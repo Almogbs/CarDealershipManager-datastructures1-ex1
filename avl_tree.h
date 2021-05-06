@@ -7,7 +7,7 @@
 * Implements an AVL Tree of generic type.
 *
 * The following methods are available:
-*   size		            - Returns the size of the list
+*   getSize		            - Returns the size of the list
 *   search 		            - returns whether or not an element exists inside the list.
 *   insert	                - Insert an element to the list.
 *   remove		       		- Removes specified element from the list
@@ -20,6 +20,8 @@
 #include <stdlib.h>
 #include "node.h"
 #include "exceptions.h"
+
+#define EMPTY_TREE_HEIGHT -1
 
 using namespace DataStructures;
 using std::endl;
@@ -34,33 +36,26 @@ namespace DataStructures {
 		Node<T>* min_node;
 		int size;
 
-		/**
-		* isValidDate: Checks if date parameters are valid.
-		*
-		* @param day - the day of the date.
-		* @param month - the month of the date.
-		* @param year - the year of the date.
-		* @return
-		* 	true - if the parameters represent valid date.
-		* 	Otherwise, returns false.
-		*/
 		template <class Operation>
 		void preOrder(Operation op);
+
 		template <class Operation>
 		void preOrderFrom(Node<T>* node, Operation op);
 
 		template <class Operation>
 		void postOrder(Operation op);
+
 		template <class Operation>
 		void postOrderFrom(Node<T>* node, Operation op);
 
 		template <class Operation>
 		void inOrder(Operation op);
+
 		template <class Operation>
 		void inOrderFrom(Node<T>* node, Operation op);
 
 		bool searchFrom(Node<T>* node, const T& key);
-
+		void balance(Node<T>* node);
 
 	public:
 		AVLTree() : root(nullptr), min_node(nullptr), size(0) {};
@@ -159,23 +154,22 @@ template <class T>
 void AVLTree<T>::insert(const T& key){
 	if(search(key)) throw NodeExist();
 
-	//Node<T>* to_insert = new Node<T>(key);
 	//find the right place for the new node
-	//if(root == nullptr) 
 	Node<T>* to_insert;
 	Node<T>* temp = root;
 	Node<T>* temp_parent = nullptr;
 	size++;
 	while(temp != nullptr){
+		temp_parent = temp;
 		if (temp->key > key) temp = temp->left;
 		else temp = temp->right;
-		temp_parent = temp;
-		temp_parent->height++;
+		if(temp_parent != nullptr) temp_parent->height++;
 	}
 
 	try {
 		//alloc and insert the new node in the right place
-		to_insert = new Node<T>(key, temp_parent->height + 1);
+		int new_height = (temp_parent == nullptr) ? EMPTY_TREE_HEIGHT : temp_parent->height + 1; 
+		to_insert = new Node<T>(key, new_height);
 		to_insert->parent = temp_parent;
 	} catch(const std::bad_alloc &e){
 		//change the tree as nothing happened
@@ -189,13 +183,16 @@ void AVLTree<T>::insert(const T& key){
 		//throw further for user manegment
 		throw e;
 	}
-	if(temp_parent != nullptr && to_insert->key > temp) temp_parent->right = to_insert;
-	else if(temp_parent != nullptr && to_insert->key < temp) temp_parent->left = to_insert;
+
+	if(temp_parent != nullptr && to_insert->key > temp_parent->key) temp_parent->right = to_insert;
+	else if(temp_parent != nullptr && to_insert->key < temp_parent->key) temp_parent->left = to_insert;
+	else if(temp_parent == nullptr) root = to_insert; 
 
 	//update minimum node
 	if(min_node == nullptr || min_node->key > key) min_node = to_insert;
 
-	//rotations ....
+	//rotations for balancing, if needed
+	if(temp_parent != nullptr) balance(temp_parent->parent);
 }
 
 template <class T>
@@ -209,8 +206,12 @@ void AVLTree<T>::remove(const T& key){
 		else to_delete = to_delete->right;
 		to_delete_parent = to_delete;
 		to_delete_parent->height--;
+		
+	//remove the node and fix the tree
+	//!@#$%^&*()!@#$%^&*()
 
-	//rotations ....
+	//rotations for balancing, if needed
+	if(to_delete_parent != nullptr) balance(to_delete_parent->parent);
 	}
 }
 
@@ -248,4 +249,14 @@ bool AVLTree<T>::searchFrom(Node<T>* node, const T& key){
 	return (node->key < key) ? searchFrom(node->right, key) : searchFrom(node->left, key);
 }
 
+template <class T>
+void AVLTree<T>::balance(Node<T>* node){
+	if(node == nullptr) return;
+	Node<T>* to_fix = node;
+	while(to_fix != nullptr && std::abs(to_fix->get_balanced_factor) <= 1){
+		to_fix = to_fix->parent;
+	}
+
+
+}
 #endif  /* AVL_TREE_H_ */
