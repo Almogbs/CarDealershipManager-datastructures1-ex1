@@ -176,14 +176,10 @@ void AVLTree<T>::insert(const T& key){
 	} catch(const std::bad_alloc &e){
 		//change the tree as nothing happened
 		size--;
-		//Node<T>* bad_alloc_node = root;
-		//while(bad_alloc_node != nullptr){
-		//if (bad_alloc_node->key > key) bad_alloc_node = bad_alloc_node->left;
-		//else bad_alloc_node = bad_alloc_node->right;
-	}
+
 		//throw further for user manegment
 		throw e;
-	
+		}
 
 	if(temp_parent != nullptr && to_insert->key > temp_parent->key) temp_parent->right = to_insert;
 	else if(temp_parent != nullptr && to_insert->key < temp_parent->key) temp_parent->left = to_insert;
@@ -214,25 +210,60 @@ void AVLTree<T>::remove(const T& key){
 		else to_delete = to_delete->right;
 		to_delete_parent = to_delete;
 	}
+
 	//remove the node and fix the tree
 	//if to_delete is leaf(lucky me)
-	if(to_delete->right = nullptr && to_delete->left = nullptr){
+	if(to_delete->right == nullptr && to_delete->left == nullptr){
 		//removing the parent's left son
-		if(to_delete_parent != nullptr && to_delete_parent->left = to_delete) to_delete_parent->left = nullptr;
+		if(to_delete_parent != nullptr && to_delete_parent->left == to_delete) to_delete_parent->left = nullptr;
 
 		//removing the parent's right son
-		else if(to_delete_parent != nullptr && to_delete_parent->right = to_delete) to_delete_parent->right = nullptr;
-
-		//else, just removing the root
-		delete to_delete;
+		else if(to_delete_parent != nullptr && to_delete_parent->right == to_delete) to_delete_parent->right = nullptr;	
 	}
 
+	//if to_delete has both sons
+	else if(to_delete->right != nullptr && to_delete->left != nullptr){
+		//get the closest valued node from right
+		Node<T>* temp = to_delete->right;
+		while(temp->left != nullptr){
+			temp = temp->left;
+		}
+		temp->left = to_delete->left;
+		Node<T>* temp_parent = to_delete->right;
+		temp_parent->left = temp->right;
+		temp->right = temp_parent;
+		//removing the parent's left son
+		if(to_delete->parent != nullptr && to_delete->parent->left == to_delete) to_delete->parent->left = temp;
+
+		//removing the parent's right son
+		else if(to_delete->parent != nullptr && to_delete->parent->right == to_delete) to_delete->parent->right = temp;
+	}
+
+	//if to_delete have only one son
+	else {
+		Node<T>* temp = (to_delete->right != nullptr) ? to_delete->right : to_delete->left;
+		//removing the parent's left son
+		if(to_delete->parent != nullptr && to_delete->parent->left == to_delete) to_delete->parent->left = temp;
+
+		//removing the parent's right son
+		else if(to_delete->parent != nullptr && to_delete->parent->right == to_delete) to_delete->parent->right = temp;
+	}
+
+	//update the min node
+	if(to_delete->key == min_node->key) min_node = to_delete->parent;
 
 	//update the heights of the nodes in the path
-	//...
+	Node<T>* fix_height = to_delete->parent;
+	while(fix_height != nullptr){
+		fix_height->update_height();
+		fix_height = fix_height->parent;
+	}
+
+	delete to_delete;
 
 	//rotations for balancing, if needed
 	if(to_delete_parent != nullptr) balance(to_delete_parent->parent);
+
 }
 
 template <class T>
@@ -305,7 +336,6 @@ void AVLTree<T>::balance(Node<T>* node, bool insert = false){
 		num_of_rotations++;	
 	}
 }
-
 
 template <class T>
 void AVLTree<T>::LLRotation(Node<T>* node){
