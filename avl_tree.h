@@ -56,6 +56,8 @@ namespace DataStructures {
 
 		bool searchFrom(Node<T>* node, const T& key);
 		void balance(Node<T>* node, bool insert = false);
+		void rotateRight(Node<T>* node);
+		void rotateLeft(Node<T>* node);
 		void LLRotation(Node<T>* node);
 		void LRRotation(Node<T>* node);
 		void RRRotation(Node<T>* node);
@@ -337,24 +339,49 @@ void AVLTree<T>::balance(Node<T>* node, bool insert = false){
 	}
 }
 
-template <class T>
-void AVLTree<T>::LLRotation(Node<T>* node){
-	
+template<class T>
+void rotateRight(Node<T>* node){
+
+	Node<T>* new_root = node->left();              //A
+	Node<T>* new_left_son = new_root->right();     //Ar
+	new_root->right = node;                        //A-->B
+	node->left = new_left_son;                     //B-->Ar
+	new_root->update_height();
+	node->update_height();
 }
 
-template <class T>
-void AVLTree<T>::LRRotation(Node<T>* node){
-	
+template<class T>
+void rotateLeft(Node<T>* node){
+
+	Node<T>* new_root = node->right();              //B
+	Node<T>* new_right_son = new_root->left();      //Bl
+	new_root->left = node;                          //B-->A
+	node->right = new_right_son;                    //A-->Bl
+	new_root->update_height();
+	node->update_height();
 }
 
 template <class T>
 void AVLTree<T>::RRRotation(Node<T>* node){
-	
+	//maybe not node?
+	rotateRight(node);
 }
 
 template <class T>
 void AVLTree<T>::RLRotation(Node<T>* node){
-	
+	rotateRight(node->right);
+	rotateLeft(node);
+}
+
+template <class T>
+void AVLTree<T>::LLRotation(Node<T>* node){
+	rotateLeft(node);
+}
+
+template <class T>
+void AVLTree<T>::LRRotation(Node<T>* node){
+	rotateLeft(node->left);
+	rotateRight(node);
 }
 
 #endif  /* AVL_TREE_H_ */
