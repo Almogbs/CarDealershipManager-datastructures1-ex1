@@ -2,11 +2,11 @@
 #define EXCEPTIONS_H_
 
 /**
-* Generic Linked List
+* Exception List
 *
-* Implements a Linked List of generic type.
+* an Exception List for DataStructures namespace.
 *
-* The following methods are available:
+* The following exceptions are available:
 *   size		                - Returns the size of the list
 *   contains	                - returns whether or not an element exists inside the list.
 *   insert	                    - Insert an element to the list.
@@ -26,5 +26,6 @@ namespace DataStructures{
 	class NodeExist : public std::exception {};
 	class NodeNotExist : public std::exception {};
 	class Failure : public std::exception {};
+	class Assert : public std::exception {};
 }
 #endif  /* EXCEPTIONS_H_ */

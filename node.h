@@ -2,9 +2,9 @@
 #define NODE_H_
 
 /**
-* Generic Linked List
+* Generic Node
 *
-* Implements a Linked List of generic type.
+* Implements a Node of generic type.
 *
 * The following methods are available:
 *   size		                - Returns the size of the list
@@ -19,6 +19,8 @@
 
 #include "exceptions.h"
 
+#define EMPTY_TREE_HEIGHT -1
+
 namespace DataStructures{
 
 	template <class T>
@@ -29,15 +31,32 @@ namespace DataStructures{
 		Node* parent = nullptr;
 		Node* left = nullptr;
 		Node* right = nullptr;
-        Node(const T& key, int height = -1) : key(key), height(height) {};
+        Node(const T& key, int height = EMPTY_TREE_HEIGHT) : key(key), height(height) {};
+        int update_height();
         int get_height();
+        int get_left_height();
+        int get_right_height();
 		int get_balanced_factor();
 	};
 
+    template <class T>
+    int Node<T>::update_height(){
+        return std::max<T>(get_left_height(), get_right_height()) + 1;
+    }
 
     template <class T>
     int Node<T>::get_height(){
         return height;
+    }
+
+    template <class T>
+    int Node<T>::get_left_height(){
+        return (left == nullptr) ? EMPTY_TREE_HEIGHT : left->get_height();
+    }
+
+    template <class T>
+    int Node<T>::get_right_height(){
+        return (right == nullptr) ? EMPTY_TREE_HEIGHT : right->get_height();
     }
 
     template <class T>
@@ -46,7 +65,6 @@ namespace DataStructures{
         else if(left == nullptr) return -right->get_height();
         return left->get_height();
     }
-
 }
 
 #endif  /* NODE_H_ */
