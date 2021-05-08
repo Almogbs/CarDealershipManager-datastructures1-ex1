@@ -20,6 +20,8 @@
 #include "exceptions.h"
 
 #define EMPTY_TREE_HEIGHT -1
+#define LEAF_TREE_HEIGHT 0
+
 
 namespace DataStructures{
 
@@ -31,7 +33,7 @@ namespace DataStructures{
 		Node* parent = nullptr;
 		Node* left = nullptr;
 		Node* right = nullptr;
-        Node(const T& key, int height = EMPTY_TREE_HEIGHT) : key(key), height(height) {};
+        Node(const T& key, int height = LEAF_TREE_HEIGHT) : key(key), height(height) {};
         void update_height();
         int get_height() const;
         int get_left_height();
@@ -41,7 +43,7 @@ namespace DataStructures{
 
     template <class T>
     void Node<T>::update_height(){
-        height = std::max<T>(get_left_height(), get_right_height()) + 1;
+        height = std::max<T>(get_left_height(), get_right_height()) + 1;        //std good?
     }
 
     template <class T>
@@ -62,8 +64,9 @@ namespace DataStructures{
     template <class T>
     int Node<T>::get_balanced_factor() const{
         if(left == nullptr && right == nullptr) return 0;
-        else if(left == nullptr) return -right->get_height();
-        return left->get_height();
+        else if(left == nullptr) return EMPTY_TREE_HEIGHT - right->get_height();
+        else if(right == nullptr) return left->get_height() - EMPTY_TREE_HEIGHT;
+        return left->get_height() - right->get_height();
     }
 }
 

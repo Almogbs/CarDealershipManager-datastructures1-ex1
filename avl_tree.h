@@ -39,7 +39,7 @@ namespace DataStructures {
 
 		void swapKeys(Node<T>* node1, Node<T>* node2);
 		bool searchFrom(Node<T>* node, const T& key);
-		void balance(Node<T>* node, bool insert = false);
+		void balance(Node<T>* node);
 		void rotateRight(Node<T>* node);
 		void rotateLeft(Node<T>* node);
 		void LLRotation(Node<T>* node);
@@ -103,6 +103,7 @@ void deleteOperation<T>::operator()(const Node<T>* node){
 
 template <class T>
 void printOperation<T>::operator()(const Node<T>* node){
+	//to change after validate adt
     cout << node->key << " BF: " << node->get_balanced_factor() <<  " height: " << node->get_height() << endl;
 }
 
@@ -224,7 +225,7 @@ void AVLTree<T>::insert(const T& key){
 	}
 
 	//rotations for balancing, if needed
-	if(temp_parent != nullptr) balance(temp_parent->parent, true);
+	if(temp_parent != nullptr) balance(temp_parent->parent);
 }
 
 template <class T>
@@ -243,24 +244,11 @@ void AVLTree<T>::remove(const T& key){
 			temp = temp->left;
 		}
 		swapKeys(temp, to_delete);
-		//Node<T>* temp_parent = temp->parent;
-
-		//temp_parent->left = temp->right;
-		//temp->right->parent = temp_parent;
 		to_delete = temp;
-		/*
-		temp->left = to_delete->left;
-		Node<T>* temp_parent = to_delete->right;
-		temp_parent->left = temp->right;
-		temp->right = temp_parent;
-		//removing the parent's left son
-		if(to_delete_parent != nullptr && to_delete_parent->left == to_delete) to_delete_parent->left = temp;
-
-		//removing the parent's right son
-		else if(to_delete_parent != nullptr && to_delete_parent->right == to_delete) to_delete_parent->right = temp;
-		*/
 	}
+
 	to_delete_parent = to_delete->parent;
+
 	//if to_delete is leaf(lucky me)
 	if(to_delete->right == nullptr && to_delete->left == nullptr){
 		//sole node in the tree
@@ -271,7 +259,6 @@ void AVLTree<T>::remove(const T& key){
 		else if(to_delete_parent->right == to_delete) to_delete_parent->right = nullptr;
 	}
 
-
 	//if to_delete have only one son
 	else {
 		Node<T>* temp = (to_delete->right != nullptr) ? to_delete->right : to_delete->left;
@@ -281,21 +268,11 @@ void AVLTree<T>::remove(const T& key){
 			root->parent = nullptr;
 			//to_delete = temp;
 		}
-
 		else {
 				swapKeys(temp, to_delete);
 				(to_delete->right == temp) ? to_delete->right = nullptr : to_delete->left = nullptr;
 				to_delete = temp;
 		}
-
-	
-		/*
-		//removing the parent's left son
-		if(to_delete_parent != nullptr && to_delete_parent->left == to_delete) to_delete_parent->left = temp;
-
-		//removing the parent's right son
-		else if(to_delete_parent != nullptr && to_delete_parent->right == to_delete) to_delete_parent->right = temp;
-		*/
 	}
 
 	//update the min node
@@ -309,9 +286,8 @@ void AVLTree<T>::remove(const T& key){
 	}
 
 	delete to_delete;
-
 	//rotations for balancing, if needed
-	if(to_delete_parent != nullptr) balance(to_delete_parent->parent);
+	balance(to_delete_parent);
 }
 
 template <class T>
@@ -367,69 +343,86 @@ bool AVLTree<T>::searchFrom(Node<T>* node, const T& key){
 }
 
 template <class T>
-void AVLTree<T>::balance(Node<T>* node, bool insert){
+void AVLTree<T>::balance(Node<T>* node){
 	if(node == nullptr) return;
-	/*
 	//for observation 4 (tutorial 5)
-	int num_of_rotations = 0;
 	Node<T>* to_fix = node;
 
-	while(!(insert && num_of_rotations == 1) && to_fix != nullptr){
+	while(to_fix != nullptr){
+		to_fix->update_height();
 		if(to_fix->get_balanced_factor() == 2){
 
 			//LR rotation needed
-			if(to_fix->get_left_height() == -1) LRRotation(to_fix);
-
+			if(to_fix->left->get_balanced_factor() == -1){
+				LRRotation(to_fix);
+			}
 			//LL rotation needed
-			else if(to_fix->get_left_height() >= 0) LLRotation(to_fix);
-
+			else if(to_fix->left->get_balanced_factor() >= 0){
+				LLRotation(to_fix);
+			}
 			//should not reach here
 			else throw Assert();
 		}
 		else if(to_fix->get_balanced_factor() == -2){
 
 			//RL rotation needed
-			if(to_fix->get_right_height() == 1) RLRotation(to_fix);
+			if(to_fix->right->get_balanced_factor() == 1){
+				RLRotation(to_fix);
+			}
 
 			//RR rotation needed
-			else if(to_fix->get_right_height() <= 0) RRRotation(to_fix);
+			else if(to_fix->right->get_balanced_factor() <= 0){
+				RRRotation(to_fix);
+			}
 
 			//should not reach here
 			else throw Assert();
 		}
-
 		to_fix = to_fix->parent;	
-		num_of_rotations++;	
 	}
-	*/
 }
 
 template<class T>
 void AVLTree<T>::rotateRight(Node<T>* node){
-
-	Node<T>* new_root = node->left;              //A
-	Node<T>* new_left_son = new_root->right;     //Ar
-	new_root->right = node;                        //A-->B
-	node->left = new_left_son;                     //B-->Ar
-	new_root->update_height();
-	node->update_height();
+	Node<T>* B = node; 
+	Node<T>* Bparent = B->parent;
+	Node<T>* A = B->left;
+	Node<T>* Aright = A->right;
+	if(Aright != nullptr) Aright->parent = B;
+	B->left = Aright;
+	A->parent = Bparent;
+	if(Bparent == nullptr) root = A;
+	else if (Bparent->right == B) Bparent->right = A;
+	else if (Bparent->left == B) Bparent->left = A;
+	else throw Assert();
+	A->right = B;
+	B->parent = A;
+	B->update_height();
+	A->update_height();
 }
 
 template<class T>
 void AVLTree<T>::rotateLeft(Node<T>* node){
-
-	Node<T>* new_root = node->right;              //B
-	Node<T>* new_right_son = new_root->left;      //Bl
-	new_root->left = node;                          //B-->A
-	node->right = new_right_son;                    //A-->Bl
-	new_root->update_height();
-	node->update_height();
+	Node<T>* A = node;
+	Node<T>* Aparent = A->parent;
+	Node<T>* B = A->right;
+	Node<T>* Bleft = B->left;
+	if (Bleft != nullptr) Bleft->parent = A;
+	A->right = Bleft;
+	B->parent = Aparent;
+	if(Aparent == nullptr) root = B;
+	else if (Aparent->right == A) Aparent->right = B;
+	else if (Aparent->left == A) Aparent->left = B;
+	else throw Assert();
+	B->left = A;
+	A->parent = B;
+	A->update_height();
+	B->update_height();
 }
 
 template <class T>
 void AVLTree<T>::RRRotation(Node<T>* node){
-	//maybe not node?
-	rotateRight(node);
+	rotateLeft(node);
 }
 
 template <class T>
@@ -440,7 +433,7 @@ void AVLTree<T>::RLRotation(Node<T>* node){
 
 template <class T>
 void AVLTree<T>::LLRotation(Node<T>* node){
-	rotateLeft(node);
+	rotateRight(node);
 }
 
 template <class T>
