@@ -7,7 +7,6 @@ int main(int argc, char** argv){
     t1.insert(4); 
     t1.insert(24364);
     t1.insert(2);
-    /*
     t1.insert(924);
     t1.insert(1);
     t1.insert(244);
@@ -20,7 +19,6 @@ int main(int argc, char** argv){
     t1.printPreOrder();
 
     cout << t1.getSize() << endl;
-  */
   
     t1.remove(4);
     t1.printInorder();

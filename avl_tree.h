@@ -54,6 +54,7 @@ namespace DataStructures {
 		template <class Operation>
 		void inOrderFrom(Node<T>* node, Operation op);
 
+		void swapKeys(Node<T>* node1, Node<T>* node2);
 		bool searchFrom(Node<T>* node, const T& key);
 		void balance(Node<T>* node, bool insert = false);
 		void rotateRight(Node<T>* node);
@@ -156,6 +157,16 @@ AVLTree<T>::~AVLTree(){
 }
 
 template <class T>
+void AVLTree<T>::swapKeys(Node<T>* node1, Node<T>* node2){
+	//should not happen
+	if(node1 == nullptr || node2 == nullptr) throw Assert();
+	T temp_key = node1->key;
+	node1->key = node2->key;
+	node2->key = temp_key;
+}
+
+
+template <class T>
 bool AVLTree<T>::search(const T& key){
 	return searchFrom(root, key);
 }
@@ -207,33 +218,26 @@ void AVLTree<T>::insert(const T& key){
 
 template <class T>
 void AVLTree<T>::remove(const T& key){
-	if(!search(key)) throw NodeNotExist();
 	size--;
-	Node<T>* to_delete = root;
-	Node<T>* to_delete_parent = nullptr;
-	while(to_delete->key != key){
-		if (to_delete->key > key) to_delete = to_delete->left;
-		else to_delete = to_delete->right;
-		to_delete_parent = to_delete;
-	}
-	
+	Node<T>* to_delete = getNode(key);
+	Node<T>* to_delete_parent = to_delete->parent;
+
 	//remove the node and fix the tree
-	//if to_delete is leaf(lucky me)
-	if(to_delete->right == nullptr && to_delete->left == nullptr){
-		//removing the parent's left son
-		if(to_delete_parent != nullptr && to_delete_parent->left == to_delete) to_delete_parent->left = nullptr;
-
-		//removing the parent's right son
-		else if(to_delete_parent != nullptr && to_delete_parent->right == to_delete) to_delete_parent->right = nullptr;	
-	}
-
 	//if to_delete has both sons
-	else if(to_delete->right != nullptr && to_delete->left != nullptr){
+	if(to_delete->right != nullptr && to_delete->left != nullptr){
+
 		//get the closest valued node from right
 		Node<T>* temp = to_delete->right;
 		while(temp->left != nullptr){
 			temp = temp->left;
 		}
+		swapKeys(temp, to_delete);
+		//Node<T>* temp_parent = temp->parent;
+
+		//temp_parent->left = temp->right;
+		//temp->right->parent = temp_parent;
+		to_delete = temp;
+		/*
 		temp->left = to_delete->left;
 		Node<T>* temp_parent = to_delete->right;
 		temp_parent->left = temp->right;
@@ -243,16 +247,44 @@ void AVLTree<T>::remove(const T& key){
 
 		//removing the parent's right son
 		else if(to_delete_parent != nullptr && to_delete_parent->right == to_delete) to_delete_parent->right = temp;
+		*/
 	}
+	to_delete_parent = to_delete->parent;
+	//if to_delete is leaf(lucky me)
+	if(to_delete->right == nullptr && to_delete->left == nullptr){
+		//sole node in the tree
+		if(to_delete_parent == nullptr) root = nullptr;
+		//removing the parent's left son
+		else if(to_delete_parent->left == to_delete) to_delete_parent->left = nullptr;
+		//removing the parent's right son
+		else if(to_delete_parent->right == to_delete) to_delete_parent->right = nullptr;
+	}
+
 
 	//if to_delete have only one son
 	else {
 		Node<T>* temp = (to_delete->right != nullptr) ? to_delete->right : to_delete->left;
+		//to_delete is the root
+		if(to_delete_parent == nullptr) {
+			root = temp;
+			root->parent = nullptr;
+			//to_delete = temp;
+		}
+
+		else {
+				swapKeys(temp, to_delete);
+				(to_delete->right == temp) ? to_delete->right = nullptr : to_delete->left = nullptr;
+				to_delete = temp;
+		}
+
+	
+		/*
 		//removing the parent's left son
 		if(to_delete_parent != nullptr && to_delete_parent->left == to_delete) to_delete_parent->left = temp;
 
 		//removing the parent's right son
 		else if(to_delete_parent != nullptr && to_delete_parent->right == to_delete) to_delete_parent->right = temp;
+		*/
 	}
 
 	//update the min node
@@ -269,7 +301,6 @@ void AVLTree<T>::remove(const T& key){
 
 	//rotations for balancing, if needed
 	if(to_delete_parent != nullptr) balance(to_delete_parent->parent);
-
 }
 
 template <class T>
@@ -293,7 +324,7 @@ void AVLTree<T>::printPreOrder(){
 template <class T>
 Node<T>* AVLTree<T>::getNode(const T& key){
 	if(!search(key)) throw NodeNotExist();
-	if(root == nullptr) return false;
+	if(root == nullptr) return nullptr;
 	Node<T>* to_return = root;
 	while(to_return->key != key){
 		if(to_return->key > key) to_return = to_return->left;
@@ -327,7 +358,7 @@ bool AVLTree<T>::searchFrom(Node<T>* node, const T& key){
 template <class T>
 void AVLTree<T>::balance(Node<T>* node, bool insert){
 	if(node == nullptr) return;
-
+	/*
 	//for observation 4 (tutorial 5)
 	int num_of_rotations = 0;
 	Node<T>* to_fix = node;
@@ -359,6 +390,7 @@ void AVLTree<T>::balance(Node<T>* node, bool insert){
 		to_fix = to_fix->parent;	
 		num_of_rotations++;	
 	}
+	*/
 }
 
 template<class T>
