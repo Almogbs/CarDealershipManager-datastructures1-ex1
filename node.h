@@ -32,20 +32,20 @@ namespace DataStructures{
 		Node* left = nullptr;
 		Node* right = nullptr;
         Node(const T& key, int height = EMPTY_TREE_HEIGHT) : key(key), height(height) {};
-        int update_height();
-        int get_height();
+        void update_height();
+        int get_height() const;
         int get_left_height();
         int get_right_height();
-		int get_balanced_factor();
+		int get_balanced_factor() const;
 	};
 
     template <class T>
-    int Node<T>::update_height(){
-        return std::max<T>(get_left_height(), get_right_height()) + 1;
+    void Node<T>::update_height(){
+        height = std::max<T>(get_left_height(), get_right_height()) + 1;
     }
 
     template <class T>
-    int Node<T>::get_height(){
+    int Node<T>::get_height() const{
         return height;
     }
 
@@ -60,7 +60,7 @@ namespace DataStructures{
     }
 
     template <class T>
-    int Node<T>::get_balanced_factor(){
+    int Node<T>::get_balanced_factor() const{
         if(left == nullptr && right == nullptr) return 0;
         else if(left == nullptr) return -right->get_height();
         return left->get_height();

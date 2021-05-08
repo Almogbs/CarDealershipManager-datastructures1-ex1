@@ -14,6 +14,7 @@
 *   GetMinNode	                - Sets the internal iterator to the first element in the list and returns it
 *   GetNode	                - Sets the internal iterator to the first element in the list and returns it
 *   GetRoot	                - Sets the internal iterator to the first element in the list and returns it
+*   ...
 */
 
 #include <iostream>
@@ -36,6 +37,28 @@ namespace DataStructures {
 		Node<T>* min_node;
 		int size;
 
+		void swapKeys(Node<T>* node1, Node<T>* node2);
+		bool searchFrom(Node<T>* node, const T& key);
+		void balance(Node<T>* node, bool insert = false);
+		void rotateRight(Node<T>* node);
+		void rotateLeft(Node<T>* node);
+		void LLRotation(Node<T>* node);
+		void LRRotation(Node<T>* node);
+		void RRRotation(Node<T>* node);
+		void RLRotation(Node<T>* node);
+
+	public:
+		AVLTree() : root(nullptr), min_node(nullptr), size(0) {};
+		~AVLTree();
+		bool search(const T& key);
+		void insert(const T& key);
+		void remove(const T& key);
+		void clear();
+		Node<T>* getNode(const T& key);
+		Node<T>* getMinNode();
+		Node<T>* getRoot();
+		int getSize();
+
 		template <class Operation>
 		void preOrder(Operation op);
 
@@ -53,27 +76,6 @@ namespace DataStructures {
 
 		template <class Operation>
 		void inOrderFrom(Node<T>* node, Operation op);
-
-		void swapKeys(Node<T>* node1, Node<T>* node2);
-		bool searchFrom(Node<T>* node, const T& key);
-		void balance(Node<T>* node, bool insert = false);
-		void rotateRight(Node<T>* node);
-		void rotateLeft(Node<T>* node);
-		void LLRotation(Node<T>* node);
-		void LRRotation(Node<T>* node);
-		void RRRotation(Node<T>* node);
-		void RLRotation(Node<T>* node);
-
-	public:
-		AVLTree() : root(nullptr), min_node(nullptr), size(0) {};
-		~AVLTree();
-		bool search(const T& key);
-		void insert(const T& key);
-		void remove(const T& key);
-		Node<T>* getNode(const T& key);
-		Node<T>* getMinNode();
-		Node<T>* getRoot();
-		int getSize();
 
 		void printInorder();
 		void printPostOrder();
@@ -101,7 +103,7 @@ void deleteOperation<T>::operator()(const Node<T>* node){
 
 template <class T>
 void printOperation<T>::operator()(const Node<T>* node){
-    cout << node->key << " ";
+    cout << node->key << " BF: " << node->get_balanced_factor() <<  " height: " << node->get_height() << endl;
 }
 
 //dec
@@ -150,6 +152,15 @@ template <class Operation>
 void AVLTree<T>::inOrder(Operation op){
 	inOrderFrom(root, op);
 }
+
+template <class T>
+void AVLTree<T>::clear(){
+	postOrder<deleteOperation<T>>(deleteOperation<T>());
+	size = 0;
+	min_node = 0;
+	root = nullptr;
+}
+
 
 template <class T>
 AVLTree<T>::~AVLTree(){
