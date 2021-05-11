@@ -8,7 +8,9 @@
 
 int main(){
 	AVLTree<int> tree;
-
+	int a[5] = {3, 9, 21, 34, 55};
+	AVLTree<int> tree2(a, 5);
+	tree2.printInorder();
 	//Specific Cases
 
 	/*correct output for the four next cases

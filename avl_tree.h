@@ -1,7 +1,7 @@
 #ifndef AVL_TREE_H_
 #define AVL_TREE_H_
 
-/**2344
+/**
 * Generic AVL Tree
 *
 * Implements an AVL Tree of generic type.
@@ -37,8 +37,8 @@ namespace DataStructures {
 		Node<T>* min_node;
 		int size;
 
+		Node<T>* buildRoot(T* sorted_keys, int left, int right, Node<T>* root_parent, int root_height);
 		void swapKeys(Node<T>* node1, Node<T>* node2);
-		bool searchFrom(Node<T>* node, const T& key);
 		void balance(Node<T>* node);
 		void rotateRight(Node<T>* node);
 		void rotateLeft(Node<T>* node);
@@ -49,8 +49,10 @@ namespace DataStructures {
 
 	public:
 		AVLTree() : root(nullptr), min_node(nullptr), size(0) {};
+		AVLTree(T* sorted_keys, int num);
 		~AVLTree();
 		bool search(const T& key);
+		bool searchFrom(Node<T>* node, const T& key);
 		void insert(const T& key);
 		void remove(const T& key);
 		void clear();
@@ -162,6 +164,33 @@ void AVLTree<T>::clear(){
 	root = nullptr;
 }
 
+template <class T>
+Node<T>* AVLTree<T>::buildRoot(T* sorted_keys, int left, int right, Node<T>* root_parent, int root_height){
+	if(left > right) return nullptr;
+
+	int mid = (left + right)/2;
+	Node<T>* root = new Node<T>(sorted_keys[mid], root_height);
+	root->parent = root_parent;
+	root->left = buildRoot(sorted_keys, left, mid - 1, root, root_height - 1);
+	root->right = buildRoot(sorted_keys, mid + 1, right, root, root_height - 1);
+	return root;
+}
+
+int calcHeight(int num){
+	int result = 0;
+	while(num > 1){
+		num /= 2;
+		result++;
+	}
+	return result;
+}
+
+template <class T>
+AVLTree<T>::AVLTree(T* sorted_keys, int num) : size(num){
+	root = buildRoot(sorted_keys, 0, num-1, nullptr, calcHeight(num));
+	min_node = root;
+	while(min_node->left != nullptr) min_node = min_node->left;
+}
 
 template <class T>
 AVLTree<T>::~AVLTree(){
@@ -176,7 +205,6 @@ void AVLTree<T>::swapKeys(Node<T>* node1, Node<T>* node2){
 	node1->key = node2->key;
 	node2->key = temp_key;
 }
-
 
 template <class T>
 bool AVLTree<T>::search(const T& key){
