@@ -28,14 +28,23 @@ using namespace DataStructures;
 using std::endl;
 using std::cout;
 
+static int calcHeight(int num){
+	int result = 0;
+	while(num > 1){
+		num /= 2;
+		result++;
+	}
+	return result;
+}
+
 namespace DataStructures {
 
 	template <class T>
 	class AVLTree {
 
-		Node<T>* root;
-		Node<T>* min_node;
-		int size;
+		Node<T>* 	root;
+		Node<T>* 	min_node;
+		int			size;
 
 		Node<T>* buildRoot(T* sorted_keys, int left, int right, Node<T>* root_parent, int root_height);
 		void swapKeys(Node<T>* node1, Node<T>* node2);
@@ -176,15 +185,6 @@ Node<T>* AVLTree<T>::buildRoot(T* sorted_keys, int left, int right, Node<T>* roo
 	return root;
 }
 
-int calcHeight(int num){
-	int result = 0;
-	while(num > 1){
-		num /= 2;
-		result++;
-	}
-	return result;
-}
-
 template <class T>
 AVLTree<T>::AVLTree(T* sorted_keys, int num) : size(num){
 	root = buildRoot(sorted_keys, 0, num-1, nullptr, calcHeight(num));
@@ -258,8 +258,8 @@ void AVLTree<T>::insert(const T& key){
 
 template <class T>
 void AVLTree<T>::remove(const T& key){
-	size--;
 	Node<T>* to_delete = getNode(key);
+	size--;
 	Node<T>* to_delete_parent = to_delete->parent;
 
 	//remove the node and fix the tree
