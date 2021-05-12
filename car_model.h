@@ -17,6 +17,7 @@ namespace DataStructures
     public:
         CarModel(int type_id, int model_id, int score = 0, int sells = 0);
         CarModel() = default;
+        //~CarModel();
         int get_score() const;
         int get_total_sales() const;
         int get_model_id() const;

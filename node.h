@@ -35,7 +35,8 @@ namespace DataStructures{
 		Node*     right = nullptr;
         Node(const T& key, int height = LEAF_TREE_HEIGHT) : key(key), height(height) {};
         void update_height();
-        T get_key() const;
+        const T* get_key() const;
+        T* get_key() const;
         int get_height() const;
         int get_left_height();
         int get_right_height();
@@ -43,10 +44,16 @@ namespace DataStructures{
 	};
 
     template <class T>
-    T Node<T>::get_key() const{
-	    return key;
+    const T* Node<T>::get_key() const{
+	    return &key;
     }
-
+/*
+    template <class T>
+    T* Node<T>::get_key() {
+	    return &key;
+    }
+*/
+    
     template <class T>
     void Node<T>::update_height(){
         height = std::max(get_left_height(), get_right_height()) + 1;        //std good?

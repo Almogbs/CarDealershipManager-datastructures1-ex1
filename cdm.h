@@ -9,11 +9,12 @@
 
 
 class CDM {
-    AVLTree<CarType>            types_tree;
-    AVLTree<CarType>            zero_scored_types_tree;
-    AVLTree<CarModel>           models_by_type_tree;
-    AVLTree<CarModelByGrade>    models_by_score_tree;
-    CarType*                    best_seller_type;
+    AVLTree<CarType>            types_tree;                 //AVL Tree of all Types, sorted by TypeID
+    AVLTree<CarType>            zero_scored_types_tree;     //AVL Tree of all Types which hold at least one Model with the Score: 0, sorted by TypeID
+    AVLTree<CarModel>           models_by_type_tree;        //AVL Tree of all Models, sorted by TypeID>ModelID
+    AVLTree<CarModelByGrade>    models_by__pos_score_tree;  //AVL Tree of all Models with Positive Scrore, sorted by Score>TypeID>ModelID
+    AVLTree<CarModelByGrade>    models_by_neg_score_tree;   //AVL Tree of all Models with Negative Scrore, sorted by Score>TypeID>ModelID
+    CarType*                    best_seller_type;           //Pointer to ???
 
 public:
     CDM();

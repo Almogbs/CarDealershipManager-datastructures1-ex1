@@ -1,6 +1,5 @@
 #include"library.h"
 #include "cdm.h"
-#define NULL 0 //OMEN
 
 void *Init() {
     CDM *DS = new CDM (); 

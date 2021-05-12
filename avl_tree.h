@@ -44,6 +44,7 @@ namespace DataStructures {
 
 		Node<T>* 	root;
 		Node<T>* 	min_node;
+		Node<T>* 	iterator;
 		int			size;
 
 		Node<T>* buildRoot(T* sorted_keys, int left, int right, Node<T>* root_parent, int root_height);
@@ -87,6 +88,12 @@ namespace DataStructures {
 
 		template <class Operation>
 		void inOrderFrom(Node<T>* node, Operation op);
+
+		//template <class Operation>
+		const T* InOrderGetFirst();
+
+		//template <class Operation>
+		const T* InOrderGetNext();
 
 		void printInorder();
 		void printPostOrder();
@@ -163,6 +170,32 @@ template <class T>
 template <class Operation>
 void AVLTree<T>::inOrder(Operation op){
 	inOrderFrom(root, op);
+}
+
+
+template <class T>
+//template <class Operation>
+const T* AVLTree<T>::InOrderGetFirst(){
+	iterator = min_node;
+	return iterator->get_key();
+}
+
+template <class T>
+//template <class Operation>
+const T* AVLTree<T>::InOrderGetNext(){
+	if(iterator == nullptr) return nullptr;
+	Node<T>* result = iterator->right;
+	if(result == nullptr){
+		result = iterator;
+		while(result->parent != nullptr && *(result->get_key()) > *(result->parent->get_key())){
+			result = result->parent;
+		}
+		if(result->parent != nullptr) iterator = result->parent;
+		return iterator->get_key();
+	}
+	while(result->left != nullptr) result = result->left;
+	iterator = result;
+	return iterator->get_key();
 }
 
 template <class T>

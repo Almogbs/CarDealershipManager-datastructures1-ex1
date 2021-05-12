@@ -2,6 +2,7 @@
 #include "avl_tree.h"
 #include <vector>
 #include <ostream>
+#include <iostream>
 #include <random>
 #include <chrono>
 #include <algorithm>
@@ -9,7 +10,14 @@
 int main(){
 	AVLTree<int> tree;
 	int a[5] = {3, 9, 21, 34, 55};
+  
 	AVLTree<int> tree2(a, 5);
+	std::cout << "!!!newline!!" << std::endl;
+	const int* iter = tree2.InOrderGetFirst();
+	for(int i = 0; i < tree2.getSize(); i++, iter = tree2.InOrderGetNext()){
+		cout << *iter << endl;
+	}
+
 	tree2.printInorder();
 	//Specific Cases
 
