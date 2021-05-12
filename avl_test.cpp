@@ -13,11 +13,11 @@ int main(){
   
 	AVLTree<int> tree2(a, 5);
 	std::cout << "!!!newline!!" << std::endl;
-	const int* iter = tree2.InOrderGetFirst();
+	int* iter = tree2.InOrderGetFirst();
 	for(int i = 0; i < tree2.getSize(); i++, iter = tree2.InOrderGetNext()){
 		cout << *iter << endl;
 	}
-
+	
 	tree2.printInorder();
 	//Specific Cases
 

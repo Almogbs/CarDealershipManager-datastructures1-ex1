@@ -39,7 +39,6 @@ StatusType CDM::RemoveCarType(int typeID){
         Node<CarType>* to_delete = types_tree.getNode(type);
         int num_of_models = to_delete->get_key()->get_num_of_models();
         types_tree.remove(type);
-
         try{
             zero_scored_types_tree.remove(type);
         }
@@ -72,22 +71,22 @@ StatusType CDM::sellCar(int typeID, int modelID){
     if ( !isValidTypeId(typeID) || !isValidModelId(modelID) ) return INVALID_INPUT;
     try
     {
-        /*
-        CarType current_type = CarType(typeID, 0);
-        Node<CarType>* current_type_node = this->types_tree.getNode(current_type); 
-        current_type = current_type_node->get_key(); 
-        AVLTree<CarModel> zero_models =  current_type_node->key.zero_scored_models;
-        CarModel to_add = CarModel(typeID, modelID);
-        */
         CarType current_type = CarType(typeID, 0);
         Node<CarType>* current_type_node = zero_scored_types_tree.getNode(current_type);
         AVLTree<CarModel>* current_type_zeros = &(current_type_node->get_key()->zero_scored_models);
-        if (current_type_zeros.search(CarModel(typeID, modelID)))
+        CarModel to_sell = CarModel(typeID, modelID);
+        if (current_type_zeros->search(to_sell))
         {
-            zero_models.remove(to_add);
             //is zero score
+            current_type_zeros->remove(to_sell);
+            if (current_type_zeros->getSize() == 0)
+            {
+                //if all models of this type are not 0
+                zero_scored_types_tree.remove(current_type);
+            }
         }
-        to_add.addSale();
+        to_sell.addSale();
+        
         this->
         
     }

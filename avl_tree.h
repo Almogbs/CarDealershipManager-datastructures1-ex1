@@ -90,10 +90,10 @@ namespace DataStructures {
 		void inOrderFrom(Node<T>* node, Operation op);
 
 		//template <class Operation>
-		const T* InOrderGetFirst();
+		T* InOrderGetFirst();
 
 		//template <class Operation>
-		const T* InOrderGetNext();
+		T* InOrderGetNext();
 
 		void printInorder();
 		void printPostOrder();
@@ -175,14 +175,14 @@ void AVLTree<T>::inOrder(Operation op){
 
 template <class T>
 //template <class Operation>
-const T* AVLTree<T>::InOrderGetFirst(){
+T* AVLTree<T>::InOrderGetFirst(){
 	iterator = min_node;
 	return iterator->get_key();
 }
 
 template <class T>
 //template <class Operation>
-const T* AVLTree<T>::InOrderGetNext(){
+T* AVLTree<T>::InOrderGetNext(){
 	if(iterator == nullptr) return nullptr;
 	Node<T>* result = iterator->right;
 	if(result == nullptr){
