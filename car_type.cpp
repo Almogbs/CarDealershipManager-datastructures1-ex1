@@ -29,7 +29,6 @@ std::ostream& DataStructures::operator<<(std::ostream& os, const CarType& type){
     return os;
 }
 
-
 bool CarType::operator==(const CarType& type) const{
     return type_id == type.type_id; 
 }  
@@ -52,5 +51,4 @@ bool DataStructures::operator>=(const CarType& type1, const CarType& type2){
 
 bool DataStructures::operator<(const CarType& type1, const CarType& type2){
         return (type1 <= type2) && (type1 != type2); 
-
 }

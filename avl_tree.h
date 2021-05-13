@@ -68,6 +68,7 @@ namespace DataStructures {
 		void clear();
 		Node<T>* getNode(const T& key);
 		Node<T>* getMinNode();
+		Node<T>* getMaxNode();
 		Node<T>* getRoot();
 		int getSize();
 
@@ -177,6 +178,7 @@ template <class T>
 //template <class Operation>
 T* AVLTree<T>::InOrderGetFirst(){
 	iterator = min_node;
+	if(iterator == nullptr) return nullptr;
 	return iterator->get_key();
 }
 
@@ -389,6 +391,14 @@ Node<T>* AVLTree<T>::getRoot(){
 template <class T>
 Node<T>* AVLTree<T>::getMinNode(){
 	return min_node;
+}
+
+template <class T>
+Node<T>* AVLTree<T>::getMaxNode(){
+	Node<T>* result = root;
+	if(result == nullptr) return nullptr;
+	while(result->right != nullptr) result = result->right;
+	return result;
 }
 
 template <class T>

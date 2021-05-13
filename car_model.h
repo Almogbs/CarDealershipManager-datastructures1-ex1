@@ -37,6 +37,14 @@ namespace DataStructures
 
     class CarModelByGrade : public CarModel{
     public:
+        CarModelByGrade(int type_id, int model_id, int score = 0, int sales = 0);
+        bool operator==(const CarModel&) const override;
+        bool operator>(const CarModel&) const override;
+    };
+
+    class CarModelBySales : public CarModel{
+    public:
+        CarModelBySales(int type_id, int model_id, int score = 0, int sales = 0);
         bool operator==(const CarModel&) const override;
         bool operator>(const CarModel&) const override;
     };

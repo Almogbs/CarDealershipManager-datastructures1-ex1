@@ -42,8 +42,8 @@ static const char *commandStr[] = {
         "Init",
         "AddCarType",
         "RemoveCarType",
-        "sellCar",
-		"makeComplaint",
+        "SellCar",
+		"MakeComplaint",
         "GetBestSellerModelByType",
         "GetWorstModels",
         "Quit" };
@@ -203,7 +203,7 @@ static errorType OnInit(void** DS, const char* const command) {
 
 static errorType OnAddCarType(void* DS, const char* const command) {
     int typeID, numOfModels;
-    ValidateRead(sscanf(command, "%d %d", &typeID, &numOfModels), 2, "%s failed.\n", commandStr[ADDMODEL_CMD]);
+    ValidateRead(sscanf(command, "%d %d", &typeID, &numOfModels), 2, "%s failed.\n", commandStr[ADDCARTYPE_CMD]);
     StatusType res = AddCarType(DS, typeID, numOfModels);
 
     if (res != SUCCESS) {
@@ -232,7 +232,7 @@ static errorType OnRemoveCarType(void* DS, const char* const command) {
 static errorType OnSellCar(void* DS, const char* const command) {
     int typeID, modelID;
     ValidateRead(sscanf(command, "%d %d", &typeID, &modelID), 2, "%s failed.\n", commandStr[SELLCAR_CMD]);
-    StatusType res = sellCar(DS, typeID, modelID);
+    StatusType res = SellCar(DS, typeID, modelID);
 
     if (res != SUCCESS) {
         printf("%s: %s\n", commandStr[SELLCAR_CMD], ReturnValToStr(res));
@@ -246,7 +246,7 @@ static errorType OnSellCar(void* DS, const char* const command) {
 static errorType OnMakeComplaint(void* DS, const char* const command) {
     int typeID, modelID, time;
     ValidateRead(sscanf(command, "%d %d %d", &typeID, &modelID, &time), 3, "%s failed.\n", commandStr[MAKECOMPLAINT_CMD]);
-    StatusType res = makeComplaint(DS, typeID, modelID, time);
+    StatusType res = MakeComplaint(DS, typeID, modelID, time);
 
     if (res != SUCCESS) {
         printf("%s: %s\n", commandStr[MAKECOMPLAINT_CMD], ReturnValToStr(res));

@@ -15,9 +15,8 @@ namespace DataStructures {
         int       num_of_models;
     public:
         int       total_sales;
-        int       best_car;
+        int       best_car;         //by sales!!!!!!!!!!!!!!
 
-        //ListNode<AVLTree<CarModel>*>* list_node_ptr;
         AVLTree<CarModel>  zero_scored_models;
         
         CarType(int type_id, int num_of_models);

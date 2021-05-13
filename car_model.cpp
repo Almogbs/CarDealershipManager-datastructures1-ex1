@@ -74,6 +74,8 @@ bool DataStructures::operator<(const CarModel& first, const CarModel& second){
     return !(first >= second);
 }
 
+CarModelByGrade::CarModelByGrade(int type_id, int model_id, int score = 0, int sales = 0) : CarModel(type_id, model_id, score, sales){};
+
 bool CarModelByGrade::operator==(const CarModel& model) const {
     return(score == model.get_score() && type_id == model.get_type_id() && model_id == model.get_model_id());
 }
@@ -88,6 +90,18 @@ bool CarModelByGrade::operator>(const CarModel& model) const {
     return false;
 }
 
+CarModelBySales::CarModelBySales(int type_id, int model_id, int score = 0, int sales = 0) : CarModel(type_id, model_id, score, sales){};
 
+bool CarModelBySales::operator==(const CarModel& model) const {
+    return(score == model.get_total_sales() && type_id == model.get_type_id() && model_id == model.get_model_id());
+}
 
-
+bool CarModelBySales::operator>(const CarModel& model) const {
+    if(score > model.get_total_sales()) return true;
+    else if(score == model.get_total_sales()){
+        if(type_id > model.get_type_id()) return true;
+        else if(type_id == model.get_type_id()) return model_id > model.get_model_id(); 
+        else return false;
+    }
+    return false;
+}

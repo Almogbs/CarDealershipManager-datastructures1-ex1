@@ -28,4 +28,5 @@ namespace DataStructures{
 	class Failure : public std::exception {};
 	class Assert : public std::exception {};
 }
+
 #endif  /* EXCEPTIONS_H_ */
