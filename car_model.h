@@ -4,6 +4,10 @@
 
 #include "avl_tree.h"
 
+
+#define SCORE_ARG_COMPLAIN 100
+#define SCORE_ARG_SELL 10
+
 using namespace DataStructures;
 
 namespace DataStructures 

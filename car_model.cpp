@@ -1,7 +1,5 @@
 #include "car_model.h"
 
-#define SCORE_ARG_COMPLAIN 100
-#define SCORE_ARG_SELL 10
 
 using namespace DataStructures;
 /*
@@ -11,7 +9,7 @@ bool isValidModelId(int model_id)
 }
 */
 
-CarModel::CarModel(int type_id, int model_id, int score = 0, int sales = 0) :
+CarModel::CarModel(int type_id, int model_id, int score, int sales) :
         model_id(model_id), type_id(type_id), sales(sales), score(score) {};
 
 void CarModel::addSale(){
@@ -74,7 +72,7 @@ bool DataStructures::operator<(const CarModel& first, const CarModel& second){
     return !(first >= second);
 }
 
-CarModelByGrade::CarModelByGrade(int type_id, int model_id, int score = 0, int sales = 0) : CarModel(type_id, model_id, score, sales){};
+CarModelByGrade::CarModelByGrade(int type_id, int model_id, int score, int sales) : CarModel(type_id, model_id, score, sales){};
 
 bool CarModelByGrade::operator==(const CarModel& model) const {
     return(score == model.get_score() && type_id == model.get_type_id() && model_id == model.get_model_id());
@@ -90,7 +88,7 @@ bool CarModelByGrade::operator>(const CarModel& model) const {
     return false;
 }
 
-CarModelBySales::CarModelBySales(int type_id, int model_id, int score = 0, int sales = 0) : CarModel(type_id, model_id, score, sales){};
+CarModelBySales::CarModelBySales(int type_id, int model_id, int score, int sales) : CarModel(type_id, model_id, score, sales){};
 
 bool CarModelBySales::operator==(const CarModel& model) const {
     return(score == model.get_total_sales() && type_id == model.get_type_id() && model_id == model.get_model_id());

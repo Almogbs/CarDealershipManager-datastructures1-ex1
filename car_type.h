@@ -3,7 +3,6 @@
 
 #include "avl_tree.h"
 #include "car_model.h"
-#include "linked_list.h"
 //#include <iostream>
 
 using namespace DataStructures;
@@ -15,14 +14,16 @@ namespace DataStructures {
         int       num_of_models;
     public:
         int       total_sales;
-        int       best_car;         //by sales!!!!!!!!!!!!!!
+        int       best_seller_model;                         //by sales!!!!!!!!!!!!!!
+        int       num_of_sales_of_best_seller_model;         //by sales!!!!!!!!!!!!!!
 
         AVLTree<CarModel>  zero_scored_models;
         
         CarType(int type_id, int num_of_models);
-        ~CarType();
-        int get_num_of_models() const;
+        int getNumOfModels() const;
         int get_type_id() const;
+        void addSale();
+        void updateBestSeller(int modelID, int num_of_sales);
         bool operator==(const CarType&) const;
         bool operator>(const CarType&) const;
         friend std::ostream& operator<<(std::ostream&, const CarType&);
