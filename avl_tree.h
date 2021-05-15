@@ -58,7 +58,7 @@ namespace DataStructures {
 		void RLRotation(Node<T>* node);
 
 	public:
-		AVLTree() : root(nullptr), min_node(nullptr), size(0) {};
+		AVLTree() : root(nullptr), min_node(nullptr), size(0) {iterator = nullptr;};
 		AVLTree(T* sorted_keys, int num);
 		~AVLTree();
 		bool search(const T& key);
@@ -106,7 +106,7 @@ namespace DataStructures {
 template <class T>
 class deleteOperation{
 public:
-    void operator()(const Node<T>* node);
+    void operator()(Node<T>* node);
 };
 
 template <class T>
@@ -116,7 +116,7 @@ public:
 };
 
 template <class T>
-void deleteOperation<T>::operator()(const Node<T>* node){
+void deleteOperation<T>::operator()(Node<T>* node){
     if(node != nullptr) delete node;
 }
 
@@ -197,7 +197,7 @@ T* AVLTree<T>::InOrderGetNext(){
 	}
 	while(result->left != nullptr) result = result->left;
 	iterator = result;
-	return iterator->get_key();
+	return iterator->get_key();	
 }
 
 template <class T>

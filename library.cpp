@@ -1,7 +1,7 @@
 #include"library.h"
 #include "cdm.h"
 
-void *Init() {
+void* Init() {
     CDM *DS = new CDM (); 
     return (void*)DS;
 }
@@ -38,9 +38,11 @@ StatusType GetWorstModels(void *DS, int numOfModels, int *types, int *models){
 
 }
 
-void Quit(void* DS) {
-    if(DS == NULL) return;
-    ((CDM *)DS)-> ~CDM();
-    DS = NULL;
+void Quit(void** DS) {
+    if(*DS == NULL) return;
+    //((CDM *)(*DS))-> ~CDM();
+    //delete *DS;
+    delete (CDM*)(*DS);
+    *DS = NULL;
 }
 

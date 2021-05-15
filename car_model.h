@@ -44,7 +44,12 @@ namespace DataStructures
         CarModelByGrade(int type_id, int model_id, int score = 0, int sales = 0);
         bool operator==(const CarModel&) const override;
         bool operator>(const CarModel&) const override;
+        
     };
+    bool operator!=(const CarModelByGrade&, const CarModelByGrade&);   
+    bool operator>=(const CarModelByGrade&, const CarModelByGrade&);
+    bool operator<(const CarModelByGrade&, const CarModelByGrade&);
+    bool operator<=(const CarModelByGrade&, const CarModelByGrade&);
 
     class CarModelBySales : public CarModel{
     public:
@@ -52,6 +57,10 @@ namespace DataStructures
         bool operator==(const CarModel&) const override;
         bool operator>(const CarModel&) const override;
     };
+    bool operator!=(const CarModelBySales&, const CarModelBySales&);   
+    bool operator>=(const CarModelBySales&, const CarModelBySales&);
+    bool operator<(const CarModelBySales&, const CarModelBySales&);
+    bool operator<=(const CarModelBySales&, const CarModelBySales&);
 }
 
 

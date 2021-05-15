@@ -2,15 +2,40 @@
 
 CarType::CarType(int type_id, int num_of_models) :  type_id(type_id), num_of_models(num_of_models), total_sales(0),
                                                     best_seller_model(0), num_of_sales_of_best_seller_model(0){
-                                                        
-    CarModel* temp_arr = new CarModel[num_of_models];
-    for(int i=0; i<num_of_models; i++){                 
-        temp_arr[i] = CarModel(type_id, num_of_models - 1 - i);
+    if(num_of_models != 0){                                   
+        CarModel temp_arr[num_of_models];
+        for(int i=0; i<num_of_models; i++){                 
+            temp_arr[i] = CarModel(type_id, i);
+        }
+
+        //zero_scored_models = new AVLTree<CarModel>(temp_arr, num_of_models);
+        zero_scored_models = new AVLTree<CarModel>(temp_arr, num_of_models);
+        //delete[] temp_arr;
     }
-    
-    //zero_scored_models = new AVLTree<CarModel>(temp_arr, num_of_models);
-    zero_scored_models = AVLTree<CarModel>(temp_arr, num_of_models);
-    delete[] temp_arr;
+    else zero_scored_models = new AVLTree<CarModel>();
+}
+
+CarType::CarType(const CarType& type){
+    type_id = type.type_id;
+    num_of_models = type.num_of_models;
+    total_sales = type.total_sales;
+    best_seller_model = type.best_seller_model;                         
+    num_of_sales_of_best_seller_model = type.num_of_sales_of_best_seller_model;
+    if(num_of_models != 0){                                   
+        CarModel temp_arr[num_of_models];
+        for(int i=0; i<num_of_models; i++){                 
+            temp_arr[i] = CarModel(type_id, i);
+        }
+        //zero_scored_models = new AVLTree<CarModel>(temp_arr, num_of_models);
+        zero_scored_models = new AVLTree<CarModel>(temp_arr, num_of_models);
+        //delete[] temp_arr;
+    }
+    else zero_scored_models = new AVLTree<CarModel>();
+}
+
+CarType::~CarType(){
+    //if(zero_scored_models != nullptr)
+        delete zero_scored_models;
 }
 
 int CarType::getNumOfModels() const{
@@ -54,7 +79,7 @@ bool CarType::operator==(const CarType& type) const{
 }  
 
 bool CarType::operator>(const CarType& type) const{
-    return type_id < type.type_id; 
+    return type_id > type.type_id; 
 }
 
 bool DataStructures::operator!=(const CarType& type1, const CarType& type2){

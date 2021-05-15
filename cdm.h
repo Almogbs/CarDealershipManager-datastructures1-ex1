@@ -9,6 +9,7 @@
 
 
 class CDM {
+public:
     AVLTree<CarType>            types_tree;                 //AVL Tree of all Types, sorted by TypeID
     AVLTree<CarType>            zero_scored_types_tree;     //AVL Tree of all Types which hold at least one Model with the Score: 0, sorted by TypeID
     AVLTree<CarModel>           models_by_type_tree;        //AVL Tree of all Models, sorted by TypeID>ModelID

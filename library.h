@@ -42,7 +42,7 @@ StatusType GetBestSellerModelByType(void *DS, int typeID, int * modelID);
 
 StatusType GetWorstModels(void *DS, int numOfModels, int *types, int *models);
 
-void Quit(void* DS);
+void Quit(void** DS);
 
 #ifdef __cplusplus
 }

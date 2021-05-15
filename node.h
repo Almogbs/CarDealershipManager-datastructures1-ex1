@@ -30,10 +30,14 @@ namespace DataStructures{
     public:
         T         key;
 		int       height;
-		Node*     parent = nullptr;
-		Node*     left = nullptr;
-		Node*     right = nullptr;
-        Node(const T& key, int height = LEAF_TREE_HEIGHT) : key(key), height(height) {};
+		Node*     parent;
+		Node*     left;
+		Node*     right;
+        Node(const T& key, int height = LEAF_TREE_HEIGHT) : key(key), height(height) {
+            parent = nullptr;
+            left = nullptr;
+            right = nullptr;
+        };
         void update_height();
         T* get_key();
         int get_height() const;

@@ -3,7 +3,8 @@
 
 #include "avl_tree.h"
 #include "car_model.h"
-//#include <iostream>
+#include <stdlib.h>
+#include <iostream>
 
 using namespace DataStructures;
 
@@ -17,9 +18,11 @@ namespace DataStructures {
         int       best_seller_model;                         //by sales!!!!!!!!!!!!!!
         int       num_of_sales_of_best_seller_model;         //by sales!!!!!!!!!!!!!!
 
-        AVLTree<CarModel>  zero_scored_models;
+        AVLTree<CarModel>*  zero_scored_models;
         
         CarType(int type_id, int num_of_models);
+        CarType(const CarType&);
+        ~CarType();
         int getNumOfModels() const;
         int get_type_id() const;
         void addSale();
@@ -33,8 +36,6 @@ namespace DataStructures {
     bool operator<=(const CarType&, const CarType&);
     bool operator>=(const CarType&, const CarType&);  
     bool operator<(const CarType&, const CarType&);
-
-    //class :     
 }
 
 
