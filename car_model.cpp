@@ -111,8 +111,8 @@ bool CarModelBySales::operator==(const CarModel& model) const {
 }
 
 bool CarModelBySales::operator>(const CarModel& model) const {
-    if(score > model.get_total_sales()) return true;
-    else if(score == model.get_total_sales()){
+    if(sales > model.get_total_sales()) return true;
+    else if(sales == model.get_total_sales()){
         if(type_id > model.get_type_id()) return true;
         else if(type_id == model.get_type_id()) return model_id > model.get_model_id(); 
         else return false;

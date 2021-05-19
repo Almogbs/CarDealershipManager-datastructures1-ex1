@@ -26,6 +26,7 @@ void CDM::updateBestSeller(){
         best_seller_model = temp->get_model_id();
         best_seller_sales = temp->get_score();
         best_seller_type = temp->get_type_id();
+        return;
     }
     best_seller_type = types_tree.getMinNode()->get_key()->get_type_id();
     best_seller_sales = 0;
@@ -117,14 +118,25 @@ StatusType CDM::RemoveCarType(int typeID){
         catch(const DataStructures::NodeNotExist &e){}
         for(int i=0; i<num_of_models; i++){
             int current_model_score = 0;
+            int current_model_sales = 0;
             CarModel current_model = CarModel(typeID, i);
 
             //remove the current model of the type from the models_by_type_tree, if exists there
             try{
-                current_model_score = models_by_type_tree.getNode(current_model)->get_key()->get_score();
-                models_by_type_tree.remove(current_model);
-                models_by_score_tree.remove(CarModelByGrade(typeID, i, current_model_score));
-                models_by_sales_tree.remove(CarModelBySales(typeID, i, current_model_score));
+                try{
+                    current_model_score = models_by_type_tree.getNode(current_model)->get_key()->get_score();
+                    models_by_score_tree.remove(CarModelByGrade(typeID, i, current_model_score));
+                }
+                catch(const DataStructures::NodeNotExist &e){}
+                try{
+                    current_model_sales = models_by_type_tree.getNode(current_model)->get_key()->get_total_sales();
+                    models_by_sales_tree.remove(CarModelBySales(typeID, i, current_model_score, current_model_sales));
+                }
+                catch(const DataStructures::NodeNotExist &e){}
+                try{
+                    models_by_type_tree.remove(current_model);
+                }
+                catch(const DataStructures::NodeNotExist &e){}
             }
             catch(const DataStructures::NodeNotExist &e){}
         }
@@ -135,6 +147,7 @@ StatusType CDM::RemoveCarType(int typeID){
     catch(const DataStructures::NodeNotExist &e){
         return FAILURE;
     }
+
     updateBestSeller();
     return SUCCESS;
 }
@@ -144,7 +157,7 @@ StatusType CDM::sellCar(int typeID, int modelID){
     //checks if the type exist and the validity of the input
     try{
         CarType* car_type_node = types_tree.getNode(CarType(typeID, 0))->get_key();
-        if(car_type_node->getNumOfModels() <= modelID) return INVALID_INPUT;
+        if(car_type_node->getNumOfModels() <= modelID) return FAILURE;
     }
     catch (const DataStructures::NodeNotExist &e){
         return FAILURE;
@@ -222,6 +235,7 @@ StatusType CDM::makeComplaint(int typeID, int modelID, int t){
     //model is used(sell>0)
     try{
         CarModel* model = models_by_type_tree.getNode(CarModel(typeID, modelID))->get_key();
+
         //save old score and old sales
         int old_score = model->get_score();
                          //int old_sales = model->get_total_sales();  --------------------UNUSED---------------------------
@@ -251,7 +265,7 @@ StatusType CDM::makeComplaint(int typeID, int modelID, int t){
     //model is unused (0 sells, 0 score)
     catch (const DataStructures::NodeNotExist &e){
         //should not reach here
-        throw Assert();
+        //throw Assert();
     }
     catch(const std::bad_alloc &e){
         return ALLOCATION_ERROR;
@@ -261,7 +275,10 @@ StatusType CDM::makeComplaint(int typeID, int modelID, int t){
 
 //fix ths \/
 StatusType CDM::GetBestSellerModelByType(int typeID, int * modelID){
-    if(typeID == 0) *modelID = best_seller_model;
+    if(typeID == 0) {
+        *modelID = best_seller_model;
+        return SUCCESS;
+    }
     else if(!isValidTypeId(typeID)) return INVALID_INPUT;
     try{
         Node<CarType>* result = types_tree.getNode(CarType(typeID, 0));
@@ -289,6 +306,7 @@ StatusType CDM::GetWorstModels(int numOfModels, int *types, int *models){
         }
         types[counter] = iterator_negative->get_type_id();
         models[counter] = iterator_negative->get_model_id();
+        //cout << iterator_negative->get_type_id() << " " << iterator_negative->get_model_id() << " " << iterator_negative->get_score() << endl; ///!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
         iterator_negative = models_by_score_tree.InOrderGetNext();
     }
     if(counter == numOfModels - 1) return SUCCESS;
@@ -305,6 +323,7 @@ StatusType CDM::GetWorstModels(int numOfModels, int *types, int *models){
         for(int inner_counter = 0; inner_counter < current_type->getSize() && counter < numOfModels; counter++, inner_counter++){
             types[counter] = current_model->get_type_id();
             models[counter] = current_model->get_model_id();
+            //cout << current_model->get_type_id() << " "<< current_model->get_model_id() << " "<< current_model->get_score() << endl; ///!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
             current_model = current_type->InOrderGetNext();
         }
         iterator_zero = zero_scored_types_tree.InOrderGetNext();
@@ -318,6 +337,7 @@ StatusType CDM::GetWorstModels(int numOfModels, int *types, int *models){
     for(int inner_counter = 0; inner_counter < models_by_score_tree.getSize() && counter < numOfModels; counter++, inner_counter++){
         types[counter] = iterator_negative->get_type_id();
         models[counter] = iterator_negative->get_model_id();
+            //cout << iterator_negative->get_type_id()<< " " << iterator_negative->get_model_id()<< " " << iterator_negative->get_score() << endl; ///!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
         iterator_negative = models_by_score_tree.InOrderGetNext();
     }
     return SUCCESS;
