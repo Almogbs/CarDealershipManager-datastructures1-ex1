@@ -24,8 +24,14 @@ void CDM::updateBestSeller(){
     if(models_by_sales_tree.getSize() != 0 ){
         CarModelBySales* temp = models_by_sales_tree.getMaxNode()->get_key();
         best_seller_model = temp->get_model_id();
-        best_seller_sales = temp->get_score();
+        best_seller_sales = temp->get_total_sales();
         best_seller_type = temp->get_type_id();
+        return;
+    }
+    if(types_tree.getSize() == 0) {
+        best_seller_type = UNINITIALIZED;
+        best_seller_sales = UNINITIALIZED;
+        best_seller_model = UNINITIALIZED;
         return;
     }
     best_seller_type = types_tree.getMinNode()->get_key()->get_type_id();
@@ -35,15 +41,11 @@ void CDM::updateBestSeller(){
 
 void CDM::InsertOrRemoveFromZeroScoredTypesTree(CarType car_type, int action)
 {
-    if (action == ADD_TO_ZST)
-    {
-        this->zero_scored_types_tree.insert(car_type);
-        //car_type.zero_scored_models->= AVLTree<CarModel>(); //really need ?
+    if (action == ADD_TO_ZST){
+        this->zero_scored_types_tree.insert(CarType(car_type.get_type_id(), 0));
     }
-    else if (action == REMOVE_FROM_ZST)
-    {
+    else if (action == REMOVE_FROM_ZST){
         this->zero_scored_types_tree.remove(car_type);
-        //car_type.zero_scored_models->~AVLTree();            //really need ?
     }
     return;
 }
@@ -70,7 +72,8 @@ void CDM::addModelToZeroScroredModels(CarType car_type, CarModelByGrade car_mode
 void CDM::addToModelsByScoreTree(CarType* car_type, CarModel car_model){
     CarModelByGrade car_model_by_grade =  CarModelByGrade(car_model.get_type_id(), car_model.get_model_id(),
                                                           car_model.get_score(), car_model.get_total_sales());
-    car_type->zero_scored_models->remove(car_model);                                                      
+    car_type->zero_scored_models->remove(car_model);  
+    //car_type->zero_scored_models->InOrderGetFirst();                                                    
     models_by_score_tree.insert(car_model_by_grade);
     if (car_type->zero_scored_models->getSize() == 0){
         InsertOrRemoveFromZeroScoredTypesTree(*car_type, REMOVE_FROM_ZST);
@@ -221,11 +224,13 @@ StatusType CDM::sellCar(int typeID, int modelID){
 }
 
 StatusType CDM::makeComplaint(int typeID, int modelID, int t){
-    if ( !isValidTypeId(typeID) || !isValidModelId(modelID) ) return INVALID_INPUT;
+    if ( !isValidTypeId(typeID) || !isValidModelId(modelID)) {
+        return INVALID_INPUT;
+    }
     //checks if the type exist and the validity of the input
     try{
         CarType* car_type_node = types_tree.getNode(CarType(typeID, 0))->get_key();
-        if(car_type_node->getNumOfModels() <= modelID) return INVALID_INPUT;
+        if(car_type_node->getNumOfModels() <= modelID) return FAILURE;
     }
     catch (const DataStructures::NodeNotExist &e){
         return FAILURE;
@@ -238,11 +243,10 @@ StatusType CDM::makeComplaint(int typeID, int modelID, int t){
 
         //save old score and old sales
         int old_score = model->get_score();
-                         //int old_sales = model->get_total_sales();  --------------------UNUSED---------------------------
         model->complain(t);
         int new_score = model->get_score();
         int new_sales = model->get_total_sales();
-        //extere case: old score is 0!!!!!!!
+        //extere case: old score is 0
         if(old_score == 0){
             //search in zero_scored_types_tree, remove it and insert is to models_by_score_tree
             addToModelsByScoreTree(zero_scored_types_tree.getNode(CarType(typeID, 0))->get_key(), *model);
@@ -250,7 +254,7 @@ StatusType CDM::makeComplaint(int typeID, int modelID, int t){
         else if (new_score == 0)
         {
             //exetreme case: new score is 0!!!! > DO NOT INSERT to models_by_score_tree
-            addModelToZeroScroredModels(CarType(typeID, 0), CarModelByGrade(typeID, old_score) );
+            addModelToZeroScroredModels(CarType(typeID, 0), CarModelByGrade(typeID, modelID, old_score));
         }
         else{
             //delete model from models_by_score_tree
@@ -337,7 +341,7 @@ StatusType CDM::GetWorstModels(int numOfModels, int *types, int *models){
     for(int inner_counter = 0; inner_counter < models_by_score_tree.getSize() && counter < numOfModels; counter++, inner_counter++){
         types[counter] = iterator_negative->get_type_id();
         models[counter] = iterator_negative->get_model_id();
-            //cout << iterator_negative->get_type_id()<< " " << iterator_negative->get_model_id()<< " " << iterator_negative->get_score() << endl; ///!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+        //cout << iterator_negative->get_type_id()<< " " << iterator_negative->get_model_id()<< " " << iterator_negative->get_score() << endl; ///!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
         iterator_negative = models_by_score_tree.InOrderGetNext();
     }
     return SUCCESS;

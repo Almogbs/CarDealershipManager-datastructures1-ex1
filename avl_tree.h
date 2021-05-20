@@ -237,6 +237,7 @@ void AVLTree<T>::swapKeys(Node<T>* node1, Node<T>* node2){
 	//should not happen
 	if(node1 == nullptr || node2 == nullptr) throw Assert();
 	T temp_key = node1->key;
+	//temp_key = node1->key;	
 	node1->key = node2->key;
 	node2->key = temp_key;
 }
@@ -306,7 +307,7 @@ void AVLTree<T>::remove(const T& key){
 		while(temp->left != nullptr){
 			temp = temp->left;
 		}
-		swapKeys(temp, to_delete);
+		swapKeys(temp, to_delete);					//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 		to_delete = temp;
 	}
 
@@ -340,6 +341,11 @@ void AVLTree<T>::remove(const T& key){
 
 	//update the min node
 	if(to_delete->key == min_node->key) min_node = to_delete_parent;
+
+	if(size == 1){
+		root->parent = nullptr;
+		min_node = root;
+	}
 
 	//update the heights of the nodes in the path
 	Node<T>* fix_height = to_delete_parent;

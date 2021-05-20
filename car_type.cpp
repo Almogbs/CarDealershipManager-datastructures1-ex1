@@ -15,6 +15,21 @@ CarType::CarType(int type_id, int num_of_models) :  type_id(type_id), num_of_mod
     else zero_scored_models = new AVLTree<CarModel>();
 }
 
+void CarType::operator=(const CarType& type){
+    delete zero_scored_models;
+    type_id = type.type_id;
+    num_of_models = type.num_of_models;
+    total_sales = type.total_sales;
+    best_seller_model = type.best_seller_model;                         
+    num_of_sales_of_best_seller_model = type.num_of_sales_of_best_seller_model;
+    zero_scored_models = new AVLTree<CarModel>();
+    CarModel* to_insert = type.zero_scored_models->InOrderGetFirst();
+    for(int i = 0; i < type.zero_scored_models->getSize(); i++){
+        zero_scored_models->insert(*to_insert);
+        to_insert = type.zero_scored_models->InOrderGetNext();
+    }
+}
+
 CarType::CarType(const CarType& type){
     type_id = type.type_id;
     num_of_models = type.num_of_models;
@@ -30,7 +45,7 @@ CarType::CarType(const CarType& type){
         zero_scored_models = new AVLTree<CarModel>(temp_arr, num_of_models);
         //delete[] temp_arr;
     }
-    else zero_scored_models = new AVLTree<CarModel>();
+    else {zero_scored_models = new AVLTree<CarModel>();}
 }
 
 CarType::~CarType(){
@@ -59,19 +74,17 @@ void CarType::addSale()
 
 void CarType::updateBestSeller(int modelID, int num_of_sales)
 {
-    if (this->num_of_sales_of_best_seller_model <= num_of_sales)
-    {
-        if (this->num_of_sales_of_best_seller_model == num_of_sales)
-        {
-            if (this->best_seller_model < modelID)
-            {
-                this->best_seller_model = modelID;
-            }
-            return;
-        }
-        this->num_of_sales_of_best_seller_model = num_of_sales;
-        this->best_seller_model = modelID;
+    if (this->num_of_sales_of_best_seller_model < num_of_sales){
+        best_seller_model = modelID;
+        num_of_sales_of_best_seller_model = num_of_sales;
+        return;
     }
+    else if(this->num_of_sales_of_best_seller_model == num_of_sales && best_seller_model > modelID){
+        best_seller_model = modelID;
+        num_of_sales_of_best_seller_model = num_of_sales;
+        return;
+
+    }    
 }
 
 bool CarType::operator==(const CarType& type) const{

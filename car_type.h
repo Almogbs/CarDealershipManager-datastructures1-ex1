@@ -27,6 +27,7 @@ namespace DataStructures {
         int get_type_id() const;
         void addSale();
         void updateBestSeller(int modelID, int num_of_sales);
+        void operator=(const CarType& type);
         bool operator==(const CarType&) const;
         bool operator>(const CarType&) const;
         friend std::ostream& operator<<(std::ostream&, const CarType&);
