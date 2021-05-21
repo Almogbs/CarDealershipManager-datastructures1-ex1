@@ -1,692 +1,228 @@
 1.txt
 
-==27054== Memcheck, a memory error detector
-==27054== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==27054== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==27054== Command: ../a
-==27054== 
-==27054== 
-==27054== HEAP SUMMARY:
-==27054==     in use at exit: 0 bytes in 0 blocks
-==27054==   total heap usage: 31,658 allocs, 31,658 frees, 4,238,720 bytes allocated
-==27054== 
-==27054== All heap blocks were freed -- no leaks are possible
-==27054== 
-==27054== For lists of detected and suppressed errors, rerun with: -s
-==27054== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==1226== Memcheck, a memory error detector
+==1226== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1226== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==1226== Command: ../a
+==1226== 
+==1226== 
+==1226== HEAP SUMMARY:
+==1226==     in use at exit: 0 bytes in 0 blocks
+==1226==   total heap usage: 31,658 allocs, 31,658 frees, 4,238,720 bytes allocated
+==1226== 
+==1226== All heap blocks were freed -- no leaks are possible
+==1226== 
+==1226== For lists of detected and suppressed errors, rerun with: -s
+==1226== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 10.txt
 
-==27365== Memcheck, a memory error detector
-==27365== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==27365== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==27365== Command: ../a
-==27365== 
-==27365== 
-==27365== HEAP SUMMARY:
-==27365==     in use at exit: 0 bytes in 0 blocks
-==27365==   total heap usage: 4,596 allocs, 4,596 frees, 327,904 bytes allocated
-==27365== 
-==27365== All heap blocks were freed -- no leaks are possible
-==27365== 
-==27365== For lists of detected and suppressed errors, rerun with: -s
-==27365== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==2142== Memcheck, a memory error detector
+==2142== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==2142== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==2142== Command: ../a
+==2142== 
+==2142== 
+==2142== HEAP SUMMARY:
+==2142==     in use at exit: 0 bytes in 0 blocks
+==2142==   total heap usage: 4,596 allocs, 4,596 frees, 327,904 bytes allocated
+==2142== 
+==2142== All heap blocks were freed -- no leaks are possible
+==2142== 
+==2142== For lists of detected and suppressed errors, rerun with: -s
+==2142== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 100.txt
 
-==27456== Memcheck, a memory error detector
-==27456== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==27456== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==27456== Command: ../a
-==27456== 
-==27456== 
-==27456== HEAP SUMMARY:
-==27456==     in use at exit: 0 bytes in 0 blocks
-==27456==   total heap usage: 17,877 allocs, 17,877 frees, 1,885,680 bytes allocated
-==27456== 
-==27456== All heap blocks were freed -- no leaks are possible
-==27456== 
-==27456== For lists of detected and suppressed errors, rerun with: -s
-==27456== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==2754== Memcheck, a memory error detector
+==2754== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==2754== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==2754== Command: ../a
+==2754== 
+==2754== 
+==2754== HEAP SUMMARY:
+==2754==     in use at exit: 0 bytes in 0 blocks
+==2754==   total heap usage: 17,877 allocs, 17,877 frees, 1,885,680 bytes allocated
+==2754== 
+==2754== All heap blocks were freed -- no leaks are possible
+==2754== 
+==2754== For lists of detected and suppressed errors, rerun with: -s
+==2754== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 11.txt
 
-==27703== Memcheck, a memory error detector
-==27703== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==27703== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==27703== Command: ../a
-==27703== 
-==27703== 
-==27703== HEAP SUMMARY:
-==27703==     in use at exit: 0 bytes in 0 blocks
-==27703==   total heap usage: 984 allocs, 984 frees, 67,400 bytes allocated
-==27703== 
-==27703== All heap blocks were freed -- no leaks are possible
-==27703== 
-==27703== For lists of detected and suppressed errors, rerun with: -s
-==27703== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==2879== Memcheck, a memory error detector
+==2879== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==2879== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==2879== Command: ../a
+==2879== 
+==2879== 
+==2879== HEAP SUMMARY:
+==2879==     in use at exit: 0 bytes in 0 blocks
+==2879==   total heap usage: 984 allocs, 984 frees, 67,400 bytes allocated
+==2879== 
+==2879== All heap blocks were freed -- no leaks are possible
+==2879== 
+==2879== For lists of detected and suppressed errors, rerun with: -s
+==2879== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 12.txt
 
-==27730== Memcheck, a memory error detector
-==27730== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==27730== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==27730== Command: ../a
-==27730== 
-==27730== 
-==27730== HEAP SUMMARY:
-==27730==     in use at exit: 0 bytes in 0 blocks
-==27730==   total heap usage: 1,073 allocs, 1,073 frees, 69,656 bytes allocated
-==27730== 
-==27730== All heap blocks were freed -- no leaks are possible
-==27730== 
-==27730== For lists of detected and suppressed errors, rerun with: -s
-==27730== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==2918== Memcheck, a memory error detector
+==2918== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==2918== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==2918== Command: ../a
+==2918== 
+==2918== 
+==2918== HEAP SUMMARY:
+==2918==     in use at exit: 0 bytes in 0 blocks
+==2918==   total heap usage: 1,073 allocs, 1,073 frees, 69,656 bytes allocated
+==2918== 
+==2918== All heap blocks were freed -- no leaks are possible
+==2918== 
+==2918== For lists of detected and suppressed errors, rerun with: -s
+==2918== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 13.txt
 
-==27747== Memcheck, a memory error detector
-==27747== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==27747== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==27747== Command: ../a
-==27747== 
-==27747== 
-==27747== HEAP SUMMARY:
-==27747==     in use at exit: 0 bytes in 0 blocks
-==27747==   total heap usage: 10,443 allocs, 10,443 frees, 847,784 bytes allocated
-==27747== 
-==27747== All heap blocks were freed -- no leaks are possible
-==27747== 
-==27747== For lists of detected and suppressed errors, rerun with: -s
-==27747== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==2969== Memcheck, a memory error detector
+==2969== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==2969== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==2969== Command: ../a
+==2969== 
+==2969== 
+==2969== HEAP SUMMARY:
+==2969==     in use at exit: 0 bytes in 0 blocks
+==2969==   total heap usage: 10,443 allocs, 10,443 frees, 847,784 bytes allocated
+==2969== 
+==2969== All heap blocks were freed -- no leaks are possible
+==2969== 
+==2969== For lists of detected and suppressed errors, rerun with: -s
+==2969== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 14.txt
 
-==27918== Memcheck, a memory error detector
-==27918== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==27918== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==27918== Command: ../a
-==27918== 
-==27918== 
-==27918== HEAP SUMMARY:
-==27918==     in use at exit: 0 bytes in 0 blocks
-==27918==   total heap usage: 3,763 allocs, 3,763 frees, 280,424 bytes allocated
-==27918== 
-==27918== All heap blocks were freed -- no leaks are possible
-==27918== 
-==27918== For lists of detected and suppressed errors, rerun with: -s
-==27918== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==3085== Memcheck, a memory error detector
+==3085== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==3085== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==3085== Command: ../a
+==3085== 
+==3085== 
+==3085== HEAP SUMMARY:
+==3085==     in use at exit: 0 bytes in 0 blocks
+==3085==   total heap usage: 3,763 allocs, 3,763 frees, 280,424 bytes allocated
+==3085== 
+==3085== All heap blocks were freed -- no leaks are possible
+==3085== 
+==3085== For lists of detected and suppressed errors, rerun with: -s
+==3085== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 15.txt
 
-==28160== Memcheck, a memory error detector
-==28160== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==28160== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==28160== Command: ../a
-==28160== 
-==28160== 
-==28160== HEAP SUMMARY:
-==28160==     in use at exit: 0 bytes in 0 blocks
-==28160==   total heap usage: 8,581 allocs, 8,581 frees, 736,344 bytes allocated
-==28160== 
-==28160== All heap blocks were freed -- no leaks are possible
-==28160== 
-==28160== For lists of detected and suppressed errors, rerun with: -s
-==28160== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==3239== Memcheck, a memory error detector
+==3239== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==3239== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==3239== Command: ../a
+==3239== 
+==3239== 
+==3239== HEAP SUMMARY:
+==3239==     in use at exit: 0 bytes in 0 blocks
+==3239==   total heap usage: 8,581 allocs, 8,581 frees, 736,344 bytes allocated
+==3239== 
+==3239== All heap blocks were freed -- no leaks are possible
+==3239== 
+==3239== For lists of detected and suppressed errors, rerun with: -s
+==3239== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 16.txt
 
-==28470== Memcheck, a memory error detector
-==28470== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==28470== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==28470== Command: ../a
-==28470== 
-==28470== 
-==28470== HEAP SUMMARY:
-==28470==     in use at exit: 0 bytes in 0 blocks
-==28470==   total heap usage: 9,819 allocs, 9,819 frees, 809,920 bytes allocated
-==28470== 
-==28470== All heap blocks were freed -- no leaks are possible
-==28470== 
-==28470== For lists of detected and suppressed errors, rerun with: -s
-==28470== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==3468== Memcheck, a memory error detector
+==3468== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==3468== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==3468== Command: ../a
+==3468== 
+==3468== 
+==3468== HEAP SUMMARY:
+==3468==     in use at exit: 0 bytes in 0 blocks
+==3468==   total heap usage: 9,819 allocs, 9,819 frees, 809,920 bytes allocated
+==3468== 
+==3468== All heap blocks were freed -- no leaks are possible
+==3468== 
+==3468== For lists of detected and suppressed errors, rerun with: -s
+==3468== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 17.txt
 
-==28752== Memcheck, a memory error detector
-==28752== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==28752== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==28752== Command: ../a
-==28752== 
-==28752== 
-==28752== HEAP SUMMARY:
-==28752==     in use at exit: 0 bytes in 0 blocks
-==28752==   total heap usage: 26,489 allocs, 26,489 frees, 2,985,520 bytes allocated
-==28752== 
-==28752== All heap blocks were freed -- no leaks are possible
-==28752== 
-==28752== For lists of detected and suppressed errors, rerun with: -s
-==28752== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==3623== Memcheck, a memory error detector
+==3623== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==3623== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==3623== Command: ../a
+==3623== 
+==3623== 
+==3623== HEAP SUMMARY:
+==3623==     in use at exit: 0 bytes in 0 blocks
+==3623==   total heap usage: 26,489 allocs, 26,489 frees, 2,985,520 bytes allocated
+==3623== 
+==3623== All heap blocks were freed -- no leaks are possible
+==3623== 
+==3623== For lists of detected and suppressed errors, rerun with: -s
+==3623== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 18.txt
 
-==29391== Memcheck, a memory error detector
-==29391== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==29391== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==29391== Command: ../a
-==29391== 
-==29391== 
-==29391== HEAP SUMMARY:
-==29391==     in use at exit: 0 bytes in 0 blocks
-==29391==   total heap usage: 2,528 allocs, 2,528 frees, 186,648 bytes allocated
-==29391== 
-==29391== All heap blocks were freed -- no leaks are possible
-==29391== 
-==29391== For lists of detected and suppressed errors, rerun with: -s
-==29391== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==3826== Memcheck, a memory error detector
+==3826== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==3826== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==3826== Command: ../a
+==3826== 
+==3826== 
+==3826== HEAP SUMMARY:
+==3826==     in use at exit: 0 bytes in 0 blocks
+==3826==   total heap usage: 2,528 allocs, 2,528 frees, 186,648 bytes allocated
+==3826== 
+==3826== All heap blocks were freed -- no leaks are possible
+==3826== 
+==3826== For lists of detected and suppressed errors, rerun with: -s
+==3826== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 19.txt
 
-==29663== Memcheck, a memory error detector
-==29663== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==29663== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==29663== Command: ../a
-==29663== 
-==29663== 
-==29663== HEAP SUMMARY:
-==29663==     in use at exit: 0 bytes in 0 blocks
-==29663==   total heap usage: 3,919 allocs, 3,919 frees, 272,584 bytes allocated
-==29663== 
-==29663== All heap blocks were freed -- no leaks are possible
-==29663== 
-==29663== For lists of detected and suppressed errors, rerun with: -s
-==29663== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==3850== Memcheck, a memory error detector
+==3850== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==3850== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==3850== Command: ../a
+==3850== 
+==3850== 
+==3850== HEAP SUMMARY:
+==3850==     in use at exit: 0 bytes in 0 blocks
+==3850==   total heap usage: 3,919 allocs, 3,919 frees, 272,584 bytes allocated
+==3850== 
+==3850== All heap blocks were freed -- no leaks are possible
+==3850== 
+==3850== For lists of detected and suppressed errors, rerun with: -s
+==3850== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 2.txt
 
-==29871== Memcheck, a memory error detector
-==29871== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==29871== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==29871== Command: ../a
-==29871== 
-==29871== 
-==29871== HEAP SUMMARY:
-==29871==     in use at exit: 0 bytes in 0 blocks
-==29871==   total heap usage: 6,791 allocs, 6,791 frees, 536,536 bytes allocated
-==29871== 
-==29871== All heap blocks were freed -- no leaks are possible
-==29871== 
-==29871== For lists of detected and suppressed errors, rerun with: -s
-==29871== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==4090== Memcheck, a memory error detector
+==4090== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==4090== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==4090== Command: ../a
+==4090== 
+==4090== 
+==4090== HEAP SUMMARY:
+==4090==     in use at exit: 0 bytes in 0 blocks
+==4090==   total heap usage: 6,791 allocs, 6,791 frees, 536,536 bytes allocated
+==4090== 
+==4090== All heap blocks were freed -- no leaks are possible
+==4090== 
+==4090== For lists of detected and suppressed errors, rerun with: -s
+==4090== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 20.txt
 
-==30065== Memcheck, a memory error detector
-==30065== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==30065== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==30065== Command: ../a
-==30065== 
-==30065== 
-==30065== HEAP SUMMARY:
-==30065==     in use at exit: 0 bytes in 0 blocks
-==30065==   total heap usage: 829 allocs, 829 frees, 53,248 bytes allocated
-==30065== 
-==30065== All heap blocks were freed -- no leaks are possible
-==30065== 
-==30065== For lists of detected and suppressed errors, rerun with: -s
-==30065== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==4251== Memcheck, a memory error detector
+==4251== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==4251== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==4251== Command: ../a
+==4251== 
+==4251== 
+==4251== HEAP SUMMARY:
+==4251==     in use at exit: 0 bytes in 0 blocks
+==4251==   total heap usage: 829 allocs, 829 frees, 53,248 bytes allocated
+==4251== 
+==4251== All heap blocks were freed -- no leaks are possible
+==4251== 
+==4251== For lists of detected and suppressed errors, rerun with: -s
+==4251== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 21.txt
-
-==30092== Memcheck, a memory error detector
-==30092== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==30092== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==30092== Command: ../a
-==30092== 
-==30092== 
-==30092== HEAP SUMMARY:
-==30092==     in use at exit: 0 bytes in 0 blocks
-==30092==   total heap usage: 1,626 allocs, 1,626 frees, 116,936 bytes allocated
-==30092== 
-==30092== All heap blocks were freed -- no leaks are possible
-==30092== 
-==30092== For lists of detected and suppressed errors, rerun with: -s
-==30092== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
-22.txt
-
-==30135== Memcheck, a memory error detector
-==30135== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==30135== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==30135== Command: ../a
-==30135== 
-==30135== 
-==30135== HEAP SUMMARY:
-==30135==     in use at exit: 0 bytes in 0 blocks
-==30135==   total heap usage: 2,979 allocs, 2,979 frees, 208,376 bytes allocated
-==30135== 
-==30135== All heap blocks were freed -- no leaks are possible
-==30135== 
-==30135== For lists of detected and suppressed errors, rerun with: -s
-==30135== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
-23.txt
-
-==30310== Memcheck, a memory error detector
-==30310== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==30310== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==30310== Command: ../a
-==30310== 
-==30310== 
-==30310== HEAP SUMMARY:
-==30310==     in use at exit: 0 bytes in 0 blocks
-==30310==   total heap usage: 8,344 allocs, 8,344 frees, 613,072 bytes allocated
-==30310== 
-==30310== All heap blocks were freed -- no leaks are possible
-==30310== 
-==30310== For lists of detected and suppressed errors, rerun with: -s
-==30310== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
-24.txt
-
-==30516== Memcheck, a memory error detector
-==30516== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==30516== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==30516== Command: ../a
-==30516== 
-==30516== 
-==30516== HEAP SUMMARY:
-==30516==     in use at exit: 0 bytes in 0 blocks
-==30516==   total heap usage: 2,909 allocs, 2,909 frees, 209,392 bytes allocated
-==30516== 
-==30516== All heap blocks were freed -- no leaks are possible
-==30516== 
-==30516== For lists of detected and suppressed errors, rerun with: -s
-==30516== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
-25.txt
-
-==30580== Memcheck, a memory error detector
-==30580== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==30580== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==30580== Command: ../a
-==30580== 
-==30580== 
-==30580== HEAP SUMMARY:
-==30580==     in use at exit: 0 bytes in 0 blocks
-==30580==   total heap usage: 22,307 allocs, 22,307 frees, 2,450,064 bytes allocated
-==30580== 
-==30580== All heap blocks were freed -- no leaks are possible
-==30580== 
-==30580== For lists of detected and suppressed errors, rerun with: -s
-==30580== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
-26.txt
-
-==31027== Memcheck, a memory error detector
-==31027== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==31027== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==31027== Command: ../a
-==31027== 
-==31027== 
-==31027== HEAP SUMMARY:
-==31027==     in use at exit: 0 bytes in 0 blocks
-==31027==   total heap usage: 25,591 allocs, 25,591 frees, 2,928,920 bytes allocated
-==31027== 
-==31027== All heap blocks were freed -- no leaks are possible
-==31027== 
-==31027== For lists of detected and suppressed errors, rerun with: -s
-==31027== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
-27.txt
-
-==31956== Memcheck, a memory error detector
-==31956== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==31956== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==31956== Command: ../a
-==31956== 
-==31956== 
-==31956== HEAP SUMMARY:
-==31956==     in use at exit: 0 bytes in 0 blocks
-==31956==   total heap usage: 13,568 allocs, 13,568 frees, 1,170,568 bytes allocated
-==31956== 
-==31956== All heap blocks were freed -- no leaks are possible
-==31956== 
-==31956== For lists of detected and suppressed errors, rerun with: -s
-==31956== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
-28.txt
-
-==32066== Memcheck, a memory error detector
-==32066== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==32066== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==32066== Command: ../a
-==32066== 
-==32066== 
-==32066== HEAP SUMMARY:
-==32066==     in use at exit: 0 bytes in 0 blocks
-==32066==   total heap usage: 7,830 allocs, 7,830 frees, 594,528 bytes allocated
-==32066== 
-==32066== All heap blocks were freed -- no leaks are possible
-==32066== 
-==32066== For lists of detected and suppressed errors, rerun with: -s
-==32066== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
-29.txt
-
-==32371== Memcheck, a memory error detector
-==32371== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==32371== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==32371== Command: ../a
-==32371== 
-==32371== 
-==32371== HEAP SUMMARY:
-==32371==     in use at exit: 0 bytes in 0 blocks
-==32371==   total heap usage: 18,227 allocs, 18,227 frees, 1,811,528 bytes allocated
-==32371== 
-==32371== All heap blocks were freed -- no leaks are possible
-==32371== 
-==32371== For lists of detected and suppressed errors, rerun with: -s
-==32371== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
-3.txt
-
-==32687== Memcheck, a memory error detector
-==32687== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==32687== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==32687== Command: ../a
-==32687== 
-==32687== 
-==32687== HEAP SUMMARY:
-==32687==     in use at exit: 0 bytes in 0 blocks
-==32687==   total heap usage: 15,808 allocs, 15,808 frees, 1,567,176 bytes allocated
-==32687== 
-==32687== All heap blocks were freed -- no leaks are possible
-==32687== 
-==32687== For lists of detected and suppressed errors, rerun with: -s
-==32687== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
-30.txt
-
-==32737== Memcheck, a memory error detector
-==32737== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==32737== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==32737== Command: ../a
-==32737== 
-==32737== 
-==32737== HEAP SUMMARY:
-==32737==     in use at exit: 0 bytes in 0 blocks
-==32737==   total heap usage: 52,397 allocs, 52,397 frees, 9,056,664 bytes allocated
-==32737== 
-==32737== All heap blocks were freed -- no leaks are possible
-==32737== 
-==32737== For lists of detected and suppressed errors, rerun with: -s
-==32737== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
-31.txt
-
-==858== Memcheck, a memory error detector
-==858== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==858== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==858== Command: ../a
-==858== 
-==858== 
-==858== HEAP SUMMARY:
-==858==     in use at exit: 0 bytes in 0 blocks
-==858==   total heap usage: 11,550 allocs, 11,550 frees, 1,024,968 bytes allocated
-==858== 
-==858== All heap blocks were freed -- no leaks are possible
-==858== 
-==858== For lists of detected and suppressed errors, rerun with: -s
-==858== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
-32.txt
-
-==901== Memcheck, a memory error detector
-==901== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==901== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==901== Command: ../a
-==901== 
-==901== 
-==901== HEAP SUMMARY:
-==901==     in use at exit: 0 bytes in 0 blocks
-==901==   total heap usage: 24,180 allocs, 24,180 frees, 2,421,352 bytes allocated
-==901== 
-==901== All heap blocks were freed -- no leaks are possible
-==901== 
-==901== For lists of detected and suppressed errors, rerun with: -s
-==901== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
-33.txt
-
-==1160== Memcheck, a memory error detector
-==1160== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==1160== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==1160== Command: ../a
-==1160== 
-==1160== 
-==1160== HEAP SUMMARY:
-==1160==     in use at exit: 0 bytes in 0 blocks
-==1160==   total heap usage: 48,956 allocs, 48,956 frees, 7,598,592 bytes allocated
-==1160== 
-==1160== All heap blocks were freed -- no leaks are possible
-==1160== 
-==1160== For lists of detected and suppressed errors, rerun with: -s
-==1160== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
-34.txt
-
-==1854== Memcheck, a memory error detector
-==1854== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==1854== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==1854== Command: ../a
-==1854== 
-==1854== 
-==1854== HEAP SUMMARY:
-==1854==     in use at exit: 0 bytes in 0 blocks
-==1854==   total heap usage: 783 allocs, 783 frees, 49,000 bytes allocated
-==1854== 
-==1854== All heap blocks were freed -- no leaks are possible
-==1854== 
-==1854== For lists of detected and suppressed errors, rerun with: -s
-==1854== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
-35.txt
-
-==1885== Memcheck, a memory error detector
-==1885== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==1885== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==1885== Command: ../a
-==1885== 
-==1885== 
-==1885== HEAP SUMMARY:
-==1885==     in use at exit: 0 bytes in 0 blocks
-==1885==   total heap usage: 17,148 allocs, 17,148 frees, 1,727,536 bytes allocated
-==1885== 
-==1885== All heap blocks were freed -- no leaks are possible
-==1885== 
-==1885== For lists of detected and suppressed errors, rerun with: -s
-==1885== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
-36.txt
-
-==2438== Memcheck, a memory error detector
-==2438== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==2438== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==2438== Command: ../a
-==2438== 
-==2438== 
-==2438== HEAP SUMMARY:
-==2438==     in use at exit: 0 bytes in 0 blocks
-==2438==   total heap usage: 10,944 allocs, 10,944 frees, 989,528 bytes allocated
-==2438== 
-==2438== All heap blocks were freed -- no leaks are possible
-==2438== 
-==2438== For lists of detected and suppressed errors, rerun with: -s
-==2438== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
-37.txt
-
-==2482== Memcheck, a memory error detector
-==2482== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==2482== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==2482== Command: ../a
-==2482== 
-==2482== 
-==2482== HEAP SUMMARY:
-==2482==     in use at exit: 0 bytes in 0 blocks
-==2482==   total heap usage: 3 allocs, 3 frees, 344 bytes allocated
-==2482== 
-==2482== All heap blocks were freed -- no leaks are possible
-==2482== 
-==2482== For lists of detected and suppressed errors, rerun with: -s
-==2482== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
-38.txt
-
-==2510== Memcheck, a memory error detector
-==2510== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==2510== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==2510== Command: ../a
-==2510== 
-==2510== 
-==2510== HEAP SUMMARY:
-==2510==     in use at exit: 0 bytes in 0 blocks
-==2510==   total heap usage: 1,025 allocs, 1,025 frees, 64,360 bytes allocated
-==2510== 
-==2510== All heap blocks were freed -- no leaks are possible
-==2510== 
-==2510== For lists of detected and suppressed errors, rerun with: -s
-==2510== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
-39.txt
-
-==2595== Memcheck, a memory error detector
-==2595== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==2595== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==2595== Command: ../a
-==2595== 
-==2595== 
-==2595== HEAP SUMMARY:
-==2595==     in use at exit: 0 bytes in 0 blocks
-==2595==   total heap usage: 4,317 allocs, 4,317 frees, 312,840 bytes allocated
-==2595== 
-==2595== All heap blocks were freed -- no leaks are possible
-==2595== 
-==2595== For lists of detected and suppressed errors, rerun with: -s
-==2595== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
-4.txt
-
-==2626== Memcheck, a memory error detector
-==2626== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==2626== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==2626== Command: ../a
-==2626== 
-==2626== 
-==2626== HEAP SUMMARY:
-==2626==     in use at exit: 0 bytes in 0 blocks
-==2626==   total heap usage: 9,164 allocs, 9,164 frees, 781,584 bytes allocated
-==2626== 
-==2626== All heap blocks were freed -- no leaks are possible
-==2626== 
-==2626== For lists of detected and suppressed errors, rerun with: -s
-==2626== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
-40.txt
-
-==2731== Memcheck, a memory error detector
-==2731== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==2731== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==2731== Command: ../a
-==2731== 
-==2731== 
-==2731== HEAP SUMMARY:
-==2731==     in use at exit: 0 bytes in 0 blocks
-==2731==   total heap usage: 10,153 allocs, 10,153 frees, 805,584 bytes allocated
-==2731== 
-==2731== All heap blocks were freed -- no leaks are possible
-==2731== 
-==2731== For lists of detected and suppressed errors, rerun with: -s
-==2731== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
-41.txt
-
-==2786== Memcheck, a memory error detector
-==2786== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==2786== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==2786== Command: ../a
-==2786== 
-==2786== 
-==2786== HEAP SUMMARY:
-==2786==     in use at exit: 0 bytes in 0 blocks
-==2786==   total heap usage: 2,597 allocs, 2,597 frees, 187,576 bytes allocated
-==2786== 
-==2786== All heap blocks were freed -- no leaks are possible
-==2786== 
-==2786== For lists of detected and suppressed errors, rerun with: -s
-==2786== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
-42.txt
-
-==2815== Memcheck, a memory error detector
-==2815== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==2815== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==2815== Command: ../a
-==2815== 
-==2815== 
-==2815== HEAP SUMMARY:
-==2815==     in use at exit: 0 bytes in 0 blocks
-==2815==   total heap usage: 3,694 allocs, 3,694 frees, 263,896 bytes allocated
-==2815== 
-==2815== All heap blocks were freed -- no leaks are possible
-==2815== 
-==2815== For lists of detected and suppressed errors, rerun with: -s
-==2815== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
-43.txt
-
-==2871== Memcheck, a memory error detector
-==2871== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==2871== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==2871== Command: ../a
-==2871== 
-==2871== 
-==2871== HEAP SUMMARY:
-==2871==     in use at exit: 0 bytes in 0 blocks
-==2871==   total heap usage: 6,442 allocs, 6,442 frees, 486,984 bytes allocated
-==2871== 
-==2871== All heap blocks were freed -- no leaks are possible
-==2871== 
-==2871== For lists of detected and suppressed errors, rerun with: -s
-==2871== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
-44.txt
-
-==3035== Memcheck, a memory error detector
-==3035== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==3035== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==3035== Command: ../a
-==3035== 
-==3035== 
-==3035== HEAP SUMMARY:
-==3035==     in use at exit: 0 bytes in 0 blocks
-==3035==   total heap usage: 6,635 allocs, 6,635 frees, 523,248 bytes allocated
-==3035== 
-==3035== All heap blocks were freed -- no leaks are possible
-==3035== 
-==3035== For lists of detected and suppressed errors, rerun with: -s
-==3035== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
-45.txt
-
-==3132== Memcheck, a memory error detector
-==3132== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==3132== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==3132== Command: ../a
-==3132== 
-==3132== 
-==3132== HEAP SUMMARY:
-==3132==     in use at exit: 0 bytes in 0 blocks
-==3132==   total heap usage: 343 allocs, 343 frees, 19,584 bytes allocated
-==3132== 
-==3132== All heap blocks were freed -- no leaks are possible
-==3132== 
-==3132== For lists of detected and suppressed errors, rerun with: -s
-==3132== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
-46.txt
-
-==3230== Memcheck, a memory error detector
-==3230== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==3230== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==3230== Command: ../a
-==3230== 
-==3230== 
-==3230== HEAP SUMMARY:
-==3230==     in use at exit: 0 bytes in 0 blocks
-==3230==   total heap usage: 33,158 allocs, 33,158 frees, 5,151,976 bytes allocated
-==3230== 
-==3230== All heap blocks were freed -- no leaks are possible
-==3230== 
-==3230== For lists of detected and suppressed errors, rerun with: -s
-==3230== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
-47.txt
-
-==3783== Memcheck, a memory error detector
-==3783== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==3783== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==3783== Command: ../a
-==3783== 
-==3783== 
-==3783== HEAP SUMMARY:
-==3783==     in use at exit: 0 bytes in 0 blocks
-==3783==   total heap usage: 23,771 allocs, 23,771 frees, 2,643,112 bytes allocated
-==3783== 
-==3783== All heap blocks were freed -- no leaks are possible
-==3783== 
-==3783== For lists of detected and suppressed errors, rerun with: -s
-==3783== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
-48.txt
 
 ==4443== Memcheck, a memory error detector
 ==4443== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
@@ -696,1385 +232,1369 @@
 ==4443== 
 ==4443== HEAP SUMMARY:
 ==4443==     in use at exit: 0 bytes in 0 blocks
-==4443==   total heap usage: 10,910 allocs, 10,910 frees, 996,000 bytes allocated
+==4443==   total heap usage: 1,626 allocs, 1,626 frees, 116,936 bytes allocated
 ==4443== 
 ==4443== All heap blocks were freed -- no leaks are possible
 ==4443== 
 ==4443== For lists of detected and suppressed errors, rerun with: -s
 ==4443== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+22.txt
+
+==4496== Memcheck, a memory error detector
+==4496== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==4496== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==4496== Command: ../a
+==4496== 
+==4496== 
+==4496== HEAP SUMMARY:
+==4496==     in use at exit: 0 bytes in 0 blocks
+==4496==   total heap usage: 2,979 allocs, 2,979 frees, 208,376 bytes allocated
+==4496== 
+==4496== All heap blocks were freed -- no leaks are possible
+==4496== 
+==4496== For lists of detected and suppressed errors, rerun with: -s
+==4496== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+23.txt
+
+==4523== Memcheck, a memory error detector
+==4523== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==4523== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==4523== Command: ../a
+==4523== 
+==4523== 
+==4523== HEAP SUMMARY:
+==4523==     in use at exit: 0 bytes in 0 blocks
+==4523==   total heap usage: 8,344 allocs, 8,344 frees, 613,072 bytes allocated
+==4523== 
+==4523== All heap blocks were freed -- no leaks are possible
+==4523== 
+==4523== For lists of detected and suppressed errors, rerun with: -s
+==4523== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+24.txt
+
+==4636== Memcheck, a memory error detector
+==4636== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==4636== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==4636== Command: ../a
+==4636== 
+==4636== 
+==4636== HEAP SUMMARY:
+==4636==     in use at exit: 0 bytes in 0 blocks
+==4636==   total heap usage: 2,909 allocs, 2,909 frees, 209,392 bytes allocated
+==4636== 
+==4636== All heap blocks were freed -- no leaks are possible
+==4636== 
+==4636== For lists of detected and suppressed errors, rerun with: -s
+==4636== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+25.txt
+
+==4660== Memcheck, a memory error detector
+==4660== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==4660== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==4660== Command: ../a
+==4660== 
+==4660== 
+==4660== HEAP SUMMARY:
+==4660==     in use at exit: 0 bytes in 0 blocks
+==4660==   total heap usage: 22,307 allocs, 22,307 frees, 2,450,064 bytes allocated
+==4660== 
+==4660== All heap blocks were freed -- no leaks are possible
+==4660== 
+==4660== For lists of detected and suppressed errors, rerun with: -s
+==4660== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+26.txt
+
+==4855== Memcheck, a memory error detector
+==4855== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==4855== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==4855== Command: ../a
+==4855== 
+==4855== 
+==4855== HEAP SUMMARY:
+==4855==     in use at exit: 0 bytes in 0 blocks
+==4855==   total heap usage: 25,591 allocs, 25,591 frees, 2,928,920 bytes allocated
+==4855== 
+==4855== All heap blocks were freed -- no leaks are possible
+==4855== 
+==4855== For lists of detected and suppressed errors, rerun with: -s
+==4855== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+27.txt
+
+==4916== Memcheck, a memory error detector
+==4916== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==4916== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==4916== Command: ../a
+==4916== 
+==4916== 
+==4916== HEAP SUMMARY:
+==4916==     in use at exit: 0 bytes in 0 blocks
+==4916==   total heap usage: 13,568 allocs, 13,568 frees, 1,170,568 bytes allocated
+==4916== 
+==4916== All heap blocks were freed -- no leaks are possible
+==4916== 
+==4916== For lists of detected and suppressed errors, rerun with: -s
+==4916== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+28.txt
+
+==5355== Memcheck, a memory error detector
+==5355== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==5355== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==5355== Command: ../a
+==5355== 
+==5355== 
+==5355== HEAP SUMMARY:
+==5355==     in use at exit: 0 bytes in 0 blocks
+==5355==   total heap usage: 7,830 allocs, 7,830 frees, 594,528 bytes allocated
+==5355== 
+==5355== All heap blocks were freed -- no leaks are possible
+==5355== 
+==5355== For lists of detected and suppressed errors, rerun with: -s
+==5355== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+29.txt
+
+==5537== Memcheck, a memory error detector
+==5537== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==5537== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==5537== Command: ../a
+==5537== 
+==5537== 
+==5537== HEAP SUMMARY:
+==5537==     in use at exit: 0 bytes in 0 blocks
+==5537==   total heap usage: 18,227 allocs, 18,227 frees, 1,811,528 bytes allocated
+==5537== 
+==5537== All heap blocks were freed -- no leaks are possible
+==5537== 
+==5537== For lists of detected and suppressed errors, rerun with: -s
+==5537== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+3.txt
+
+==5614== Memcheck, a memory error detector
+==5614== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==5614== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==5614== Command: ../a
+==5614== 
+==5614== 
+==5614== HEAP SUMMARY:
+==5614==     in use at exit: 0 bytes in 0 blocks
+==5614==   total heap usage: 15,808 allocs, 15,808 frees, 1,567,176 bytes allocated
+==5614== 
+==5614== All heap blocks were freed -- no leaks are possible
+==5614== 
+==5614== For lists of detected and suppressed errors, rerun with: -s
+==5614== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+30.txt
+
+==5678== Memcheck, a memory error detector
+==5678== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==5678== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==5678== Command: ../a
+==5678== 
+==5678== 
+==5678== HEAP SUMMARY:
+==5678==     in use at exit: 0 bytes in 0 blocks
+==5678==   total heap usage: 52,397 allocs, 52,397 frees, 9,056,664 bytes allocated
+==5678== 
+==5678== All heap blocks were freed -- no leaks are possible
+==5678== 
+==5678== For lists of detected and suppressed errors, rerun with: -s
+==5678== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+31.txt
+
+==5982== Memcheck, a memory error detector
+==5982== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==5982== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==5982== Command: ../a
+==5982== 
+==5982== 
+==5982== HEAP SUMMARY:
+==5982==     in use at exit: 0 bytes in 0 blocks
+==5982==   total heap usage: 11,550 allocs, 11,550 frees, 1,024,968 bytes allocated
+==5982== 
+==5982== All heap blocks were freed -- no leaks are possible
+==5982== 
+==5982== For lists of detected and suppressed errors, rerun with: -s
+==5982== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+32.txt
+
+==6223== Memcheck, a memory error detector
+==6223== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==6223== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==6223== Command: ../a
+==6223== 
+==6223== 
+==6223== HEAP SUMMARY:
+==6223==     in use at exit: 0 bytes in 0 blocks
+==6223==   total heap usage: 24,180 allocs, 24,180 frees, 2,421,352 bytes allocated
+==6223== 
+==6223== All heap blocks were freed -- no leaks are possible
+==6223== 
+==6223== For lists of detected and suppressed errors, rerun with: -s
+==6223== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+33.txt
+
+==6372== Memcheck, a memory error detector
+==6372== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==6372== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==6372== Command: ../a
+==6372== 
+==6372== 
+==6372== HEAP SUMMARY:
+==6372==     in use at exit: 0 bytes in 0 blocks
+==6372==   total heap usage: 48,956 allocs, 48,956 frees, 7,598,592 bytes allocated
+==6372== 
+==6372== All heap blocks were freed -- no leaks are possible
+==6372== 
+==6372== For lists of detected and suppressed errors, rerun with: -s
+==6372== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+34.txt
+
+==7098== Memcheck, a memory error detector
+==7098== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==7098== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==7098== Command: ../a
+==7098== 
+==7098== 
+==7098== HEAP SUMMARY:
+==7098==     in use at exit: 0 bytes in 0 blocks
+==7098==   total heap usage: 783 allocs, 783 frees, 49,000 bytes allocated
+==7098== 
+==7098== All heap blocks were freed -- no leaks are possible
+==7098== 
+==7098== For lists of detected and suppressed errors, rerun with: -s
+==7098== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+35.txt
+
+==7157== Memcheck, a memory error detector
+==7157== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==7157== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==7157== Command: ../a
+==7157== 
+==7157== 
+==7157== HEAP SUMMARY:
+==7157==     in use at exit: 0 bytes in 0 blocks
+==7157==   total heap usage: 17,148 allocs, 17,148 frees, 1,727,536 bytes allocated
+==7157== 
+==7157== All heap blocks were freed -- no leaks are possible
+==7157== 
+==7157== For lists of detected and suppressed errors, rerun with: -s
+==7157== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+36.txt
+
+==7241== Memcheck, a memory error detector
+==7241== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==7241== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==7241== Command: ../a
+==7241== 
+==7241== 
+==7241== HEAP SUMMARY:
+==7241==     in use at exit: 0 bytes in 0 blocks
+==7241==   total heap usage: 10,944 allocs, 10,944 frees, 989,528 bytes allocated
+==7241== 
+==7241== All heap blocks were freed -- no leaks are possible
+==7241== 
+==7241== For lists of detected and suppressed errors, rerun with: -s
+==7241== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+37.txt
+
+==7270== Memcheck, a memory error detector
+==7270== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==7270== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==7270== Command: ../a
+==7270== 
+==7270== 
+==7270== HEAP SUMMARY:
+==7270==     in use at exit: 0 bytes in 0 blocks
+==7270==   total heap usage: 3 allocs, 3 frees, 344 bytes allocated
+==7270== 
+==7270== All heap blocks were freed -- no leaks are possible
+==7270== 
+==7270== For lists of detected and suppressed errors, rerun with: -s
+==7270== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+38.txt
+
+==7360== Memcheck, a memory error detector
+==7360== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==7360== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==7360== Command: ../a
+==7360== 
+==7360== 
+==7360== HEAP SUMMARY:
+==7360==     in use at exit: 0 bytes in 0 blocks
+==7360==   total heap usage: 1,025 allocs, 1,025 frees, 64,360 bytes allocated
+==7360== 
+==7360== All heap blocks were freed -- no leaks are possible
+==7360== 
+==7360== For lists of detected and suppressed errors, rerun with: -s
+==7360== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+39.txt
+
+==7385== Memcheck, a memory error detector
+==7385== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==7385== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==7385== Command: ../a
+==7385== 
+==7385== 
+==7385== HEAP SUMMARY:
+==7385==     in use at exit: 0 bytes in 0 blocks
+==7385==   total heap usage: 4,317 allocs, 4,317 frees, 312,840 bytes allocated
+==7385== 
+==7385== All heap blocks were freed -- no leaks are possible
+==7385== 
+==7385== For lists of detected and suppressed errors, rerun with: -s
+==7385== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+4.txt
+
+==7410== Memcheck, a memory error detector
+==7410== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==7410== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==7410== Command: ../a
+==7410== 
+==7410== 
+==7410== HEAP SUMMARY:
+==7410==     in use at exit: 0 bytes in 0 blocks
+==7410==   total heap usage: 9,164 allocs, 9,164 frees, 781,584 bytes allocated
+==7410== 
+==7410== All heap blocks were freed -- no leaks are possible
+==7410== 
+==7410== For lists of detected and suppressed errors, rerun with: -s
+==7410== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+40.txt
+
+==7532== Memcheck, a memory error detector
+==7532== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==7532== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==7532== Command: ../a
+==7532== 
+==7532== 
+==7532== HEAP SUMMARY:
+==7532==     in use at exit: 0 bytes in 0 blocks
+==7532==   total heap usage: 10,153 allocs, 10,153 frees, 805,584 bytes allocated
+==7532== 
+==7532== All heap blocks were freed -- no leaks are possible
+==7532== 
+==7532== For lists of detected and suppressed errors, rerun with: -s
+==7532== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+41.txt
+
+==7569== Memcheck, a memory error detector
+==7569== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==7569== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==7569== Command: ../a
+==7569== 
+==7569== 
+==7569== HEAP SUMMARY:
+==7569==     in use at exit: 0 bytes in 0 blocks
+==7569==   total heap usage: 2,597 allocs, 2,597 frees, 187,576 bytes allocated
+==7569== 
+==7569== All heap blocks were freed -- no leaks are possible
+==7569== 
+==7569== For lists of detected and suppressed errors, rerun with: -s
+==7569== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+42.txt
+
+==7687== Memcheck, a memory error detector
+==7687== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==7687== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==7687== Command: ../a
+==7687== 
+==7687== 
+==7687== HEAP SUMMARY:
+==7687==     in use at exit: 0 bytes in 0 blocks
+==7687==   total heap usage: 3,694 allocs, 3,694 frees, 263,896 bytes allocated
+==7687== 
+==7687== All heap blocks were freed -- no leaks are possible
+==7687== 
+==7687== For lists of detected and suppressed errors, rerun with: -s
+==7687== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+43.txt
+
+==7730== Memcheck, a memory error detector
+==7730== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==7730== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==7730== Command: ../a
+==7730== 
+==7730== 
+==7730== HEAP SUMMARY:
+==7730==     in use at exit: 0 bytes in 0 blocks
+==7730==   total heap usage: 6,442 allocs, 6,442 frees, 486,984 bytes allocated
+==7730== 
+==7730== All heap blocks were freed -- no leaks are possible
+==7730== 
+==7730== For lists of detected and suppressed errors, rerun with: -s
+==7730== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+44.txt
+
+==7817== Memcheck, a memory error detector
+==7817== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==7817== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==7817== Command: ../a
+==7817== 
+==7817== 
+==7817== HEAP SUMMARY:
+==7817==     in use at exit: 0 bytes in 0 blocks
+==7817==   total heap usage: 6,635 allocs, 6,635 frees, 523,248 bytes allocated
+==7817== 
+==7817== All heap blocks were freed -- no leaks are possible
+==7817== 
+==7817== For lists of detected and suppressed errors, rerun with: -s
+==7817== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+45.txt
+
+==7836== Memcheck, a memory error detector
+==7836== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==7836== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==7836== Command: ../a
+==7836== 
+==7836== 
+==7836== HEAP SUMMARY:
+==7836==     in use at exit: 0 bytes in 0 blocks
+==7836==   total heap usage: 343 allocs, 343 frees, 19,584 bytes allocated
+==7836== 
+==7836== All heap blocks were freed -- no leaks are possible
+==7836== 
+==7836== For lists of detected and suppressed errors, rerun with: -s
+==7836== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+46.txt
+
+==7881== Memcheck, a memory error detector
+==7881== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==7881== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==7881== Command: ../a
+==7881== 
+==7881== 
+==7881== HEAP SUMMARY:
+==7881==     in use at exit: 0 bytes in 0 blocks
+==7881==   total heap usage: 33,158 allocs, 33,158 frees, 5,151,976 bytes allocated
+==7881== 
+==7881== All heap blocks were freed -- no leaks are possible
+==7881== 
+==7881== For lists of detected and suppressed errors, rerun with: -s
+==7881== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+47.txt
+
+==8389== Memcheck, a memory error detector
+==8389== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==8389== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==8389== Command: ../a
+==8389== 
+==8389== 
+==8389== HEAP SUMMARY:
+==8389==     in use at exit: 0 bytes in 0 blocks
+==8389==   total heap usage: 23,771 allocs, 23,771 frees, 2,643,112 bytes allocated
+==8389== 
+==8389== All heap blocks were freed -- no leaks are possible
+==8389== 
+==8389== For lists of detected and suppressed errors, rerun with: -s
+==8389== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+48.txt
+
+==8972== Memcheck, a memory error detector
+==8972== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==8972== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==8972== Command: ../a
+==8972== 
+==8972== 
+==8972== HEAP SUMMARY:
+==8972==     in use at exit: 0 bytes in 0 blocks
+==8972==   total heap usage: 10,910 allocs, 10,910 frees, 996,000 bytes allocated
+==8972== 
+==8972== All heap blocks were freed -- no leaks are possible
+==8972== 
+==8972== For lists of detected and suppressed errors, rerun with: -s
+==8972== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 49.txt
 
-==4644== Memcheck, a memory error detector
-==4644== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==4644== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==4644== Command: ../a
-==4644== 
-==4644== 
-==4644== Process terminating with default action of signal 6 (SIGABRT)
-==4644==    at 0x568D3D7: raise (in /usr/lib64/libc-2.17.so)
-==4644==    by 0x568EAC7: abort (in /usr/lib64/libc-2.17.so)
-==4644==    by 0x4E97A94: __gnu_cxx::__verbose_terminate_handler() (in /usr/lib64/libstdc++.so.6.0.19)
-==4644==    by 0x4E95A05: ??? (in /usr/lib64/libstdc++.so.6.0.19)
-==4644==    by 0x4E95A32: std::terminate() (in /usr/lib64/libstdc++.so.6.0.19)
-==4644==    by 0x4E95C52: __cxa_throw (in /usr/lib64/libstdc++.so.6.0.19)
-==4644==    by 0x40214D: DataStructures::AVLTree<DataStructures::CarModel>::insert(DataStructures::CarModel const&) (avl_tree.h:252)
-==4644==    by 0x403E09: CDM::sellCar(int, int) (cdm.cpp:210)
-==4644==    by 0x407B25: SellCar (library.cpp:21)
-==4644==    by 0x4084C9: OnSellCar (main1.cpp:235)
-==4644==    by 0x4081D5: parser (main1.cpp:157)
-==4644==    by 0x407FD3: main (main1.cpp:93)
-==4644== 
-==4644== HEAP SUMMARY:
-==4644==     in use at exit: 162,584 bytes in 2,942 blocks
-==4644==   total heap usage: 9,261 allocs, 6,319 frees, 835,816 bytes allocated
-==4644== 
-==4644== 32 bytes in 1 blocks are still reachable in loss record 1 of 21
-==4644==    at 0x4C2A593: operator new(unsigned long) (vg_replace_malloc.c:344)
-==4644==    by 0x401AB9: DataStructures::CarType::operator=(DataStructures::CarType const&) (car_type.cpp:25)
-==4644==    by 0x4062C5: DataStructures::AVLTree<DataStructures::CarType>::swapKeys(DataStructures::Node<DataStructures::CarType>*, DataStructures::Node<DataStructures::CarType>*) (avl_tree.h:242)
-==4644==    by 0x404D10: DataStructures::AVLTree<DataStructures::CarType>::remove(DataStructures::CarType const&) (avl_tree.h:310)
-==4644==    by 0x4030F0: CDM::InsertOrRemoveFromZeroScoredTypesTree(DataStructures::CarType, int) (cdm.cpp:48)
-==4644==    by 0x4033D6: CDM::addToModelsByScoreTree(DataStructures::CarType*, DataStructures::CarModel) (cdm.cpp:79)
-==4644==    by 0x403E7F: CDM::sellCar(int, int) (cdm.cpp:211)
-==4644==    by 0x407B25: SellCar (library.cpp:21)
-==4644==    by 0x4084C9: OnSellCar (main1.cpp:235)
-==4644==    by 0x4081D5: parser (main1.cpp:157)
-==4644==    by 0x407FD3: main (main1.cpp:93)
-==4644== 
-==4644== 136 bytes in 1 blocks are possibly lost in loss record 2 of 21
-==4644==    at 0x4C29F73: malloc (vg_replace_malloc.c:309)
-==4644==    by 0x4E945A2: __cxa_allocate_exception (in /usr/lib64/libstdc++.so.6.0.19)
-==4644==    by 0x405790: DataStructures::AVLTree<DataStructures::CarModel>::getNode(DataStructures::CarModel const&) (avl_tree.h:388)
-==4644==    by 0x4052A4: DataStructures::AVLTree<DataStructures::CarModel>::remove(DataStructures::CarModel const&) (avl_tree.h:297)
-==4644==    by 0x40337B: CDM::addToModelsByScoreTree(DataStructures::CarType*, DataStructures::CarModel) (cdm.cpp:75)
-==4644==    by 0x403ACD: CDM::sellCar(int, int) (cdm.cpp:182)
-==4644==    by 0x407B25: SellCar (library.cpp:21)
-==4644==    by 0x4084C9: OnSellCar (main1.cpp:235)
-==4644==    by 0x4081D5: parser (main1.cpp:157)
-==4644==    by 0x407FD3: main (main1.cpp:93)
-==4644== 
-==4644== 136 bytes in 1 blocks are possibly lost in loss record 3 of 21
-==4644==    at 0x4C29F73: malloc (vg_replace_malloc.c:309)
-==4644==    by 0x4E945A2: __cxa_allocate_exception (in /usr/lib64/libstdc++.so.6.0.19)
-==4644==    by 0x402129: DataStructures::AVLTree<DataStructures::CarModel>::insert(DataStructures::CarModel const&) (avl_tree.h:252)
-==4644==    by 0x403E09: CDM::sellCar(int, int) (cdm.cpp:210)
-==4644==    by 0x407B25: SellCar (library.cpp:21)
-==4644==    by 0x4084C9: OnSellCar (main1.cpp:235)
-==4644==    by 0x4081D5: parser (main1.cpp:157)
-==4644==    by 0x407FD3: main (main1.cpp:93)
-==4644== 
-==4644== 176 bytes in 1 blocks are still reachable in loss record 4 of 21
-==4644==    at 0x4C2A593: operator new(unsigned long) (vg_replace_malloc.c:344)
-==4644==    by 0x407A57: Init (library.cpp:5)
-==4644==    by 0x408291: OnInit (main1.cpp:193)
-==4644==    by 0x40817B: parser (main1.cpp:148)
-==4644==    by 0x407FD3: main (main1.cpp:93)
-==4644== 
-==4644== 224 bytes in 7 blocks are still reachable in loss record 5 of 21
-==4644==    at 0x4C2A593: operator new(unsigned long) (vg_replace_malloc.c:344)
-==4644==    by 0x401AB9: DataStructures::CarType::operator=(DataStructures::CarType const&) (car_type.cpp:25)
-==4644==    by 0x4062C5: DataStructures::AVLTree<DataStructures::CarType>::swapKeys(DataStructures::Node<DataStructures::CarType>*, DataStructures::Node<DataStructures::CarType>*) (avl_tree.h:242)
-==4644==    by 0x404D10: DataStructures::AVLTree<DataStructures::CarType>::remove(DataStructures::CarType const&) (avl_tree.h:310)
-==4644==    by 0x40365F: CDM::RemoveCarType(int) (cdm.cpp:119)
-==4644==    by 0x407AEF: RemoveCarType (library.cpp:16)
-==4644==    by 0x4083FA: OnRemoveCarType (main1.cpp:221)
-==4644==    by 0x4081B7: parser (main1.cpp:154)
-==4644==    by 0x407FD3: main (main1.cpp:93)
-==4644== 
-==4644== 288 bytes in 9 blocks are still reachable in loss record 6 of 21
-==4644==    at 0x4C2A593: operator new(unsigned long) (vg_replace_malloc.c:344)
-==4644==    by 0x401AB9: DataStructures::CarType::operator=(DataStructures::CarType const&) (car_type.cpp:25)
-==4644==    by 0x4062C5: DataStructures::AVLTree<DataStructures::CarType>::swapKeys(DataStructures::Node<DataStructures::CarType>*, DataStructures::Node<DataStructures::CarType>*) (avl_tree.h:242)
-==4644==    by 0x404D10: DataStructures::AVLTree<DataStructures::CarType>::remove(DataStructures::CarType const&) (avl_tree.h:310)
-==4644==    by 0x403623: CDM::RemoveCarType(int) (cdm.cpp:114)
-==4644==    by 0x407AEF: RemoveCarType (library.cpp:16)
-==4644==    by 0x4083FA: OnRemoveCarType (main1.cpp:221)
-==4644==    by 0x4081B7: parser (main1.cpp:154)
-==4644==    by 0x407FD3: main (main1.cpp:93)
-==4644== 
-==4644== 1,064 bytes in 19 blocks are still reachable in loss record 7 of 21
-==4644==    at 0x4C2A593: operator new(unsigned long) (vg_replace_malloc.c:344)
-==4644==    by 0x40559D: DataStructures::AVLTree<DataStructures::CarModelByGrade>::insert(DataStructures::CarModelByGrade const&) (avl_tree.h:267)
-==4644==    by 0x403BDD: CDM::sellCar(int, int) (cdm.cpp:192)
-==4644==    by 0x407B25: SellCar (library.cpp:21)
-==4644==    by 0x4084C9: OnSellCar (main1.cpp:235)
-==4644==    by 0x4081D5: parser (main1.cpp:157)
-==4644==    by 0x407FD3: main (main1.cpp:93)
-==4644== 
-==4644== 1,232 bytes in 22 blocks are still reachable in loss record 8 of 21
-==4644==    at 0x4C2A593: operator new(unsigned long) (vg_replace_malloc.c:344)
-==4644==    by 0x4021BF: DataStructures::AVLTree<DataStructures::CarModel>::insert(DataStructures::CarModel const&) (avl_tree.h:267)
-==4644==    by 0x401B00: DataStructures::CarType::operator=(DataStructures::CarType const&) (car_type.cpp:28)
-==4644==    by 0x4062C5: DataStructures::AVLTree<DataStructures::CarType>::swapKeys(DataStructures::Node<DataStructures::CarType>*, DataStructures::Node<DataStructures::CarType>*) (avl_tree.h:242)
-==4644==    by 0x404D10: DataStructures::AVLTree<DataStructures::CarType>::remove(DataStructures::CarType const&) (avl_tree.h:310)
-==4644==    by 0x4030F0: CDM::InsertOrRemoveFromZeroScoredTypesTree(DataStructures::CarType, int) (cdm.cpp:48)
-==4644==    by 0x4033D6: CDM::addToModelsByScoreTree(DataStructures::CarType*, DataStructures::CarModel) (cdm.cpp:79)
-==4644==    by 0x403E7F: CDM::sellCar(int, int) (cdm.cpp:211)
-==4644==    by 0x407B25: SellCar (library.cpp:21)
-==4644==    by 0x4084C9: OnSellCar (main1.cpp:235)
-==4644==    by 0x4081D5: parser (main1.cpp:157)
-==4644==    by 0x407FD3: main (main1.cpp:93)
-==4644== 
-==4644== 1,288 bytes in 23 blocks are still reachable in loss record 9 of 21
-==4644==    at 0x4C2A593: operator new(unsigned long) (vg_replace_malloc.c:344)
-==4644==    by 0x405B45: DataStructures::AVLTree<DataStructures::CarModelBySales>::insert(DataStructures::CarModelBySales const&) (avl_tree.h:267)
-==4644==    by 0x403C6B: CDM::sellCar(int, int) (cdm.cpp:198)
-==4644==    by 0x407B25: SellCar (library.cpp:21)
-==4644==    by 0x4084C9: OnSellCar (main1.cpp:235)
-==4644==    by 0x4081D5: parser (main1.cpp:157)
-==4644==    by 0x407FD3: main (main1.cpp:93)
-==4644== 
-==4644== 2,144 bytes in 67 blocks are still reachable in loss record 10 of 21
-==4644==    at 0x4C2A593: operator new(unsigned long) (vg_replace_malloc.c:344)
-==4644==    by 0x401B98: DataStructures::CarType::CarType(DataStructures::CarType const&) (car_type.cpp:49)
-==4644==    by 0x40601B: DataStructures::Node<DataStructures::CarType>::Node(DataStructures::CarType const&, int) (node.h:36)
-==4644==    by 0x404A9A: DataStructures::AVLTree<DataStructures::CarType>::insert(DataStructures::CarType const&) (avl_tree.h:267)
-==4644==    by 0x403498: CDM::AddCarType(int, int) (cdm.cpp:88)
-==4644==    by 0x407ABF: AddCarType (library.cpp:11)
-==4644==    by 0x408332: OnAddCarType (main1.cpp:207)
-==4644==    by 0x408199: parser (main1.cpp:151)
-==4644==    by 0x407FD3: main (main1.cpp:93)
-==4644== 
-==4644== 2,208 bytes in 69 blocks are still reachable in loss record 11 of 21
-==4644==    at 0x4C2A593: operator new(unsigned long) (vg_replace_malloc.c:344)
-==4644==    by 0x401B98: DataStructures::CarType::CarType(DataStructures::CarType const&) (car_type.cpp:49)
-==4644==    by 0x40601B: DataStructures::Node<DataStructures::CarType>::Node(DataStructures::CarType const&, int) (node.h:36)
-==4644==    by 0x404A9A: DataStructures::AVLTree<DataStructures::CarType>::insert(DataStructures::CarType const&) (avl_tree.h:267)
-==4644==    by 0x403481: CDM::AddCarType(int, int) (cdm.cpp:87)
-==4644==    by 0x407ABF: AddCarType (library.cpp:11)
-==4644==    by 0x408332: OnAddCarType (main1.cpp:207)
-==4644==    by 0x408199: parser (main1.cpp:151)
-==4644==    by 0x407FD3: main (main1.cpp:93)
-==4644== 
-==4644== 2,464 bytes in 44 blocks are still reachable in loss record 12 of 21
-==4644==    at 0x4C2A593: operator new(unsigned long) (vg_replace_malloc.c:344)
-==4644==    by 0x40559D: DataStructures::AVLTree<DataStructures::CarModelByGrade>::insert(DataStructures::CarModelByGrade const&) (avl_tree.h:267)
-==4644==    by 0x4042C9: CDM::makeComplaint(int, int, int) (cdm.cpp:267)
-==4644==    by 0x407B5F: MakeComplaint (library.cpp:26)
-==4644==    by 0x4085A0: OnMakeComplaint (main1.cpp:249)
-==4644==    by 0x4081F0: parser (main1.cpp:160)
-==4644==    by 0x407FD3: main (main1.cpp:93)
-==4644== 
-==4644== 4,800 bytes in 75 blocks are still reachable in loss record 13 of 21
-==4644==    at 0x4C2A593: operator new(unsigned long) (vg_replace_malloc.c:344)
-==4644==    by 0x404A83: DataStructures::AVLTree<DataStructures::CarType>::insert(DataStructures::CarType const&) (avl_tree.h:267)
-==4644==    by 0x403498: CDM::AddCarType(int, int) (cdm.cpp:88)
-==4644==    by 0x407ABF: AddCarType (library.cpp:11)
-==4644==    by 0x408332: OnAddCarType (main1.cpp:207)
-==4644==    by 0x408199: parser (main1.cpp:151)
-==4644==    by 0x407FD3: main (main1.cpp:93)
-==4644== 
-==4644== 4,816 bytes in 86 blocks are still reachable in loss record 14 of 21
-==4644==    at 0x4C2A593: operator new(unsigned long) (vg_replace_malloc.c:344)
-==4644==    by 0x4021BF: DataStructures::AVLTree<DataStructures::CarModel>::insert(DataStructures::CarModel const&) (avl_tree.h:267)
-==4644==    by 0x401B00: DataStructures::CarType::operator=(DataStructures::CarType const&) (car_type.cpp:28)
-==4644==    by 0x4062C5: DataStructures::AVLTree<DataStructures::CarType>::swapKeys(DataStructures::Node<DataStructures::CarType>*, DataStructures::Node<DataStructures::CarType>*) (avl_tree.h:242)
-==4644==    by 0x404D10: DataStructures::AVLTree<DataStructures::CarType>::remove(DataStructures::CarType const&) (avl_tree.h:310)
-==4644==    by 0x40365F: CDM::RemoveCarType(int) (cdm.cpp:119)
-==4644==    by 0x407AEF: RemoveCarType (library.cpp:16)
-==4644==    by 0x4083FA: OnRemoveCarType (main1.cpp:221)
-==4644==    by 0x4081B7: parser (main1.cpp:154)
-==4644==    by 0x407FD3: main (main1.cpp:93)
-==4644== 
-==4644== 4,992 bytes in 78 blocks are still reachable in loss record 15 of 21
-==4644==    at 0x4C2A593: operator new(unsigned long) (vg_replace_malloc.c:344)
-==4644==    by 0x404A83: DataStructures::AVLTree<DataStructures::CarType>::insert(DataStructures::CarType const&) (avl_tree.h:267)
-==4644==    by 0x403481: CDM::AddCarType(int, int) (cdm.cpp:87)
-==4644==    by 0x407ABF: AddCarType (library.cpp:11)
-==4644==    by 0x408332: OnAddCarType (main1.cpp:207)
-==4644==    by 0x408199: parser (main1.cpp:151)
-==4644==    by 0x407FD3: main (main1.cpp:93)
-==4644== 
-==4644== 5,880 bytes in 105 blocks are still reachable in loss record 16 of 21
-==4644==    at 0x4C2A593: operator new(unsigned long) (vg_replace_malloc.c:344)
-==4644==    by 0x40559D: DataStructures::AVLTree<DataStructures::CarModelByGrade>::insert(DataStructures::CarModelByGrade const&) (avl_tree.h:267)
-==4644==    by 0x403392: CDM::addToModelsByScoreTree(DataStructures::CarType*, DataStructures::CarModel) (cdm.cpp:77)
-==4644==    by 0x403E7F: CDM::sellCar(int, int) (cdm.cpp:211)
-==4644==    by 0x407B25: SellCar (library.cpp:21)
-==4644==    by 0x4084C9: OnSellCar (main1.cpp:235)
-==4644==    by 0x4081D5: parser (main1.cpp:157)
-==4644==    by 0x407FD3: main (main1.cpp:93)
-==4644== 
-==4644== 8,176 bytes in 146 blocks are still reachable in loss record 17 of 21
-==4644==    at 0x4C2A593: operator new(unsigned long) (vg_replace_malloc.c:344)
-==4644==    by 0x405B45: DataStructures::AVLTree<DataStructures::CarModelBySales>::insert(DataStructures::CarModelBySales const&) (avl_tree.h:267)
-==4644==    by 0x403EEE: CDM::sellCar(int, int) (cdm.cpp:213)
-==4644==    by 0x407B25: SellCar (library.cpp:21)
-==4644==    by 0x4084C9: OnSellCar (main1.cpp:235)
-==4644==    by 0x4081D5: parser (main1.cpp:157)
-==4644==    by 0x407FD3: main (main1.cpp:93)
-==4644== 
-==4644== 8,456 bytes in 151 blocks are still reachable in loss record 18 of 21
-==4644==    at 0x4C2A593: operator new(unsigned long) (vg_replace_malloc.c:344)
-==4644==    by 0x4021BF: DataStructures::AVLTree<DataStructures::CarModel>::insert(DataStructures::CarModel const&) (avl_tree.h:267)
-==4644==    by 0x401B00: DataStructures::CarType::operator=(DataStructures::CarType const&) (car_type.cpp:28)
-==4644==    by 0x4062C5: DataStructures::AVLTree<DataStructures::CarType>::swapKeys(DataStructures::Node<DataStructures::CarType>*, DataStructures::Node<DataStructures::CarType>*) (avl_tree.h:242)
-==4644==    by 0x404D10: DataStructures::AVLTree<DataStructures::CarType>::remove(DataStructures::CarType const&) (avl_tree.h:310)
-==4644==    by 0x403623: CDM::RemoveCarType(int) (cdm.cpp:114)
-==4644==    by 0x407AEF: RemoveCarType (library.cpp:16)
-==4644==    by 0x4083FA: OnRemoveCarType (main1.cpp:221)
-==4644==    by 0x4081B7: parser (main1.cpp:154)
-==4644==    by 0x407FD3: main (main1.cpp:93)
-==4644== 
-==4644== 9,464 bytes in 169 blocks are still reachable in loss record 19 of 21
-==4644==    at 0x4C2A593: operator new(unsigned long) (vg_replace_malloc.c:344)
-==4644==    by 0x4021BF: DataStructures::AVLTree<DataStructures::CarModel>::insert(DataStructures::CarModel const&) (avl_tree.h:267)
-==4644==    by 0x403E09: CDM::sellCar(int, int) (cdm.cpp:210)
-==4644==    by 0x407B25: SellCar (library.cpp:21)
-==4644==    by 0x4084C9: OnSellCar (main1.cpp:235)
-==4644==    by 0x4081D5: parser (main1.cpp:157)
-==4644==    by 0x407FD3: main (main1.cpp:93)
-==4644== 
-==4644== 48,776 bytes in 871 blocks are still reachable in loss record 20 of 21
-==4644==    at 0x4C2A593: operator new(unsigned long) (vg_replace_malloc.c:344)
-==4644==    by 0x4021BF: DataStructures::AVLTree<DataStructures::CarModel>::insert(DataStructures::CarModel const&) (avl_tree.h:267)
-==4644==    by 0x401BEA: DataStructures::CarType::CarType(DataStructures::CarType const&) (car_type.cpp:53)
-==4644==    by 0x40601B: DataStructures::Node<DataStructures::CarType>::Node(DataStructures::CarType const&, int) (node.h:36)
-==4644==    by 0x404A9A: DataStructures::AVLTree<DataStructures::CarType>::insert(DataStructures::CarType const&) (avl_tree.h:267)
-==4644==    by 0x403498: CDM::AddCarType(int, int) (cdm.cpp:88)
-==4644==    by 0x407ABF: AddCarType (library.cpp:11)
-==4644==    by 0x408332: OnAddCarType (main1.cpp:207)
-==4644==    by 0x408199: parser (main1.cpp:151)
-==4644==    by 0x407FD3: main (main1.cpp:93)
-==4644== 
-==4644== 55,832 bytes in 997 blocks are still reachable in loss record 21 of 21
-==4644==    at 0x4C2A593: operator new(unsigned long) (vg_replace_malloc.c:344)
-==4644==    by 0x4021BF: DataStructures::AVLTree<DataStructures::CarModel>::insert(DataStructures::CarModel const&) (avl_tree.h:267)
-==4644==    by 0x401BEA: DataStructures::CarType::CarType(DataStructures::CarType const&) (car_type.cpp:53)
-==4644==    by 0x40601B: DataStructures::Node<DataStructures::CarType>::Node(DataStructures::CarType const&, int) (node.h:36)
-==4644==    by 0x404A9A: DataStructures::AVLTree<DataStructures::CarType>::insert(DataStructures::CarType const&) (avl_tree.h:267)
-==4644==    by 0x403481: CDM::AddCarType(int, int) (cdm.cpp:87)
-==4644==    by 0x407ABF: AddCarType (library.cpp:11)
-==4644==    by 0x408332: OnAddCarType (main1.cpp:207)
-==4644==    by 0x408199: parser (main1.cpp:151)
-==4644==    by 0x407FD3: main (main1.cpp:93)
-==4644== 
-==4644== LEAK SUMMARY:
-==4644==    definitely lost: 0 bytes in 0 blocks
-==4644==    indirectly lost: 0 bytes in 0 blocks
-==4644==      possibly lost: 272 bytes in 2 blocks
-==4644==    still reachable: 162,312 bytes in 2,940 blocks
-==4644==         suppressed: 0 bytes in 0 blocks
-==4644== 
-==4644== For lists of detected and suppressed errors, rerun with: -s
-==4644== ERROR SUMMARY: 2 errors from 2 contexts (suppressed: 0 from 0)
+==9029== Memcheck, a memory error detector
+==9029== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==9029== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==9029== Command: ../a
+==9029== 
+==9029== 
+==9029== HEAP SUMMARY:
+==9029==     in use at exit: 0 bytes in 0 blocks
+==9029==   total heap usage: 29,140 allocs, 29,140 frees, 3,872,512 bytes allocated
+==9029== 
+==9029== All heap blocks were freed -- no leaks are possible
+==9029== 
+==9029== For lists of detected and suppressed errors, rerun with: -s
+==9029== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 5.txt
 
-==5558== Memcheck, a memory error detector
-==5558== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==5558== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==5558== Command: ../a
-==5558== 
-==5558== 
-==5558== HEAP SUMMARY:
-==5558==     in use at exit: 0 bytes in 0 blocks
-==5558==   total heap usage: 6,100 allocs, 6,100 frees, 464,624 bytes allocated
-==5558== 
-==5558== All heap blocks were freed -- no leaks are possible
-==5558== 
-==5558== For lists of detected and suppressed errors, rerun with: -s
-==5558== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==9152== Memcheck, a memory error detector
+==9152== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==9152== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==9152== Command: ../a
+==9152== 
+==9152== 
+==9152== HEAP SUMMARY:
+==9152==     in use at exit: 0 bytes in 0 blocks
+==9152==   total heap usage: 6,100 allocs, 6,100 frees, 464,624 bytes allocated
+==9152== 
+==9152== All heap blocks were freed -- no leaks are possible
+==9152== 
+==9152== For lists of detected and suppressed errors, rerun with: -s
+==9152== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 50.txt
 
-==5644== Memcheck, a memory error detector
-==5644== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==5644== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==5644== Command: ../a
-==5644== 
-==5644== 
-==5644== HEAP SUMMARY:
-==5644==     in use at exit: 0 bytes in 0 blocks
-==5644==   total heap usage: 16,877 allocs, 16,877 frees, 1,607,616 bytes allocated
-==5644== 
-==5644== All heap blocks were freed -- no leaks are possible
-==5644== 
-==5644== For lists of detected and suppressed errors, rerun with: -s
-==5644== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==9171== Memcheck, a memory error detector
+==9171== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==9171== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==9171== Command: ../a
+==9171== 
+==9171== 
+==9171== HEAP SUMMARY:
+==9171==     in use at exit: 0 bytes in 0 blocks
+==9171==   total heap usage: 16,877 allocs, 16,877 frees, 1,607,616 bytes allocated
+==9171== 
+==9171== All heap blocks were freed -- no leaks are possible
+==9171== 
+==9171== For lists of detected and suppressed errors, rerun with: -s
+==9171== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 51.txt
 
-==5709== Memcheck, a memory error detector
-==5709== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==5709== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==5709== Command: ../a
-==5709== 
-==5709== 
-==5709== HEAP SUMMARY:
-==5709==     in use at exit: 0 bytes in 0 blocks
-==5709==   total heap usage: 9,754 allocs, 9,754 frees, 838,112 bytes allocated
-==5709== 
-==5709== All heap blocks were freed -- no leaks are possible
-==5709== 
-==5709== For lists of detected and suppressed errors, rerun with: -s
-==5709== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==9202== Memcheck, a memory error detector
+==9202== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==9202== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==9202== Command: ../a
+==9202== 
+==9202== 
+==9202== HEAP SUMMARY:
+==9202==     in use at exit: 0 bytes in 0 blocks
+==9202==   total heap usage: 9,754 allocs, 9,754 frees, 838,112 bytes allocated
+==9202== 
+==9202== All heap blocks were freed -- no leaks are possible
+==9202== 
+==9202== For lists of detected and suppressed errors, rerun with: -s
+==9202== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 52.txt
 
-==5945== Memcheck, a memory error detector
-==5945== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==5945== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==5945== Command: ../a
-==5945== 
-==5945== 
-==5945== HEAP SUMMARY:
-==5945==     in use at exit: 0 bytes in 0 blocks
-==5945==   total heap usage: 16,666 allocs, 16,666 frees, 1,689,760 bytes allocated
-==5945== 
-==5945== All heap blocks were freed -- no leaks are possible
-==5945== 
-==5945== For lists of detected and suppressed errors, rerun with: -s
-==5945== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==9225== Memcheck, a memory error detector
+==9225== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==9225== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==9225== Command: ../a
+==9225== 
+==9225== 
+==9225== HEAP SUMMARY:
+==9225==     in use at exit: 0 bytes in 0 blocks
+==9225==   total heap usage: 16,666 allocs, 16,666 frees, 1,689,760 bytes allocated
+==9225== 
+==9225== All heap blocks were freed -- no leaks are possible
+==9225== 
+==9225== For lists of detected and suppressed errors, rerun with: -s
+==9225== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 53.txt
 
-==6242== Memcheck, a memory error detector
-==6242== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==6242== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==6242== Command: ../a
-==6242== 
-==6242== 
-==6242== HEAP SUMMARY:
-==6242==     in use at exit: 0 bytes in 0 blocks
-==6242==   total heap usage: 8,241 allocs, 8,241 frees, 626,416 bytes allocated
-==6242== 
-==6242== All heap blocks were freed -- no leaks are possible
-==6242== 
-==6242== For lists of detected and suppressed errors, rerun with: -s
-==6242== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==9497== Memcheck, a memory error detector
+==9497== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==9497== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==9497== Command: ../a
+==9497== 
+==9497== 
+==9497== HEAP SUMMARY:
+==9497==     in use at exit: 0 bytes in 0 blocks
+==9497==   total heap usage: 8,241 allocs, 8,241 frees, 626,416 bytes allocated
+==9497== 
+==9497== All heap blocks were freed -- no leaks are possible
+==9497== 
+==9497== For lists of detected and suppressed errors, rerun with: -s
+==9497== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 54.txt
 
-==7344== Memcheck, a memory error detector
-==7344== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==7344== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==7344== Command: ../a
-==7344== 
-==7344== 
-==7344== HEAP SUMMARY:
-==7344==     in use at exit: 0 bytes in 0 blocks
-==7344==   total heap usage: 8,380 allocs, 8,380 frees, 684,272 bytes allocated
-==7344== 
-==7344== All heap blocks were freed -- no leaks are possible
-==7344== 
-==7344== For lists of detected and suppressed errors, rerun with: -s
-==7344== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==9703== Memcheck, a memory error detector
+==9703== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==9703== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==9703== Command: ../a
+==9703== 
+==9703== 
+==9703== HEAP SUMMARY:
+==9703==     in use at exit: 0 bytes in 0 blocks
+==9703==   total heap usage: 8,380 allocs, 8,380 frees, 684,272 bytes allocated
+==9703== 
+==9703== All heap blocks were freed -- no leaks are possible
+==9703== 
+==9703== For lists of detected and suppressed errors, rerun with: -s
+==9703== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 55.txt
 
-==7394== Memcheck, a memory error detector
-==7394== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==7394== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==7394== Command: ../a
-==7394== 
-==7394== 
-==7394== HEAP SUMMARY:
-==7394==     in use at exit: 0 bytes in 0 blocks
-==7394==   total heap usage: 43,290 allocs, 43,290 frees, 6,246,648 bytes allocated
-==7394== 
-==7394== All heap blocks were freed -- no leaks are possible
-==7394== 
-==7394== For lists of detected and suppressed errors, rerun with: -s
-==7394== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==9975== Memcheck, a memory error detector
+==9975== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==9975== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==9975== Command: ../a
+==9975== 
+==9975== 
+==9975== HEAP SUMMARY:
+==9975==     in use at exit: 0 bytes in 0 blocks
+==9975==   total heap usage: 43,290 allocs, 43,290 frees, 6,246,648 bytes allocated
+==9975== 
+==9975== All heap blocks were freed -- no leaks are possible
+==9975== 
+==9975== For lists of detected and suppressed errors, rerun with: -s
+==9975== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 56.txt
 
-==7890== Memcheck, a memory error detector
-==7890== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==7890== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==7890== Command: ../a
-==7890== 
-==7890== 
-==7890== HEAP SUMMARY:
-==7890==     in use at exit: 0 bytes in 0 blocks
-==7890==   total heap usage: 11,139 allocs, 11,139 frees, 935,392 bytes allocated
-==7890== 
-==7890== All heap blocks were freed -- no leaks are possible
-==7890== 
-==7890== For lists of detected and suppressed errors, rerun with: -s
-==7890== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==10523== Memcheck, a memory error detector
+==10523== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==10523== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==10523== Command: ../a
+==10523== 
+==10523== 
+==10523== HEAP SUMMARY:
+==10523==     in use at exit: 0 bytes in 0 blocks
+==10523==   total heap usage: 11,139 allocs, 11,139 frees, 935,392 bytes allocated
+==10523== 
+==10523== All heap blocks were freed -- no leaks are possible
+==10523== 
+==10523== For lists of detected and suppressed errors, rerun with: -s
+==10523== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 57.txt
 
-==7934== Memcheck, a memory error detector
-==7934== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==7934== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==7934== Command: ../a
-==7934== 
-==7934== 
-==7934== HEAP SUMMARY:
-==7934==     in use at exit: 0 bytes in 0 blocks
-==7934==   total heap usage: 776 allocs, 776 frees, 50,872 bytes allocated
-==7934== 
-==7934== All heap blocks were freed -- no leaks are possible
-==7934== 
-==7934== For lists of detected and suppressed errors, rerun with: -s
-==7934== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==11050== Memcheck, a memory error detector
+==11050== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==11050== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==11050== Command: ../a
+==11050== 
+==11050== 
+==11050== HEAP SUMMARY:
+==11050==     in use at exit: 0 bytes in 0 blocks
+==11050==   total heap usage: 776 allocs, 776 frees, 50,872 bytes allocated
+==11050== 
+==11050== All heap blocks were freed -- no leaks are possible
+==11050== 
+==11050== For lists of detected and suppressed errors, rerun with: -s
+==11050== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 58.txt
 
-==8003== Memcheck, a memory error detector
-==8003== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==8003== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==8003== Command: ../a
-==8003== 
-==8003== 
-==8003== HEAP SUMMARY:
-==8003==     in use at exit: 0 bytes in 0 blocks
-==8003==   total heap usage: 2,053 allocs, 2,053 frees, 152,392 bytes allocated
-==8003== 
-==8003== All heap blocks were freed -- no leaks are possible
-==8003== 
-==8003== For lists of detected and suppressed errors, rerun with: -s
-==8003== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==11296== Memcheck, a memory error detector
+==11296== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==11296== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==11296== Command: ../a
+==11296== 
+==11296== 
+==11296== HEAP SUMMARY:
+==11296==     in use at exit: 0 bytes in 0 blocks
+==11296==   total heap usage: 2,053 allocs, 2,053 frees, 152,392 bytes allocated
+==11296== 
+==11296== All heap blocks were freed -- no leaks are possible
+==11296== 
+==11296== For lists of detected and suppressed errors, rerun with: -s
+==11296== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 59.txt
 
-==8040== Memcheck, a memory error detector
-==8040== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==8040== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==8040== Command: ../a
-==8040== 
-==8040== 
-==8040== HEAP SUMMARY:
-==8040==     in use at exit: 0 bytes in 0 blocks
-==8040==   total heap usage: 446 allocs, 446 frees, 24,688 bytes allocated
-==8040== 
-==8040== All heap blocks were freed -- no leaks are possible
-==8040== 
-==8040== For lists of detected and suppressed errors, rerun with: -s
-==8040== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==11807== Memcheck, a memory error detector
+==11807== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==11807== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==11807== Command: ../a
+==11807== 
+==11807== 
+==11807== HEAP SUMMARY:
+==11807==     in use at exit: 0 bytes in 0 blocks
+==11807==   total heap usage: 446 allocs, 446 frees, 24,688 bytes allocated
+==11807== 
+==11807== All heap blocks were freed -- no leaks are possible
+==11807== 
+==11807== For lists of detected and suppressed errors, rerun with: -s
+==11807== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 6.txt
 
-==8072== Memcheck, a memory error detector
-==8072== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==8072== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==8072== Command: ../a
-==8072== 
-==8072== 
-==8072== HEAP SUMMARY:
-==8072==     in use at exit: 0 bytes in 0 blocks
-==8072==   total heap usage: 14,854 allocs, 14,854 frees, 1,437,040 bytes allocated
-==8072== 
-==8072== All heap blocks were freed -- no leaks are possible
-==8072== 
-==8072== For lists of detected and suppressed errors, rerun with: -s
-==8072== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==11816== Memcheck, a memory error detector
+==11816== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==11816== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==11816== Command: ../a
+==11816== 
+==11816== 
+==11816== HEAP SUMMARY:
+==11816==     in use at exit: 0 bytes in 0 blocks
+==11816==   total heap usage: 14,854 allocs, 14,854 frees, 1,437,040 bytes allocated
+==11816== 
+==11816== All heap blocks were freed -- no leaks are possible
+==11816== 
+==11816== For lists of detected and suppressed errors, rerun with: -s
+==11816== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 60.txt
 
-==8382== Memcheck, a memory error detector
-==8382== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==8382== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==8382== Command: ../a
-==8382== 
-==8382== 
-==8382== HEAP SUMMARY:
-==8382==     in use at exit: 0 bytes in 0 blocks
-==8382==   total heap usage: 23,560 allocs, 23,560 frees, 2,687,264 bytes allocated
-==8382== 
-==8382== All heap blocks were freed -- no leaks are possible
-==8382== 
-==8382== For lists of detected and suppressed errors, rerun with: -s
-==8382== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==12417== Memcheck, a memory error detector
+==12417== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==12417== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==12417== Command: ../a
+==12417== 
+==12417== 
+==12417== HEAP SUMMARY:
+==12417==     in use at exit: 0 bytes in 0 blocks
+==12417==   total heap usage: 23,560 allocs, 23,560 frees, 2,687,264 bytes allocated
+==12417== 
+==12417== All heap blocks were freed -- no leaks are possible
+==12417== 
+==12417== For lists of detected and suppressed errors, rerun with: -s
+==12417== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 61.txt
 
-==8792== Memcheck, a memory error detector
-==8792== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==8792== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==8792== Command: ../a
-==8792== 
-==8792== 
-==8792== HEAP SUMMARY:
-==8792==     in use at exit: 0 bytes in 0 blocks
-==8792==   total heap usage: 8,038 allocs, 8,038 frees, 696,944 bytes allocated
-==8792== 
-==8792== All heap blocks were freed -- no leaks are possible
-==8792== 
-==8792== For lists of detected and suppressed errors, rerun with: -s
-==8792== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==12520== Memcheck, a memory error detector
+==12520== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==12520== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==12520== Command: ../a
+==12520== 
+==12520== 
+==12520== HEAP SUMMARY:
+==12520==     in use at exit: 0 bytes in 0 blocks
+==12520==   total heap usage: 8,038 allocs, 8,038 frees, 696,944 bytes allocated
+==12520== 
+==12520== All heap blocks were freed -- no leaks are possible
+==12520== 
+==12520== For lists of detected and suppressed errors, rerun with: -s
+==12520== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 62.txt
 
-==8993== Memcheck, a memory error detector
-==8993== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==8993== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==8993== Command: ../a
-==8993== 
-==8993== 
-==8993== HEAP SUMMARY:
-==8993==     in use at exit: 0 bytes in 0 blocks
-==8993==   total heap usage: 7,347 allocs, 7,347 frees, 603,008 bytes allocated
-==8993== 
-==8993== All heap blocks were freed -- no leaks are possible
-==8993== 
-==8993== For lists of detected and suppressed errors, rerun with: -s
-==8993== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==12660== Memcheck, a memory error detector
+==12660== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==12660== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==12660== Command: ../a
+==12660== 
+==12660== 
+==12660== HEAP SUMMARY:
+==12660==     in use at exit: 0 bytes in 0 blocks
+==12660==   total heap usage: 7,347 allocs, 7,347 frees, 603,008 bytes allocated
+==12660== 
+==12660== All heap blocks were freed -- no leaks are possible
+==12660== 
+==12660== For lists of detected and suppressed errors, rerun with: -s
+==12660== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 63.txt
 
-==9065== Memcheck, a memory error detector
-==9065== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==9065== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==9065== Command: ../a
-==9065== 
-==9065== 
-==9065== HEAP SUMMARY:
-==9065==     in use at exit: 0 bytes in 0 blocks
-==9065==   total heap usage: 4,169 allocs, 4,169 frees, 297,472 bytes allocated
-==9065== 
-==9065== All heap blocks were freed -- no leaks are possible
-==9065== 
-==9065== For lists of detected and suppressed errors, rerun with: -s
-==9065== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==12764== Memcheck, a memory error detector
+==12764== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==12764== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==12764== Command: ../a
+==12764== 
+==12764== 
+==12764== HEAP SUMMARY:
+==12764==     in use at exit: 0 bytes in 0 blocks
+==12764==   total heap usage: 4,169 allocs, 4,169 frees, 297,472 bytes allocated
+==12764== 
+==12764== All heap blocks were freed -- no leaks are possible
+==12764== 
+==12764== For lists of detected and suppressed errors, rerun with: -s
+==12764== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 64.txt
 
-==9197== Memcheck, a memory error detector
-==9197== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==9197== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==9197== Command: ../a
-==9197== 
-==9197== 
-==9197== HEAP SUMMARY:
-==9197==     in use at exit: 0 bytes in 0 blocks
-==9197==   total heap usage: 4,666 allocs, 4,666 frees, 341,720 bytes allocated
-==9197== 
-==9197== All heap blocks were freed -- no leaks are possible
-==9197== 
-==9197== For lists of detected and suppressed errors, rerun with: -s
-==9197== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==12909== Memcheck, a memory error detector
+==12909== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==12909== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==12909== Command: ../a
+==12909== 
+==12909== 
+==12909== HEAP SUMMARY:
+==12909==     in use at exit: 0 bytes in 0 blocks
+==12909==   total heap usage: 4,666 allocs, 4,666 frees, 341,720 bytes allocated
+==12909== 
+==12909== All heap blocks were freed -- no leaks are possible
+==12909== 
+==12909== For lists of detected and suppressed errors, rerun with: -s
+==12909== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 65.txt
 
-==9237== Memcheck, a memory error detector
-==9237== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==9237== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==9237== Command: ../a
-==9237== 
-==9237== 
-==9237== HEAP SUMMARY:
-==9237==     in use at exit: 0 bytes in 0 blocks
-==9237==   total heap usage: 15,279 allocs, 15,279 frees, 1,428,016 bytes allocated
-==9237== 
-==9237== All heap blocks were freed -- no leaks are possible
-==9237== 
-==9237== For lists of detected and suppressed errors, rerun with: -s
-==9237== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==12958== Memcheck, a memory error detector
+==12958== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==12958== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==12958== Command: ../a
+==12958== 
+==12958== 
+==12958== HEAP SUMMARY:
+==12958==     in use at exit: 0 bytes in 0 blocks
+==12958==   total heap usage: 15,279 allocs, 15,279 frees, 1,428,016 bytes allocated
+==12958== 
+==12958== All heap blocks were freed -- no leaks are possible
+==12958== 
+==12958== For lists of detected and suppressed errors, rerun with: -s
+==12958== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 66.txt
 
-==9490== Memcheck, a memory error detector
-==9490== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==9490== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==9490== Command: ../a
-==9490== 
-==9490== 
-==9490== HEAP SUMMARY:
-==9490==     in use at exit: 0 bytes in 0 blocks
-==9490==   total heap usage: 1,325 allocs, 1,325 frees, 90,768 bytes allocated
-==9490== 
-==9490== All heap blocks were freed -- no leaks are possible
-==9490== 
-==9490== For lists of detected and suppressed errors, rerun with: -s
-==9490== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==13035== Memcheck, a memory error detector
+==13035== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==13035== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==13035== Command: ../a
+==13035== 
+==13035== 
+==13035== HEAP SUMMARY:
+==13035==     in use at exit: 0 bytes in 0 blocks
+==13035==   total heap usage: 1,325 allocs, 1,325 frees, 90,768 bytes allocated
+==13035== 
+==13035== All heap blocks were freed -- no leaks are possible
+==13035== 
+==13035== For lists of detected and suppressed errors, rerun with: -s
+==13035== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 67.txt
 
-==9693== Memcheck, a memory error detector
-==9693== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==9693== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==9693== Command: ../a
-==9693== 
-==9693== 
-==9693== HEAP SUMMARY:
-==9693==     in use at exit: 0 bytes in 0 blocks
-==9693==   total heap usage: 4,821 allocs, 4,821 frees, 350,608 bytes allocated
-==9693== 
-==9693== All heap blocks were freed -- no leaks are possible
-==9693== 
-==9693== For lists of detected and suppressed errors, rerun with: -s
-==9693== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==13105== Memcheck, a memory error detector
+==13105== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==13105== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==13105== Command: ../a
+==13105== 
+==13105== 
+==13105== HEAP SUMMARY:
+==13105==     in use at exit: 0 bytes in 0 blocks
+==13105==   total heap usage: 4,821 allocs, 4,821 frees, 350,608 bytes allocated
+==13105== 
+==13105== All heap blocks were freed -- no leaks are possible
+==13105== 
+==13105== For lists of detected and suppressed errors, rerun with: -s
+==13105== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 68.txt
 
-==9965== Memcheck, a memory error detector
-==9965== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==9965== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==9965== Command: ../a
-==9965== 
-==9965== 
-==9965== HEAP SUMMARY:
-==9965==     in use at exit: 0 bytes in 0 blocks
-==9965==   total heap usage: 10,816 allocs, 10,816 frees, 944,720 bytes allocated
-==9965== 
-==9965== All heap blocks were freed -- no leaks are possible
-==9965== 
-==9965== For lists of detected and suppressed errors, rerun with: -s
-==9965== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==13245== Memcheck, a memory error detector
+==13245== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==13245== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==13245== Command: ../a
+==13245== 
+==13245== 
+==13245== HEAP SUMMARY:
+==13245==     in use at exit: 0 bytes in 0 blocks
+==13245==   total heap usage: 10,816 allocs, 10,816 frees, 944,720 bytes allocated
+==13245== 
+==13245== All heap blocks were freed -- no leaks are possible
+==13245== 
+==13245== For lists of detected and suppressed errors, rerun with: -s
+==13245== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 69.txt
 
-==10156== Memcheck, a memory error detector
-==10156== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==10156== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==10156== Command: ../a
-==10156== 
-==10156== 
-==10156== HEAP SUMMARY:
-==10156==     in use at exit: 0 bytes in 0 blocks
-==10156==   total heap usage: 8,256 allocs, 8,256 frees, 662,352 bytes allocated
-==10156== 
-==10156== All heap blocks were freed -- no leaks are possible
-==10156== 
-==10156== For lists of detected and suppressed errors, rerun with: -s
-==10156== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==13301== Memcheck, a memory error detector
+==13301== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==13301== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==13301== Command: ../a
+==13301== 
+==13301== 
+==13301== HEAP SUMMARY:
+==13301==     in use at exit: 0 bytes in 0 blocks
+==13301==   total heap usage: 8,256 allocs, 8,256 frees, 662,352 bytes allocated
+==13301== 
+==13301== All heap blocks were freed -- no leaks are possible
+==13301== 
+==13301== For lists of detected and suppressed errors, rerun with: -s
+==13301== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 7.txt
 
-==10686== Memcheck, a memory error detector
-==10686== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==10686== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==10686== Command: ../a
-==10686== 
-==10686== 
-==10686== Process terminating with default action of signal 6 (SIGABRT)
-==10686==    at 0x568D3D7: raise (in /usr/lib64/libc-2.17.so)
-==10686==    by 0x568EAC7: abort (in /usr/lib64/libc-2.17.so)
-==10686==    by 0x4E97A94: __gnu_cxx::__verbose_terminate_handler() (in /usr/lib64/libstdc++.so.6.0.19)
-==10686==    by 0x4E95A05: ??? (in /usr/lib64/libstdc++.so.6.0.19)
-==10686==    by 0x4E95A32: std::terminate() (in /usr/lib64/libstdc++.so.6.0.19)
-==10686==    by 0x4E95C52: __cxa_throw (in /usr/lib64/libstdc++.so.6.0.19)
-==10686==    by 0x40214D: DataStructures::AVLTree<DataStructures::CarModel>::insert(DataStructures::CarModel const&) (avl_tree.h:252)
-==10686==    by 0x403E09: CDM::sellCar(int, int) (cdm.cpp:210)
-==10686==    by 0x407B25: SellCar (library.cpp:21)
-==10686==    by 0x4084C9: OnSellCar (main1.cpp:235)
-==10686==    by 0x4081D5: parser (main1.cpp:157)
-==10686==    by 0x407FD3: main (main1.cpp:93)
-==10686== 
-==10686== HEAP SUMMARY:
-==10686==     in use at exit: 96,008 bytes in 1,736 blocks
-==10686==   total heap usage: 5,798 allocs, 4,062 frees, 453,832 bytes allocated
-==10686== 
-==10686== 64 bytes in 2 blocks are still reachable in loss record 1 of 21
-==10686==    at 0x4C2A593: operator new(unsigned long) (vg_replace_malloc.c:344)
-==10686==    by 0x401AB9: DataStructures::CarType::operator=(DataStructures::CarType const&) (car_type.cpp:25)
-==10686==    by 0x4062C5: DataStructures::AVLTree<DataStructures::CarType>::swapKeys(DataStructures::Node<DataStructures::CarType>*, DataStructures::Node<DataStructures::CarType>*) (avl_tree.h:242)
-==10686==    by 0x404D10: DataStructures::AVLTree<DataStructures::CarType>::remove(DataStructures::CarType const&) (avl_tree.h:310)
-==10686==    by 0x4030F0: CDM::InsertOrRemoveFromZeroScoredTypesTree(DataStructures::CarType, int) (cdm.cpp:48)
-==10686==    by 0x4033D6: CDM::addToModelsByScoreTree(DataStructures::CarType*, DataStructures::CarModel) (cdm.cpp:79)
-==10686==    by 0x403E7F: CDM::sellCar(int, int) (cdm.cpp:211)
-==10686==    by 0x407B25: SellCar (library.cpp:21)
-==10686==    by 0x4084C9: OnSellCar (main1.cpp:235)
-==10686==    by 0x4081D5: parser (main1.cpp:157)
-==10686==    by 0x407FD3: main (main1.cpp:93)
-==10686== 
-==10686== 136 bytes in 1 blocks are possibly lost in loss record 2 of 21
-==10686==    at 0x4C29F73: malloc (vg_replace_malloc.c:309)
-==10686==    by 0x4E945A2: __cxa_allocate_exception (in /usr/lib64/libstdc++.so.6.0.19)
-==10686==    by 0x405790: DataStructures::AVLTree<DataStructures::CarModel>::getNode(DataStructures::CarModel const&) (avl_tree.h:388)
-==10686==    by 0x4052A4: DataStructures::AVLTree<DataStructures::CarModel>::remove(DataStructures::CarModel const&) (avl_tree.h:297)
-==10686==    by 0x40337B: CDM::addToModelsByScoreTree(DataStructures::CarType*, DataStructures::CarModel) (cdm.cpp:75)
-==10686==    by 0x403ACD: CDM::sellCar(int, int) (cdm.cpp:182)
-==10686==    by 0x407B25: SellCar (library.cpp:21)
-==10686==    by 0x4084C9: OnSellCar (main1.cpp:235)
-==10686==    by 0x4081D5: parser (main1.cpp:157)
-==10686==    by 0x407FD3: main (main1.cpp:93)
-==10686== 
-==10686== 136 bytes in 1 blocks are possibly lost in loss record 3 of 21
-==10686==    at 0x4C29F73: malloc (vg_replace_malloc.c:309)
-==10686==    by 0x4E945A2: __cxa_allocate_exception (in /usr/lib64/libstdc++.so.6.0.19)
-==10686==    by 0x402129: DataStructures::AVLTree<DataStructures::CarModel>::insert(DataStructures::CarModel const&) (avl_tree.h:252)
-==10686==    by 0x403E09: CDM::sellCar(int, int) (cdm.cpp:210)
-==10686==    by 0x407B25: SellCar (library.cpp:21)
-==10686==    by 0x4084C9: OnSellCar (main1.cpp:235)
-==10686==    by 0x4081D5: parser (main1.cpp:157)
-==10686==    by 0x407FD3: main (main1.cpp:93)
-==10686== 
-==10686== 176 bytes in 1 blocks are still reachable in loss record 4 of 21
-==10686==    at 0x4C2A593: operator new(unsigned long) (vg_replace_malloc.c:344)
-==10686==    by 0x407A57: Init (library.cpp:5)
-==10686==    by 0x408291: OnInit (main1.cpp:193)
-==10686==    by 0x40817B: parser (main1.cpp:148)
-==10686==    by 0x407FD3: main (main1.cpp:93)
-==10686== 
-==10686== 192 bytes in 6 blocks are still reachable in loss record 5 of 21
-==10686==    at 0x4C2A593: operator new(unsigned long) (vg_replace_malloc.c:344)
-==10686==    by 0x401AB9: DataStructures::CarType::operator=(DataStructures::CarType const&) (car_type.cpp:25)
-==10686==    by 0x4062C5: DataStructures::AVLTree<DataStructures::CarType>::swapKeys(DataStructures::Node<DataStructures::CarType>*, DataStructures::Node<DataStructures::CarType>*) (avl_tree.h:242)
-==10686==    by 0x404D10: DataStructures::AVLTree<DataStructures::CarType>::remove(DataStructures::CarType const&) (avl_tree.h:310)
-==10686==    by 0x403623: CDM::RemoveCarType(int) (cdm.cpp:114)
-==10686==    by 0x407AEF: RemoveCarType (library.cpp:16)
-==10686==    by 0x4083FA: OnRemoveCarType (main1.cpp:221)
-==10686==    by 0x4081B7: parser (main1.cpp:154)
-==10686==    by 0x407FD3: main (main1.cpp:93)
-==10686== 
-==10686== 192 bytes in 6 blocks are still reachable in loss record 6 of 21
-==10686==    at 0x4C2A593: operator new(unsigned long) (vg_replace_malloc.c:344)
-==10686==    by 0x401AB9: DataStructures::CarType::operator=(DataStructures::CarType const&) (car_type.cpp:25)
-==10686==    by 0x4062C5: DataStructures::AVLTree<DataStructures::CarType>::swapKeys(DataStructures::Node<DataStructures::CarType>*, DataStructures::Node<DataStructures::CarType>*) (avl_tree.h:242)
-==10686==    by 0x404D10: DataStructures::AVLTree<DataStructures::CarType>::remove(DataStructures::CarType const&) (avl_tree.h:310)
-==10686==    by 0x40365F: CDM::RemoveCarType(int) (cdm.cpp:119)
-==10686==    by 0x407AEF: RemoveCarType (library.cpp:16)
-==10686==    by 0x4083FA: OnRemoveCarType (main1.cpp:221)
-==10686==    by 0x4081B7: parser (main1.cpp:154)
-==10686==    by 0x407FD3: main (main1.cpp:93)
-==10686== 
-==10686== 896 bytes in 16 blocks are still reachable in loss record 7 of 21
-==10686==    at 0x4C2A593: operator new(unsigned long) (vg_replace_malloc.c:344)
-==10686==    by 0x40559D: DataStructures::AVLTree<DataStructures::CarModelByGrade>::insert(DataStructures::CarModelByGrade const&) (avl_tree.h:267)
-==10686==    by 0x403BDD: CDM::sellCar(int, int) (cdm.cpp:192)
-==10686==    by 0x407B25: SellCar (library.cpp:21)
-==10686==    by 0x4084C9: OnSellCar (main1.cpp:235)
-==10686==    by 0x4081D5: parser (main1.cpp:157)
-==10686==    by 0x407FD3: main (main1.cpp:93)
-==10686== 
-==10686== 1,184 bytes in 37 blocks are still reachable in loss record 8 of 21
-==10686==    at 0x4C2A593: operator new(unsigned long) (vg_replace_malloc.c:344)
-==10686==    by 0x401B98: DataStructures::CarType::CarType(DataStructures::CarType const&) (car_type.cpp:49)
-==10686==    by 0x40601B: DataStructures::Node<DataStructures::CarType>::Node(DataStructures::CarType const&, int) (node.h:36)
-==10686==    by 0x404A9A: DataStructures::AVLTree<DataStructures::CarType>::insert(DataStructures::CarType const&) (avl_tree.h:267)
-==10686==    by 0x403498: CDM::AddCarType(int, int) (cdm.cpp:88)
-==10686==    by 0x407ABF: AddCarType (library.cpp:11)
-==10686==    by 0x408332: OnAddCarType (main1.cpp:207)
-==10686==    by 0x408199: parser (main1.cpp:151)
-==10686==    by 0x407FD3: main (main1.cpp:93)
-==10686== 
-==10686== 1,288 bytes in 23 blocks are still reachable in loss record 9 of 21
-==10686==    at 0x4C2A593: operator new(unsigned long) (vg_replace_malloc.c:344)
-==10686==    by 0x405B45: DataStructures::AVLTree<DataStructures::CarModelBySales>::insert(DataStructures::CarModelBySales const&) (avl_tree.h:267)
-==10686==    by 0x403C6B: CDM::sellCar(int, int) (cdm.cpp:198)
-==10686==    by 0x407B25: SellCar (library.cpp:21)
-==10686==    by 0x4084C9: OnSellCar (main1.cpp:235)
-==10686==    by 0x4081D5: parser (main1.cpp:157)
-==10686==    by 0x407FD3: main (main1.cpp:93)
-==10686== 
-==10686== 1,344 bytes in 42 blocks are still reachable in loss record 10 of 21
-==10686==    at 0x4C2A593: operator new(unsigned long) (vg_replace_malloc.c:344)
-==10686==    by 0x401B98: DataStructures::CarType::CarType(DataStructures::CarType const&) (car_type.cpp:49)
-==10686==    by 0x40601B: DataStructures::Node<DataStructures::CarType>::Node(DataStructures::CarType const&, int) (node.h:36)
-==10686==    by 0x404A9A: DataStructures::AVLTree<DataStructures::CarType>::insert(DataStructures::CarType const&) (avl_tree.h:267)
-==10686==    by 0x403481: CDM::AddCarType(int, int) (cdm.cpp:87)
-==10686==    by 0x407ABF: AddCarType (library.cpp:11)
-==10686==    by 0x408332: OnAddCarType (main1.cpp:207)
-==10686==    by 0x408199: parser (main1.cpp:151)
-==10686==    by 0x407FD3: main (main1.cpp:93)
-==10686== 
-==10686== 1,624 bytes in 29 blocks are still reachable in loss record 11 of 21
-==10686==    at 0x4C2A593: operator new(unsigned long) (vg_replace_malloc.c:344)
-==10686==    by 0x4021BF: DataStructures::AVLTree<DataStructures::CarModel>::insert(DataStructures::CarModel const&) (avl_tree.h:267)
-==10686==    by 0x401B00: DataStructures::CarType::operator=(DataStructures::CarType const&) (car_type.cpp:28)
-==10686==    by 0x4062C5: DataStructures::AVLTree<DataStructures::CarType>::swapKeys(DataStructures::Node<DataStructures::CarType>*, DataStructures::Node<DataStructures::CarType>*) (avl_tree.h:242)
-==10686==    by 0x404D10: DataStructures::AVLTree<DataStructures::CarType>::remove(DataStructures::CarType const&) (avl_tree.h:310)
-==10686==    by 0x4030F0: CDM::InsertOrRemoveFromZeroScoredTypesTree(DataStructures::CarType, int) (cdm.cpp:48)
-==10686==    by 0x4033D6: CDM::addToModelsByScoreTree(DataStructures::CarType*, DataStructures::CarModel) (cdm.cpp:79)
-==10686==    by 0x403E7F: CDM::sellCar(int, int) (cdm.cpp:211)
-==10686==    by 0x407B25: SellCar (library.cpp:21)
-==10686==    by 0x4084C9: OnSellCar (main1.cpp:235)
-==10686==    by 0x4081D5: parser (main1.cpp:157)
-==10686==    by 0x407FD3: main (main1.cpp:93)
-==10686== 
-==10686== 1,960 bytes in 35 blocks are still reachable in loss record 12 of 21
-==10686==    at 0x4C2A593: operator new(unsigned long) (vg_replace_malloc.c:344)
-==10686==    by 0x40559D: DataStructures::AVLTree<DataStructures::CarModelByGrade>::insert(DataStructures::CarModelByGrade const&) (avl_tree.h:267)
-==10686==    by 0x4042C9: CDM::makeComplaint(int, int, int) (cdm.cpp:267)
-==10686==    by 0x407B5F: MakeComplaint (library.cpp:26)
-==10686==    by 0x4085A0: OnMakeComplaint (main1.cpp:249)
-==10686==    by 0x4081F0: parser (main1.cpp:160)
-==10686==    by 0x407FD3: main (main1.cpp:93)
-==10686== 
-==10686== 2,408 bytes in 43 blocks are still reachable in loss record 13 of 21
-==10686==    at 0x4C2A593: operator new(unsigned long) (vg_replace_malloc.c:344)
-==10686==    by 0x40559D: DataStructures::AVLTree<DataStructures::CarModelByGrade>::insert(DataStructures::CarModelByGrade const&) (avl_tree.h:267)
-==10686==    by 0x403392: CDM::addToModelsByScoreTree(DataStructures::CarType*, DataStructures::CarModel) (cdm.cpp:77)
-==10686==    by 0x403E7F: CDM::sellCar(int, int) (cdm.cpp:211)
-==10686==    by 0x407B25: SellCar (library.cpp:21)
-==10686==    by 0x4084C9: OnSellCar (main1.cpp:235)
-==10686==    by 0x4081D5: parser (main1.cpp:157)
-==10686==    by 0x407FD3: main (main1.cpp:93)
-==10686== 
-==10686== 2,408 bytes in 43 blocks are still reachable in loss record 14 of 21
-==10686==    at 0x4C2A593: operator new(unsigned long) (vg_replace_malloc.c:344)
-==10686==    by 0x4021BF: DataStructures::AVLTree<DataStructures::CarModel>::insert(DataStructures::CarModel const&) (avl_tree.h:267)
-==10686==    by 0x401B00: DataStructures::CarType::operator=(DataStructures::CarType const&) (car_type.cpp:28)
-==10686==    by 0x4062C5: DataStructures::AVLTree<DataStructures::CarType>::swapKeys(DataStructures::Node<DataStructures::CarType>*, DataStructures::Node<DataStructures::CarType>*) (avl_tree.h:242)
-==10686==    by 0x404D10: DataStructures::AVLTree<DataStructures::CarType>::remove(DataStructures::CarType const&) (avl_tree.h:310)
-==10686==    by 0x40365F: CDM::RemoveCarType(int) (cdm.cpp:119)
-==10686==    by 0x407AEF: RemoveCarType (library.cpp:16)
-==10686==    by 0x4083FA: OnRemoveCarType (main1.cpp:221)
-==10686==    by 0x4081B7: parser (main1.cpp:154)
-==10686==    by 0x407FD3: main (main1.cpp:93)
-==10686== 
-==10686== 2,880 bytes in 45 blocks are still reachable in loss record 15 of 21
-==10686==    at 0x4C2A593: operator new(unsigned long) (vg_replace_malloc.c:344)
-==10686==    by 0x404A83: DataStructures::AVLTree<DataStructures::CarType>::insert(DataStructures::CarType const&) (avl_tree.h:267)
-==10686==    by 0x403498: CDM::AddCarType(int, int) (cdm.cpp:88)
-==10686==    by 0x407ABF: AddCarType (library.cpp:11)
-==10686==    by 0x408332: OnAddCarType (main1.cpp:207)
-==10686==    by 0x408199: parser (main1.cpp:151)
-==10686==    by 0x407FD3: main (main1.cpp:93)
-==10686== 
-==10686== 3,072 bytes in 48 blocks are still reachable in loss record 16 of 21
-==10686==    at 0x4C2A593: operator new(unsigned long) (vg_replace_malloc.c:344)
-==10686==    by 0x404A83: DataStructures::AVLTree<DataStructures::CarType>::insert(DataStructures::CarType const&) (avl_tree.h:267)
-==10686==    by 0x403481: CDM::AddCarType(int, int) (cdm.cpp:87)
-==10686==    by 0x407ABF: AddCarType (library.cpp:11)
-==10686==    by 0x408332: OnAddCarType (main1.cpp:207)
-==10686==    by 0x408199: parser (main1.cpp:151)
-==10686==    by 0x407FD3: main (main1.cpp:93)
-==10686== 
-==10686== 3,528 bytes in 63 blocks are still reachable in loss record 17 of 21
-==10686==    at 0x4C2A593: operator new(unsigned long) (vg_replace_malloc.c:344)
-==10686==    by 0x4021BF: DataStructures::AVLTree<DataStructures::CarModel>::insert(DataStructures::CarModel const&) (avl_tree.h:267)
-==10686==    by 0x401B00: DataStructures::CarType::operator=(DataStructures::CarType const&) (car_type.cpp:28)
-==10686==    by 0x4062C5: DataStructures::AVLTree<DataStructures::CarType>::swapKeys(DataStructures::Node<DataStructures::CarType>*, DataStructures::Node<DataStructures::CarType>*) (avl_tree.h:242)
-==10686==    by 0x404D10: DataStructures::AVLTree<DataStructures::CarType>::remove(DataStructures::CarType const&) (avl_tree.h:310)
-==10686==    by 0x403623: CDM::RemoveCarType(int) (cdm.cpp:114)
-==10686==    by 0x407AEF: RemoveCarType (library.cpp:16)
-==10686==    by 0x4083FA: OnRemoveCarType (main1.cpp:221)
-==10686==    by 0x4081B7: parser (main1.cpp:154)
-==10686==    by 0x407FD3: main (main1.cpp:93)
-==10686== 
-==10686== 4,032 bytes in 72 blocks are still reachable in loss record 18 of 21
-==10686==    at 0x4C2A593: operator new(unsigned long) (vg_replace_malloc.c:344)
-==10686==    by 0x405B45: DataStructures::AVLTree<DataStructures::CarModelBySales>::insert(DataStructures::CarModelBySales const&) (avl_tree.h:267)
-==10686==    by 0x403EEE: CDM::sellCar(int, int) (cdm.cpp:213)
-==10686==    by 0x407B25: SellCar (library.cpp:21)
-==10686==    by 0x4084C9: OnSellCar (main1.cpp:235)
-==10686==    by 0x4081D5: parser (main1.cpp:157)
-==10686==    by 0x407FD3: main (main1.cpp:93)
-==10686== 
-==10686== 5,320 bytes in 95 blocks are still reachable in loss record 19 of 21
-==10686==    at 0x4C2A593: operator new(unsigned long) (vg_replace_malloc.c:344)
-==10686==    by 0x4021BF: DataStructures::AVLTree<DataStructures::CarModel>::insert(DataStructures::CarModel const&) (avl_tree.h:267)
-==10686==    by 0x403E09: CDM::sellCar(int, int) (cdm.cpp:210)
-==10686==    by 0x407B25: SellCar (library.cpp:21)
-==10686==    by 0x4084C9: OnSellCar (main1.cpp:235)
-==10686==    by 0x4081D5: parser (main1.cpp:157)
-==10686==    by 0x407FD3: main (main1.cpp:93)
-==10686== 
-==10686== 28,672 bytes in 512 blocks are still reachable in loss record 20 of 21
-==10686==    at 0x4C2A593: operator new(unsigned long) (vg_replace_malloc.c:344)
-==10686==    by 0x4021BF: DataStructures::AVLTree<DataStructures::CarModel>::insert(DataStructures::CarModel const&) (avl_tree.h:267)
-==10686==    by 0x401BEA: DataStructures::CarType::CarType(DataStructures::CarType const&) (car_type.cpp:53)
-==10686==    by 0x40601B: DataStructures::Node<DataStructures::CarType>::Node(DataStructures::CarType const&, int) (node.h:36)
-==10686==    by 0x404A9A: DataStructures::AVLTree<DataStructures::CarType>::insert(DataStructures::CarType const&) (avl_tree.h:267)
-==10686==    by 0x403498: CDM::AddCarType(int, int) (cdm.cpp:88)
-==10686==    by 0x407ABF: AddCarType (library.cpp:11)
-==10686==    by 0x408332: OnAddCarType (main1.cpp:207)
-==10686==    by 0x408199: parser (main1.cpp:151)
-==10686==    by 0x407FD3: main (main1.cpp:93)
-==10686== 
-==10686== 34,496 bytes in 616 blocks are still reachable in loss record 21 of 21
-==10686==    at 0x4C2A593: operator new(unsigned long) (vg_replace_malloc.c:344)
-==10686==    by 0x4021BF: DataStructures::AVLTree<DataStructures::CarModel>::insert(DataStructures::CarModel const&) (avl_tree.h:267)
-==10686==    by 0x401BEA: DataStructures::CarType::CarType(DataStructures::CarType const&) (car_type.cpp:53)
-==10686==    by 0x40601B: DataStructures::Node<DataStructures::CarType>::Node(DataStructures::CarType const&, int) (node.h:36)
-==10686==    by 0x404A9A: DataStructures::AVLTree<DataStructures::CarType>::insert(DataStructures::CarType const&) (avl_tree.h:267)
-==10686==    by 0x403481: CDM::AddCarType(int, int) (cdm.cpp:87)
-==10686==    by 0x407ABF: AddCarType (library.cpp:11)
-==10686==    by 0x408332: OnAddCarType (main1.cpp:207)
-==10686==    by 0x408199: parser (main1.cpp:151)
-==10686==    by 0x407FD3: main (main1.cpp:93)
-==10686== 
-==10686== LEAK SUMMARY:
-==10686==    definitely lost: 0 bytes in 0 blocks
-==10686==    indirectly lost: 0 bytes in 0 blocks
-==10686==      possibly lost: 272 bytes in 2 blocks
-==10686==    still reachable: 95,736 bytes in 1,734 blocks
-==10686==         suppressed: 0 bytes in 0 blocks
-==10686== 
-==10686== For lists of detected and suppressed errors, rerun with: -s
-==10686== ERROR SUMMARY: 2 errors from 2 contexts (suppressed: 0 from 0)
+==13430== Memcheck, a memory error detector
+==13430== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==13430== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==13430== Command: ../a
+==13430== 
+==13430== 
+==13430== HEAP SUMMARY:
+==13430==     in use at exit: 0 bytes in 0 blocks
+==13430==   total heap usage: 23,130 allocs, 23,130 frees, 2,816,744 bytes allocated
+==13430== 
+==13430== All heap blocks were freed -- no leaks are possible
+==13430== 
+==13430== For lists of detected and suppressed errors, rerun with: -s
+==13430== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 70.txt
 
-==13971== Memcheck, a memory error detector
-==13971== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==13971== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==13971== Command: ../a
-==13971== 
-==13971== 
-==13971== HEAP SUMMARY:
-==13971==     in use at exit: 0 bytes in 0 blocks
-==13971==   total heap usage: 59,897 allocs, 59,897 frees, 12,234,704 bytes allocated
-==13971== 
-==13971== All heap blocks were freed -- no leaks are possible
-==13971== 
-==13971== For lists of detected and suppressed errors, rerun with: -s
-==13971== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==14399== Memcheck, a memory error detector
+==14399== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==14399== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==14399== Command: ../a
+==14399== 
+==14399== 
+==14399== HEAP SUMMARY:
+==14399==     in use at exit: 0 bytes in 0 blocks
+==14399==   total heap usage: 59,897 allocs, 59,897 frees, 12,234,704 bytes allocated
+==14399== 
+==14399== All heap blocks were freed -- no leaks are possible
+==14399== 
+==14399== For lists of detected and suppressed errors, rerun with: -s
+==14399== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 71.txt
 
-==16103== Memcheck, a memory error detector
-==16103== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==16103== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==16103== Command: ../a
-==16103== 
-==16103== 
-==16103== HEAP SUMMARY:
-==16103==     in use at exit: 0 bytes in 0 blocks
-==16103==   total heap usage: 25,428 allocs, 25,428 frees, 2,927,832 bytes allocated
-==16103== 
-==16103== All heap blocks were freed -- no leaks are possible
-==16103== 
-==16103== For lists of detected and suppressed errors, rerun with: -s
-==16103== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==18430== Memcheck, a memory error detector
+==18430== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==18430== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==18430== Command: ../a
+==18430== 
+==18430== 
+==18430== HEAP SUMMARY:
+==18430==     in use at exit: 0 bytes in 0 blocks
+==18430==   total heap usage: 25,428 allocs, 25,428 frees, 2,927,832 bytes allocated
+==18430== 
+==18430== All heap blocks were freed -- no leaks are possible
+==18430== 
+==18430== For lists of detected and suppressed errors, rerun with: -s
+==18430== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 72.txt
 
-==16719== Memcheck, a memory error detector
-==16719== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==16719== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==16719== Command: ../a
-==16719== 
-==16719== 
-==16719== HEAP SUMMARY:
-==16719==     in use at exit: 0 bytes in 0 blocks
-==16719==   total heap usage: 4,109 allocs, 4,109 frees, 330,296 bytes allocated
-==16719== 
-==16719== All heap blocks were freed -- no leaks are possible
-==16719== 
-==16719== For lists of detected and suppressed errors, rerun with: -s
-==16719== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==18933== Memcheck, a memory error detector
+==18933== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==18933== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==18933== Command: ../a
+==18933== 
+==18933== 
+==18933== HEAP SUMMARY:
+==18933==     in use at exit: 0 bytes in 0 blocks
+==18933==   total heap usage: 4,109 allocs, 4,109 frees, 330,296 bytes allocated
+==18933== 
+==18933== All heap blocks were freed -- no leaks are possible
+==18933== 
+==18933== For lists of detected and suppressed errors, rerun with: -s
+==18933== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 73.txt
 
-==16762== Memcheck, a memory error detector
-==16762== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==16762== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==16762== Command: ../a
-==16762== 
-==16762== 
-==16762== HEAP SUMMARY:
-==16762==     in use at exit: 0 bytes in 0 blocks
-==16762==   total heap usage: 2,071 allocs, 2,071 frees, 156,744 bytes allocated
-==16762== 
-==16762== All heap blocks were freed -- no leaks are possible
-==16762== 
-==16762== For lists of detected and suppressed errors, rerun with: -s
-==16762== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==19408== Memcheck, a memory error detector
+==19408== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==19408== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==19408== Command: ../a
+==19408== 
+==19408== 
+==19408== HEAP SUMMARY:
+==19408==     in use at exit: 0 bytes in 0 blocks
+==19408==   total heap usage: 2,071 allocs, 2,071 frees, 156,744 bytes allocated
+==19408== 
+==19408== All heap blocks were freed -- no leaks are possible
+==19408== 
+==19408== For lists of detected and suppressed errors, rerun with: -s
+==19408== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 74.txt
 
-==16851== Memcheck, a memory error detector
-==16851== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==16851== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==16851== Command: ../a
-==16851== 
-==16851== 
-==16851== HEAP SUMMARY:
-==16851==     in use at exit: 0 bytes in 0 blocks
-==16851==   total heap usage: 8,484 allocs, 8,484 frees, 701,104 bytes allocated
-==16851== 
-==16851== All heap blocks were freed -- no leaks are possible
-==16851== 
-==16851== For lists of detected and suppressed errors, rerun with: -s
-==16851== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==19435== Memcheck, a memory error detector
+==19435== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==19435== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==19435== Command: ../a
+==19435== 
+==19435== 
+==19435== HEAP SUMMARY:
+==19435==     in use at exit: 0 bytes in 0 blocks
+==19435==   total heap usage: 8,484 allocs, 8,484 frees, 701,104 bytes allocated
+==19435== 
+==19435== All heap blocks were freed -- no leaks are possible
+==19435== 
+==19435== For lists of detected and suppressed errors, rerun with: -s
+==19435== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 75.txt
 
-==16924== Memcheck, a memory error detector
-==16924== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==16924== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==16924== Command: ../a
-==16924== 
-==16924== 
-==16924== HEAP SUMMARY:
-==16924==     in use at exit: 0 bytes in 0 blocks
-==16924==   total heap usage: 7,250 allocs, 7,250 frees, 613,176 bytes allocated
-==16924== 
-==16924== All heap blocks were freed -- no leaks are possible
-==16924== 
-==16924== For lists of detected and suppressed errors, rerun with: -s
-==16924== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==19529== Memcheck, a memory error detector
+==19529== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==19529== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==19529== Command: ../a
+==19529== 
+==19529== 
+==19529== HEAP SUMMARY:
+==19529==     in use at exit: 0 bytes in 0 blocks
+==19529==   total heap usage: 7,250 allocs, 7,250 frees, 613,176 bytes allocated
+==19529== 
+==19529== All heap blocks were freed -- no leaks are possible
+==19529== 
+==19529== For lists of detected and suppressed errors, rerun with: -s
+==19529== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 76.txt
 
-==16951== Memcheck, a memory error detector
-==16951== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==16951== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==16951== Command: ../a
-==16951== 
-==16951== 
-==16951== HEAP SUMMARY:
-==16951==     in use at exit: 0 bytes in 0 blocks
-==16951==   total heap usage: 1,947 allocs, 1,947 frees, 129,592 bytes allocated
-==16951== 
-==16951== All heap blocks were freed -- no leaks are possible
-==16951== 
-==16951== For lists of detected and suppressed errors, rerun with: -s
-==16951== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==19648== Memcheck, a memory error detector
+==19648== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==19648== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==19648== Command: ../a
+==19648== 
+==19648== 
+==19648== HEAP SUMMARY:
+==19648==     in use at exit: 0 bytes in 0 blocks
+==19648==   total heap usage: 1,947 allocs, 1,947 frees, 129,592 bytes allocated
+==19648== 
+==19648== All heap blocks were freed -- no leaks are possible
+==19648== 
+==19648== For lists of detected and suppressed errors, rerun with: -s
+==19648== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 77.txt
 
-==16988== Memcheck, a memory error detector
-==16988== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==16988== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==16988== Command: ../a
-==16988== 
-==16988== 
-==16988== HEAP SUMMARY:
-==16988==     in use at exit: 0 bytes in 0 blocks
-==16988==   total heap usage: 11,786 allocs, 11,786 frees, 985,904 bytes allocated
-==16988== 
-==16988== All heap blocks were freed -- no leaks are possible
-==16988== 
-==16988== For lists of detected and suppressed errors, rerun with: -s
-==16988== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==20133== Memcheck, a memory error detector
+==20133== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==20133== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==20133== Command: ../a
+==20133== 
+==20133== 
+==20133== HEAP SUMMARY:
+==20133==     in use at exit: 0 bytes in 0 blocks
+==20133==   total heap usage: 11,786 allocs, 11,786 frees, 985,904 bytes allocated
+==20133== 
+==20133== All heap blocks were freed -- no leaks are possible
+==20133== 
+==20133== For lists of detected and suppressed errors, rerun with: -s
+==20133== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 78.txt
 
-==17167== Memcheck, a memory error detector
-==17167== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==17167== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==17167== Command: ../a
-==17167== 
-==17167== 
-==17167== HEAP SUMMARY:
-==17167==     in use at exit: 0 bytes in 0 blocks
-==17167==   total heap usage: 11,484 allocs, 11,484 frees, 1,085,384 bytes allocated
-==17167== 
-==17167== All heap blocks were freed -- no leaks are possible
-==17167== 
-==17167== For lists of detected and suppressed errors, rerun with: -s
-==17167== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==20218== Memcheck, a memory error detector
+==20218== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==20218== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==20218== Command: ../a
+==20218== 
+==20218== 
+==20218== HEAP SUMMARY:
+==20218==     in use at exit: 0 bytes in 0 blocks
+==20218==   total heap usage: 11,484 allocs, 11,484 frees, 1,085,384 bytes allocated
+==20218== 
+==20218== All heap blocks were freed -- no leaks are possible
+==20218== 
+==20218== For lists of detected and suppressed errors, rerun with: -s
+==20218== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 79.txt
 
-==17488== Memcheck, a memory error detector
-==17488== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==17488== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==17488== Command: ../a
-==17488== 
-==17488== 
-==17488== HEAP SUMMARY:
-==17488==     in use at exit: 0 bytes in 0 blocks
-==17488==   total heap usage: 9,429 allocs, 9,429 frees, 840,560 bytes allocated
-==17488== 
-==17488== All heap blocks were freed -- no leaks are possible
-==17488== 
-==17488== For lists of detected and suppressed errors, rerun with: -s
-==17488== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==20293== Memcheck, a memory error detector
+==20293== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==20293== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==20293== Command: ../a
+==20293== 
+==20293== 
+==20293== HEAP SUMMARY:
+==20293==     in use at exit: 0 bytes in 0 blocks
+==20293==   total heap usage: 9,429 allocs, 9,429 frees, 840,560 bytes allocated
+==20293== 
+==20293== All heap blocks were freed -- no leaks are possible
+==20293== 
+==20293== For lists of detected and suppressed errors, rerun with: -s
+==20293== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 8.txt
 
-==17540== Memcheck, a memory error detector
-==17540== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==17540== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==17540== Command: ../a
-==17540== 
-==17540== 
-==17540== HEAP SUMMARY:
-==17540==     in use at exit: 0 bytes in 0 blocks
-==17540==   total heap usage: 19,913 allocs, 19,913 frees, 2,027,104 bytes allocated
-==17540== 
-==17540== All heap blocks were freed -- no leaks are possible
-==17540== 
-==17540== For lists of detected and suppressed errors, rerun with: -s
-==17540== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==20736== Memcheck, a memory error detector
+==20736== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==20736== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==20736== Command: ../a
+==20736== 
+==20736== 
+==20736== HEAP SUMMARY:
+==20736==     in use at exit: 0 bytes in 0 blocks
+==20736==   total heap usage: 19,913 allocs, 19,913 frees, 2,027,104 bytes allocated
+==20736== 
+==20736== All heap blocks were freed -- no leaks are possible
+==20736== 
+==20736== For lists of detected and suppressed errors, rerun with: -s
+==20736== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 80.txt
 
-==17590== Memcheck, a memory error detector
-==17590== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==17590== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==17590== Command: ../a
-==17590== 
-==17590== 
-==17590== HEAP SUMMARY:
-==17590==     in use at exit: 0 bytes in 0 blocks
-==17590==   total heap usage: 26,887 allocs, 26,887 frees, 2,890,008 bytes allocated
-==17590== 
-==17590== All heap blocks were freed -- no leaks are possible
-==17590== 
-==17590== For lists of detected and suppressed errors, rerun with: -s
-==17590== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==21034== Memcheck, a memory error detector
+==21034== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==21034== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==21034== Command: ../a
+==21034== 
+==21034== 
+==21034== HEAP SUMMARY:
+==21034==     in use at exit: 0 bytes in 0 blocks
+==21034==   total heap usage: 26,887 allocs, 26,887 frees, 2,890,008 bytes allocated
+==21034== 
+==21034== All heap blocks were freed -- no leaks are possible
+==21034== 
+==21034== For lists of detected and suppressed errors, rerun with: -s
+==21034== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 81.txt
 
-==18272== Memcheck, a memory error detector
-==18272== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==18272== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==18272== Command: ../a
-==18272== 
-==18272== 
-==18272== HEAP SUMMARY:
-==18272==     in use at exit: 0 bytes in 0 blocks
-==18272==   total heap usage: 4,276 allocs, 4,276 frees, 340,312 bytes allocated
-==18272== 
-==18272== All heap blocks were freed -- no leaks are possible
-==18272== 
-==18272== For lists of detected and suppressed errors, rerun with: -s
-==18272== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==21995== Memcheck, a memory error detector
+==21995== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==21995== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==21995== Command: ../a
+==21995== 
+==21995== 
+==21995== HEAP SUMMARY:
+==21995==     in use at exit: 0 bytes in 0 blocks
+==21995==   total heap usage: 4,276 allocs, 4,276 frees, 340,312 bytes allocated
+==21995== 
+==21995== All heap blocks were freed -- no leaks are possible
+==21995== 
+==21995== For lists of detected and suppressed errors, rerun with: -s
+==21995== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 82.txt
 
-==18572== Memcheck, a memory error detector
-==18572== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==18572== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==18572== Command: ../a
-==18572== 
-==18572== 
-==18572== HEAP SUMMARY:
-==18572==     in use at exit: 0 bytes in 0 blocks
-==18572==   total heap usage: 2,445 allocs, 2,445 frees, 195,664 bytes allocated
-==18572== 
-==18572== All heap blocks were freed -- no leaks are possible
-==18572== 
-==18572== For lists of detected and suppressed errors, rerun with: -s
-==18572== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==22021== Memcheck, a memory error detector
+==22021== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==22021== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==22021== Command: ../a
+==22021== 
+==22021== 
+==22021== HEAP SUMMARY:
+==22021==     in use at exit: 0 bytes in 0 blocks
+==22021==   total heap usage: 2,445 allocs, 2,445 frees, 195,664 bytes allocated
+==22021== 
+==22021== All heap blocks were freed -- no leaks are possible
+==22021== 
+==22021== For lists of detected and suppressed errors, rerun with: -s
+==22021== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 83.txt
 
-==18719== Memcheck, a memory error detector
-==18719== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==18719== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==18719== Command: ../a
-==18719== 
-==18719== 
-==18719== HEAP SUMMARY:
-==18719==     in use at exit: 0 bytes in 0 blocks
-==18719==   total heap usage: 8,714 allocs, 8,714 frees, 782,536 bytes allocated
-==18719== 
-==18719== All heap blocks were freed -- no leaks are possible
-==18719== 
-==18719== For lists of detected and suppressed errors, rerun with: -s
-==18719== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==22312== Memcheck, a memory error detector
+==22312== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==22312== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==22312== Command: ../a
+==22312== 
+==22312== 
+==22312== HEAP SUMMARY:
+==22312==     in use at exit: 0 bytes in 0 blocks
+==22312==   total heap usage: 8,714 allocs, 8,714 frees, 782,536 bytes allocated
+==22312== 
+==22312== All heap blocks were freed -- no leaks are possible
+==22312== 
+==22312== For lists of detected and suppressed errors, rerun with: -s
+==22312== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 84.txt
 
-==18803== Memcheck, a memory error detector
-==18803== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==18803== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==18803== Command: ../a
-==18803== 
-==18803== 
-==18803== HEAP SUMMARY:
-==18803==     in use at exit: 0 bytes in 0 blocks
-==18803==   total heap usage: 31,193 allocs, 31,193 frees, 4,029,512 bytes allocated
-==18803== 
-==18803== All heap blocks were freed -- no leaks are possible
-==18803== 
-==18803== For lists of detected and suppressed errors, rerun with: -s
-==18803== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==22408== Memcheck, a memory error detector
+==22408== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==22408== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==22408== Command: ../a
+==22408== 
+==22408== 
+==22408== HEAP SUMMARY:
+==22408==     in use at exit: 0 bytes in 0 blocks
+==22408==   total heap usage: 31,193 allocs, 31,193 frees, 4,029,512 bytes allocated
+==22408== 
+==22408== All heap blocks were freed -- no leaks are possible
+==22408== 
+==22408== For lists of detected and suppressed errors, rerun with: -s
+==22408== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 85.txt
 
-==19443== Memcheck, a memory error detector
-==19443== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==19443== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==19443== Command: ../a
-==19443== 
-==19443== 
-==19443== HEAP SUMMARY:
-==19443==     in use at exit: 0 bytes in 0 blocks
-==19443==   total heap usage: 5,421 allocs, 5,421 frees, 402,448 bytes allocated
-==19443== 
-==19443== All heap blocks were freed -- no leaks are possible
-==19443== 
-==19443== For lists of detected and suppressed errors, rerun with: -s
-==19443== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==22782== Memcheck, a memory error detector
+==22782== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==22782== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==22782== Command: ../a
+==22782== 
+==22782== 
+==22782== HEAP SUMMARY:
+==22782==     in use at exit: 0 bytes in 0 blocks
+==22782==   total heap usage: 5,421 allocs, 5,421 frees, 402,448 bytes allocated
+==22782== 
+==22782== All heap blocks were freed -- no leaks are possible
+==22782== 
+==22782== For lists of detected and suppressed errors, rerun with: -s
+==22782== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 86.txt
 
-==19528== Memcheck, a memory error detector
-==19528== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==19528== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==19528== Command: ../a
-==19528== 
-==19528== 
-==19528== HEAP SUMMARY:
-==19528==     in use at exit: 0 bytes in 0 blocks
-==19528==   total heap usage: 286 allocs, 286 frees, 16,768 bytes allocated
-==19528== 
-==19528== All heap blocks were freed -- no leaks are possible
-==19528== 
-==19528== For lists of detected and suppressed errors, rerun with: -s
-==19528== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==22913== Memcheck, a memory error detector
+==22913== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==22913== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==22913== Command: ../a
+==22913== 
+==22913== 
+==22913== HEAP SUMMARY:
+==22913==     in use at exit: 0 bytes in 0 blocks
+==22913==   total heap usage: 286 allocs, 286 frees, 16,768 bytes allocated
+==22913== 
+==22913== All heap blocks were freed -- no leaks are possible
+==22913== 
+==22913== For lists of detected and suppressed errors, rerun with: -s
+==22913== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 87.txt
 
-==19573== Memcheck, a memory error detector
-==19573== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==19573== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==19573== Command: ../a
-==19573== 
-==19573== 
-==19573== HEAP SUMMARY:
-==19573==     in use at exit: 0 bytes in 0 blocks
-==19573==   total heap usage: 29,069 allocs, 29,069 frees, 3,567,264 bytes allocated
-==19573== 
-==19573== All heap blocks were freed -- no leaks are possible
-==19573== 
-==19573== For lists of detected and suppressed errors, rerun with: -s
-==19573== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==22941== Memcheck, a memory error detector
+==22941== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==22941== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==22941== Command: ../a
+==22941== 
+==22941== 
+==22941== HEAP SUMMARY:
+==22941==     in use at exit: 0 bytes in 0 blocks
+==22941==   total heap usage: 29,069 allocs, 29,069 frees, 3,567,264 bytes allocated
+==22941== 
+==22941== All heap blocks were freed -- no leaks are possible
+==22941== 
+==22941== For lists of detected and suppressed errors, rerun with: -s
+==22941== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 88.txt
 
-==19847== Memcheck, a memory error detector
-==19847== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==19847== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==19847== Command: ../a
-==19847== 
-==19847== 
-==19847== HEAP SUMMARY:
-==19847==     in use at exit: 0 bytes in 0 blocks
-==19847==   total heap usage: 15,328 allocs, 15,328 frees, 1,455,400 bytes allocated
-==19847== 
-==19847== All heap blocks were freed -- no leaks are possible
-==19847== 
-==19847== For lists of detected and suppressed errors, rerun with: -s
-==19847== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==23156== Memcheck, a memory error detector
+==23156== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==23156== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==23156== Command: ../a
+==23156== 
+==23156== 
+==23156== HEAP SUMMARY:
+==23156==     in use at exit: 0 bytes in 0 blocks
+==23156==   total heap usage: 15,328 allocs, 15,328 frees, 1,455,400 bytes allocated
+==23156== 
+==23156== All heap blocks were freed -- no leaks are possible
+==23156== 
+==23156== For lists of detected and suppressed errors, rerun with: -s
+==23156== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 89.txt
 
-==19900== Memcheck, a memory error detector
-==19900== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==19900== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==19900== Command: ../a
-==19900== 
-==19900== 
-==19900== HEAP SUMMARY:
-==19900==     in use at exit: 0 bytes in 0 blocks
-==19900==   total heap usage: 2,498 allocs, 2,498 frees, 189,776 bytes allocated
-==19900== 
-==19900== All heap blocks were freed -- no leaks are possible
-==19900== 
-==19900== For lists of detected and suppressed errors, rerun with: -s
-==19900== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==23189== Memcheck, a memory error detector
+==23189== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==23189== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==23189== Command: ../a
+==23189== 
+==23189== 
+==23189== HEAP SUMMARY:
+==23189==     in use at exit: 0 bytes in 0 blocks
+==23189==   total heap usage: 2,498 allocs, 2,498 frees, 189,776 bytes allocated
+==23189== 
+==23189== All heap blocks were freed -- no leaks are possible
+==23189== 
+==23189== For lists of detected and suppressed errors, rerun with: -s
+==23189== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 9.txt
 
-==19918== Memcheck, a memory error detector
-==19918== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==19918== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==19918== Command: ../a
-==19918== 
-==19918== 
-==19918== HEAP SUMMARY:
-==19918==     in use at exit: 0 bytes in 0 blocks
-==19918==   total heap usage: 16,802 allocs, 16,802 frees, 1,680,528 bytes allocated
-==19918== 
-==19918== All heap blocks were freed -- no leaks are possible
-==19918== 
-==19918== For lists of detected and suppressed errors, rerun with: -s
-==19918== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==23211== Memcheck, a memory error detector
+==23211== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==23211== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==23211== Command: ../a
+==23211== 
+==23211== 
+==23211== HEAP SUMMARY:
+==23211==     in use at exit: 0 bytes in 0 blocks
+==23211==   total heap usage: 16,802 allocs, 16,802 frees, 1,680,528 bytes allocated
+==23211== 
+==23211== All heap blocks were freed -- no leaks are possible
+==23211== 
+==23211== For lists of detected and suppressed errors, rerun with: -s
+==23211== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 90.txt
 
-==19953== Memcheck, a memory error detector
-==19953== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==19953== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==19953== Command: ../a
-==19953== 
-==19953== 
-==19953== HEAP SUMMARY:
-==19953==     in use at exit: 0 bytes in 0 blocks
-==19953==   total heap usage: 17,346 allocs, 17,346 frees, 1,687,688 bytes allocated
-==19953== 
-==19953== All heap blocks were freed -- no leaks are possible
-==19953== 
-==19953== For lists of detected and suppressed errors, rerun with: -s
-==19953== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==23262== Memcheck, a memory error detector
+==23262== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==23262== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==23262== Command: ../a
+==23262== 
+==23262== 
+==23262== HEAP SUMMARY:
+==23262==     in use at exit: 0 bytes in 0 blocks
+==23262==   total heap usage: 17,346 allocs, 17,346 frees, 1,687,688 bytes allocated
+==23262== 
+==23262== All heap blocks were freed -- no leaks are possible
+==23262== 
+==23262== For lists of detected and suppressed errors, rerun with: -s
+==23262== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 91.txt
 
-==20054== Memcheck, a memory error detector
-==20054== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==20054== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==20054== Command: ../a
-==20054== 
-==20054== 
-==20054== HEAP SUMMARY:
-==20054==     in use at exit: 0 bytes in 0 blocks
-==20054==   total heap usage: 6,557 allocs, 6,557 frees, 512,544 bytes allocated
-==20054== 
-==20054== All heap blocks were freed -- no leaks are possible
-==20054== 
-==20054== For lists of detected and suppressed errors, rerun with: -s
-==20054== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==23329== Memcheck, a memory error detector
+==23329== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==23329== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==23329== Command: ../a
+==23329== 
+==23329== 
+==23329== HEAP SUMMARY:
+==23329==     in use at exit: 0 bytes in 0 blocks
+==23329==   total heap usage: 6,557 allocs, 6,557 frees, 512,544 bytes allocated
+==23329== 
+==23329== All heap blocks were freed -- no leaks are possible
+==23329== 
+==23329== For lists of detected and suppressed errors, rerun with: -s
+==23329== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 92.txt
 
-==20088== Memcheck, a memory error detector
-==20088== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==20088== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==20088== Command: ../a
-==20088== 
-==20088== 
-==20088== HEAP SUMMARY:
-==20088==     in use at exit: 0 bytes in 0 blocks
-==20088==   total heap usage: 45,996 allocs, 45,996 frees, 6,785,464 bytes allocated
-==20088== 
-==20088== All heap blocks were freed -- no leaks are possible
-==20088== 
-==20088== For lists of detected and suppressed errors, rerun with: -s
-==20088== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==23354== Memcheck, a memory error detector
+==23354== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==23354== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==23354== Command: ../a
+==23354== 
+==23354== 
+==23354== HEAP SUMMARY:
+==23354==     in use at exit: 0 bytes in 0 blocks
+==23354==   total heap usage: 45,996 allocs, 45,996 frees, 6,785,464 bytes allocated
+==23354== 
+==23354== All heap blocks were freed -- no leaks are possible
+==23354== 
+==23354== For lists of detected and suppressed errors, rerun with: -s
+==23354== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 93.txt
 
-==20342== Memcheck, a memory error detector
-==20342== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==20342== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==20342== Command: ../a
-==20342== 
-==20342== 
-==20342== HEAP SUMMARY:
-==20342==     in use at exit: 0 bytes in 0 blocks
-==20342==   total heap usage: 15,725 allocs, 15,725 frees, 1,603,080 bytes allocated
-==20342== 
-==20342== All heap blocks were freed -- no leaks are possible
-==20342== 
-==20342== For lists of detected and suppressed errors, rerun with: -s
-==20342== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==23876== Memcheck, a memory error detector
+==23876== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==23876== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==23876== Command: ../a
+==23876== 
+==23876== 
+==23876== HEAP SUMMARY:
+==23876==     in use at exit: 0 bytes in 0 blocks
+==23876==   total heap usage: 15,725 allocs, 15,725 frees, 1,603,080 bytes allocated
+==23876== 
+==23876== All heap blocks were freed -- no leaks are possible
+==23876== 
+==23876== For lists of detected and suppressed errors, rerun with: -s
+==23876== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 94.txt
 
-==20412== Memcheck, a memory error detector
-==20412== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==20412== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==20412== Command: ../a
-==20412== 
-==20412== 
-==20412== HEAP SUMMARY:
-==20412==     in use at exit: 0 bytes in 0 blocks
-==20412==   total heap usage: 2,537 allocs, 2,537 frees, 177,328 bytes allocated
-==20412== 
-==20412== All heap blocks were freed -- no leaks are possible
-==20412== 
-==20412== For lists of detected and suppressed errors, rerun with: -s
-==20412== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==24155== Memcheck, a memory error detector
+==24155== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==24155== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==24155== Command: ../a
+==24155== 
+==24155== 
+==24155== HEAP SUMMARY:
+==24155==     in use at exit: 0 bytes in 0 blocks
+==24155==   total heap usage: 2,537 allocs, 2,537 frees, 177,328 bytes allocated
+==24155== 
+==24155== All heap blocks were freed -- no leaks are possible
+==24155== 
+==24155== For lists of detected and suppressed errors, rerun with: -s
+==24155== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 95.txt
 
-==20484== Memcheck, a memory error detector
-==20484== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==20484== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==20484== Command: ../a
-==20484== 
-==20484== 
-==20484== HEAP SUMMARY:
-==20484==     in use at exit: 0 bytes in 0 blocks
-==20484==   total heap usage: 1,143 allocs, 1,143 frees, 80,072 bytes allocated
-==20484== 
-==20484== All heap blocks were freed -- no leaks are possible
-==20484== 
-==20484== For lists of detected and suppressed errors, rerun with: -s
-==20484== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==24175== Memcheck, a memory error detector
+==24175== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==24175== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==24175== Command: ../a
+==24175== 
+==24175== 
+==24175== HEAP SUMMARY:
+==24175==     in use at exit: 0 bytes in 0 blocks
+==24175==   total heap usage: 1,143 allocs, 1,143 frees, 80,072 bytes allocated
+==24175== 
+==24175== All heap blocks were freed -- no leaks are possible
+==24175== 
+==24175== For lists of detected and suppressed errors, rerun with: -s
+==24175== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 96.txt
 
-==20595== Memcheck, a memory error detector
-==20595== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==20595== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==20595== Command: ../a
-==20595== 
-==20595== 
-==20595== HEAP SUMMARY:
-==20595==     in use at exit: 0 bytes in 0 blocks
-==20595==   total heap usage: 15,499 allocs, 15,499 frees, 1,342,000 bytes allocated
-==20595== 
-==20595== All heap blocks were freed -- no leaks are possible
-==20595== 
-==20595== For lists of detected and suppressed errors, rerun with: -s
-==20595== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==24209== Memcheck, a memory error detector
+==24209== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==24209== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==24209== Command: ../a
+==24209== 
+==24209== 
+==24209== HEAP SUMMARY:
+==24209==     in use at exit: 0 bytes in 0 blocks
+==24209==   total heap usage: 15,499 allocs, 15,499 frees, 1,342,000 bytes allocated
+==24209== 
+==24209== All heap blocks were freed -- no leaks are possible
+==24209== 
+==24209== For lists of detected and suppressed errors, rerun with: -s
+==24209== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 97.txt
 
-==20760== Memcheck, a memory error detector
-==20760== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==20760== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==20760== Command: ../a
-==20760== 
-==20760== 
-==20760== HEAP SUMMARY:
-==20760==     in use at exit: 0 bytes in 0 blocks
-==20760==   total heap usage: 43,756 allocs, 43,756 frees, 6,707,568 bytes allocated
-==20760== 
-==20760== All heap blocks were freed -- no leaks are possible
-==20760== 
-==20760== For lists of detected and suppressed errors, rerun with: -s
-==20760== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==24335== Memcheck, a memory error detector
+==24335== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==24335== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==24335== Command: ../a
+==24335== 
+==24335== 
+==24335== HEAP SUMMARY:
+==24335==     in use at exit: 0 bytes in 0 blocks
+==24335==   total heap usage: 43,756 allocs, 43,756 frees, 6,707,568 bytes allocated
+==24335== 
+==24335== All heap blocks were freed -- no leaks are possible
+==24335== 
+==24335== For lists of detected and suppressed errors, rerun with: -s
+==24335== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 98.txt
 
-==21235== Memcheck, a memory error detector
-==21235== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==21235== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==21235== Command: ../a
-==21235== 
-==21235== 
-==21235== HEAP SUMMARY:
-==21235==     in use at exit: 0 bytes in 0 blocks
-==21235==   total heap usage: 23,163 allocs, 23,163 frees, 2,654,088 bytes allocated
-==21235== 
-==21235== All heap blocks were freed -- no leaks are possible
-==21235== 
-==21235== For lists of detected and suppressed errors, rerun with: -s
-==21235== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==25089== Memcheck, a memory error detector
+==25089== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==25089== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==25089== Command: ../a
+==25089== 
+==25089== 
+==25089== HEAP SUMMARY:
+==25089==     in use at exit: 0 bytes in 0 blocks
+==25089==   total heap usage: 23,163 allocs, 23,163 frees, 2,654,088 bytes allocated
+==25089== 
+==25089== All heap blocks were freed -- no leaks are possible
+==25089== 
+==25089== For lists of detected and suppressed errors, rerun with: -s
+==25089== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
 99.txt
 
-==21413== Memcheck, a memory error detector
-==21413== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==21413== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
-==21413== Command: ../a
-==21413== 
-==21413== 
-==21413== HEAP SUMMARY:
-==21413==     in use at exit: 0 bytes in 0 blocks
-==21413==   total heap usage: 2,505 allocs, 2,505 frees, 176,480 bytes allocated
-==21413== 
-==21413== All heap blocks were freed -- no leaks are possible
-==21413== 
-==21413== For lists of detected and suppressed errors, rerun with: -s
-==21413== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==25159== Memcheck, a memory error detector
+==25159== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==25159== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==25159== Command: ../a
+==25159== 
+==25159== 
+==25159== HEAP SUMMARY:
+==25159==     in use at exit: 0 bytes in 0 blocks
+==25159==   total heap usage: 2,505 allocs, 2,505 frees, 176,480 bytes allocated
+==25159== 
+==25159== All heap blocks were freed -- no leaks are possible
+==25159== 
+==25159== For lists of detected and suppressed errors, rerun with: -s
+==25159== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

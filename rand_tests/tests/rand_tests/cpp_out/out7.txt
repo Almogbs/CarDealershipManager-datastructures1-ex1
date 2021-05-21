@@ -437,6 +437,7 @@ AddCarType: SUCCESS
 AddCarType: FAILURE
 MakeComplaint: SUCCESS
 AddCarType: SUCCESS
+
 MakeComplaint: SUCCESS
 --Start of worst models--
 CarType	|	Model
@@ -1003,6 +1004,7 @@ MakeComplaint: SUCCESS
 SellCar: SUCCESS
 MakeComplaint: SUCCESS
 AddCarType: SUCCESS
+
 MakeComplaint: SUCCESS
 GetBestSellerModelByType: FAILURE
 SellCar: INVALID_INPUT
@@ -3888,6 +3890,7 @@ RemoveCarType: SUCCESS
 SellCar: SUCCESS
 SellCar: SUCCESS
 AddCarType: INVALID_INPUT
+
 MakeComplaint: SUCCESS
 RemoveCarType: FAILURE
 SellCar: SUCCESS

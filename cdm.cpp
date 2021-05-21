@@ -72,7 +72,10 @@ void CDM::addModelToZeroScroredModels(CarType car_type, CarModelByGrade car_mode
 void CDM::addToModelsByScoreTree(CarType* car_type, CarModel car_model){
     CarModelByGrade car_model_by_grade =  CarModelByGrade(car_model.get_type_id(), car_model.get_model_id(),
                                                           car_model.get_score(), car_model.get_total_sales());
-    car_type->zero_scored_models->remove(car_model);  
+    try{
+        car_type->zero_scored_models->remove(car_model); 
+    }
+    catch(const DataStructures::NodeNotExist &e) {};
     //car_type->zero_scored_models->InOrderGetFirst();                                                    
     models_by_score_tree.insert(car_model_by_grade);
     if (car_type->zero_scored_models->getSize() == 0){
@@ -158,7 +161,6 @@ StatusType CDM::RemoveCarType(int typeID){
 StatusType CDM::sellCar(int typeID, int modelID){
     if ( !isValidTypeId(typeID) || !isValidModelId(modelID) ) return INVALID_INPUT;
     //checks if the type exist and the validity of the input
-
     try{
         CarType* car_type_node = types_tree.getNode(CarType(typeID, 0))->get_key();
         if(car_type_node->getNumOfModels() <= modelID) return FAILURE;
@@ -249,7 +251,7 @@ StatusType CDM::makeComplaint(int typeID, int modelID, int t){
         model->complain(t);
         int new_score = model->get_score();
         int new_sales = model->get_total_sales();
-        //extere case: old score is 0
+        //exterme case: old score is 0
         if(old_score == 0){
             //search in zero_scored_types_tree, remove it and insert is to models_by_score_tree
             addToModelsByScoreTree(zero_scored_types_tree.getNode(CarType(typeID, 0))->get_key(), *model);
@@ -277,6 +279,7 @@ StatusType CDM::makeComplaint(int typeID, int modelID, int t){
     catch(const std::bad_alloc &e){
         return ALLOCATION_ERROR;
     }
+
     return SUCCESS;
 }
 
@@ -330,7 +333,6 @@ StatusType CDM::GetWorstModels(int numOfModels, int *types, int *models){
     }
 
     CarType* iterator_zero = zero_scored_types_tree.InOrderGetFirst();
-
     //go on with the zero scored models
     //get in only if the tree isnt empty
     for(int zero_tree_counter = 0; zero_tree_counter < zero_scored_types_tree.getSize() && counter < numOfModels; zero_tree_counter++){

@@ -46,14 +46,14 @@ CarType::CarType(const CarType& type){
         zero_scored_models = new AVLTree<CarModel>(temp_arr, num_of_models);
         //delete[] temp_arr;
     }
-    */zero_scored_models = new AVLTree<CarModel>();
-    if(num_of_models != 0){
+    */
+    zero_scored_models = new AVLTree<CarModel>();
         CarModel* to_insert = type.zero_scored_models->InOrderGetFirst();
         for(int i = 0; i < type.zero_scored_models->getSize(); i++){
             zero_scored_models->insert(*to_insert);
             to_insert = type.zero_scored_models->InOrderGetNext();
+
         }
-    }
 
    // else {zero_scored_models = new AVLTree<CarModel>();}
 }
