@@ -158,6 +158,7 @@ StatusType CDM::RemoveCarType(int typeID){
 StatusType CDM::sellCar(int typeID, int modelID){
     if ( !isValidTypeId(typeID) || !isValidModelId(modelID) ) return INVALID_INPUT;
     //checks if the type exist and the validity of the input
+
     try{
         CarType* car_type_node = types_tree.getNode(CarType(typeID, 0))->get_key();
         if(car_type_node->getNumOfModels() <= modelID) return FAILURE;
@@ -220,6 +221,7 @@ StatusType CDM::sellCar(int typeID, int modelID){
     catch(const std::bad_alloc &e){
         return ALLOCATION_ERROR;
     }
+
     return SUCCESS;
 }
 
@@ -227,6 +229,7 @@ StatusType CDM::makeComplaint(int typeID, int modelID, int t){
     if ( !isValidTypeId(typeID) || !isValidModelId(modelID)) {
         return INVALID_INPUT;
     }
+
     //checks if the type exist and the validity of the input
     try{
         CarType* car_type_node = types_tree.getNode(CarType(typeID, 0))->get_key();
@@ -280,12 +283,18 @@ StatusType CDM::makeComplaint(int typeID, int modelID, int t){
 //fix ths \/
 StatusType CDM::GetBestSellerModelByType(int typeID, int * modelID){
     if(typeID == 0) {
+        if(best_seller_model == UNINITIALIZED){
+            return FAILURE;
+        }
         *modelID = best_seller_model;
         return SUCCESS;
     }
     else if(!isValidTypeId(typeID)) return INVALID_INPUT;
     try{
         Node<CarType>* result = types_tree.getNode(CarType(typeID, 0));
+        if(result->get_key()->best_seller_model == UNINITIALIZED){
+            return FAILURE;
+        }
         *modelID = result->get_key()->best_seller_model;
     }
     catch(const DataStructures::NodeNotExist &e){
@@ -313,8 +322,12 @@ StatusType CDM::GetWorstModels(int numOfModels, int *types, int *models){
         //cout << iterator_negative->get_type_id() << " " << iterator_negative->get_model_id() << " " << iterator_negative->get_score() << endl; ///!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
         iterator_negative = models_by_score_tree.InOrderGetNext();
     }
-    if(counter == numOfModels - 1) return SUCCESS;
-    else if(counter > numOfModels - 1) throw Assert();
+    if(counter == numOfModels) return SUCCESS;
+    else if(counter > numOfModels) {
+        //cout << counter << " " << numOfModels << endl;
+        throw Assert();
+
+    }
 
     CarType* iterator_zero = zero_scored_types_tree.InOrderGetFirst();
 

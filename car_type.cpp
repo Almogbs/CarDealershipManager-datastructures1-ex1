@@ -36,6 +36,7 @@ CarType::CarType(const CarType& type){
     total_sales = type.total_sales;
     best_seller_model = type.best_seller_model;                         
     num_of_sales_of_best_seller_model = type.num_of_sales_of_best_seller_model;
+    /*
     if(num_of_models != 0){                                   
         CarModel temp_arr[num_of_models];
         for(int i=0; i<num_of_models; i++){                 
@@ -45,7 +46,16 @@ CarType::CarType(const CarType& type){
         zero_scored_models = new AVLTree<CarModel>(temp_arr, num_of_models);
         //delete[] temp_arr;
     }
-    else {zero_scored_models = new AVLTree<CarModel>();}
+    */zero_scored_models = new AVLTree<CarModel>();
+    if(num_of_models != 0){
+        CarModel* to_insert = type.zero_scored_models->InOrderGetFirst();
+        for(int i = 0; i < type.zero_scored_models->getSize(); i++){
+            zero_scored_models->insert(*to_insert);
+            to_insert = type.zero_scored_models->InOrderGetNext();
+        }
+    }
+
+   // else {zero_scored_models = new AVLTree<CarModel>();}
 }
 
 CarType::~CarType(){

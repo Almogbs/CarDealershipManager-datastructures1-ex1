@@ -307,11 +307,10 @@ void AVLTree<T>::remove(const T& key){
 		while(temp->left != nullptr){
 			temp = temp->left;
 		}
-		swapKeys(temp, to_delete);					//!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+		swapKeys(temp, to_delete);
 		to_delete = temp;
+		to_delete_parent = to_delete->parent;
 	}
-
-	to_delete_parent = to_delete->parent;
 
 	//if to_delete is leaf(lucky me)
 	if(to_delete->right == nullptr && to_delete->left == nullptr){
@@ -333,14 +332,21 @@ void AVLTree<T>::remove(const T& key){
 			//to_delete = temp;
 		}
 		else {
-				swapKeys(temp, to_delete);
-				(to_delete->right == temp) ? to_delete->right = nullptr : to_delete->left = nullptr;
-				to_delete = temp;
+				//swapKeys(temp, to_delete);
+				(to_delete_parent->left == to_delete) ? to_delete_parent->left = temp : to_delete_parent->right = temp;
+				temp->parent = to_delete_parent;
+				//(to_delete->right == temp) ? to_delete->right = nullptr : to_delete->left = nullptr;
+				//to_delete = temp;
 		}
 	}
 
 	//update the min node
-	if(to_delete->key == min_node->key) min_node = to_delete_parent;
+	min_node = root;
+	if(root == nullptr) min_node = nullptr;
+	else{
+		while(min_node->left != nullptr) min_node = min_node->left;
+	}
+	//if(to_delete->key == min_node->key) min_node = to_delete_parent;
 
 	if(size == 1){
 		root->parent = nullptr;
